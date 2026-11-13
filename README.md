@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://datasoftcompany.org/">Organization website</a> ·
+  Intended website: <strong>datasoftcompany.org</strong> (deployment in progress) ·
   <a href="https://github.com/datasoftcompany-org">GitHub organization</a>
 </p>
 
