@@ -64,7 +64,8 @@ Researchers, engineers, and organizations are welcome to review the public work,
 
 ## Repository contents
 
-- `index.html` — English-language organization homepage.
+- `index.html` — English-language organization homepage source; deployment is in progress.
+- `business/index.html` — English-language draft for the distinct Industry & AI Futures platform intended for `datasoftcompany.biz`; not deployed.
 - `assets/` — organization branding.
 - Project-specific code, data, and reports will be linked or added when they are ready for public release.
 
