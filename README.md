@@ -1,6 +1,6 @@
 <!-- DataSoft advanced research portfolio -->
 <p align="center">
-  <img src="assets/DataSoftOrg_Logo_512_512.jpg" alt="DataSoft Advanced AI Research Organization" width="360">
+  <img src="assets/DataSoftOrg_Logo_512_512.jpg" alt="DataSoft Advanced AI Research Organization" width="300">
 </p>
 
 <h1 align="center">Advanced AI Research</h1>
@@ -10,16 +10,17 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/datasoftcompany-org">DataSoft Advanced AI Research Organization</a>
+  <a href="https://datasoftcompany.org/">Organization website</a> ·
+  <a href="https://github.com/datasoftcompany-org">GitHub organization</a>
 </p>
 
 ---
 
 ## About
 
-This repository is the public catalogue for the organization’s advanced AI research and engineering work. We study model behavior, transparency, evaluation, verification, and the reliability of intelligent systems.
+This repository is the public catalogue for the organization's advanced AI research and engineering work. We study model behavior, transparency, evaluation, verification, and the reliability of intelligent systems.
 
-Our work emphasizes explicit hypotheses, reproducible methods, recorded evidence, and clear limits on what each result supports. We publish research artifacts and findings as they are ready for public review.
+Our purpose is to improve understanding through careful evaluation and open research. We do not build or train new foundation models. We emphasize explicit hypotheses, reproducible methods, recorded evidence, and clear limits on what each result supports.
 
 ## Completed research
 
@@ -55,14 +56,16 @@ Our work emphasizes explicit hypotheses, reproducible methods, recorded evidence
 - Preserve evidence and distinguish measured results from interpretation.
 - Report limitations and make claims no broader than the supporting evidence.
 - Keep research artifacts reviewable and reproducible where the underlying materials permit.
+- Label work by its actual status, including ongoing work and known limitations.
 
-## العربية
+## Open collaboration
 
-هذا المستودع هو الفهرس العام لأبحاث المنظمة ومشاريعها الهندسية في الذكاء الاصطناعي المتقدم. نركز على سلوك النماذج، والشفافية، والتقييم، والتحقق، وموثوقية الأنظمة الذكية. نعرض النتائج مع منهجها وحدودها، ونضيف الأعمال عند جاهزيتها للمراجعة العامة.
+Researchers, engineers, and organizations are welcome to review the public work, identify gaps, propose collaborations, and contribute reproducibility efforts through [GitHub Issues](https://github.com/datasoftcompany-org/Advanced-AI-Research/issues).
 
 ## Repository contents
 
-- `assets/` — organization branding used by this README.
+- `index.html` — English-language organization homepage.
+- `assets/` — organization branding.
 - Project-specific code, data, and reports will be linked or added when they are ready for public release.
 
 ---
