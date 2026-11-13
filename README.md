@@ -21,7 +21,7 @@ This repository is the public catalogue for the organization’s advanced AI res
 
 Our work emphasizes explicit hypotheses, reproducible methods, recorded evidence, and clear limits on what each result supports. We publish research artifacts and findings as they are ready for public review.
 
-## Completed research and released artifacts
+## Completed research
 
 ### Transparency Lab — H000
 
@@ -30,6 +30,8 @@ Our work emphasizes explicit hypotheses, reproducible methods, recorded evidence
 - Graph size: **7 nodes, 7 edges**
 - Focus: transparency evaluation
 - The result records the outcome of H000 under the stated C0/C2 checks. It should not be read as a general claim about model transparency beyond that evaluation.
+
+## Released research artifacts
 
 ### Oracle — v0.1
 
