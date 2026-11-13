@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101312">
+  <meta name="description" content="Research and perspective on the people, companies, institutions, and industries shaping machine learning and humanoid robotics.">
+  <title>DataSoft | Industry & AI Futures</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg:#101312; --panel:#171c19; --panel2:#1c2420; --ink:#f4f2e9;
+      --muted:#b1b7ae; --soft:#818b82; --line:rgba(229,235,219,.15);
+      --lime:#d4f278; --gold:#e9b96b; --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 74% 5%,rgba(165,190,88,.13),transparent 32rem),var(--bg);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    a:focus-visible{outline:2px solid var(--lime);outline-offset:4px}
+    .wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+    .top{border-bottom:1px solid var(--line)}
+    .nav{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{text-decoration:none;font-weight:750;letter-spacing:.02em}
+    .brand small{display:block;color:var(--muted);font-size:10px;font-weight:650;letter-spacing:.14em;text-transform:uppercase}
+    .navlinks{display:flex;gap:24px;align-items:center}
+    .navlinks a{color:var(--muted);font-size:12px;text-decoration:none}
+    .navlinks a:hover{color:var(--lime)}
+    .navlinks .pill{padding:9px 13px;border:1px solid rgba(212,242,120,.42);border-radius:3px;color:var(--lime)}
+    .hero{padding:96px 0 83px}
+    .eyebrow,.kicker{color:var(--lime);font-size:10px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+    .eyebrow{display:flex;align-items:center;gap:11px}
+    .eyebrow:before{width:25px;height:1px;background:currentColor;content:""}
+    h1{max-width:900px;margin:21px 0 20px;font-size:clamp(45px,7vw,82px);font-weight:560;letter-spacing:-.065em;line-height:.99}
+    h1 em{color:var(--lime);font-style:normal}
+    .lead{max-width:700px;color:#c2c7be;font-size:clamp(17px,2vw,20px)}
+    .hero-note{max-width:715px;margin-top:18px;color:var(--soft);font-size:12px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:31px}
+    .button{display:inline-flex;min-height:44px;align-items:center;justify-content:center;gap:8px;padding:0 15px;border:1px solid var(--line);border-radius:3px;text-decoration:none;font-size:12px;font-weight:750}
+    .button.primary{border-color:var(--lime);background:var(--lime);color:#12170d}
+    .button:hover{border-color:var(--lime)}
+    .audience{display:grid;grid-template-columns:repeat(4,1fr);margin-top:58px;border:1px solid var(--line);background:rgba(23,28,25,.65)}
+    .audience div{padding:17px 18px;border-right:1px solid var(--line);color:#c0c8bc;font-size:12px}
+    .audience div:last-child{border-right:0}
+    .audience b{display:block;margin-bottom:2px;color:var(--ink);font-size:12px}
+    section.content{padding:69px 0;border-top:1px solid var(--line)}
+    .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:27px}
+    h2{margin:8px 0 0;font-size:clamp(29px,4vw,42px);font-weight:560;letter-spacing:-.045em;line-height:1.12}
+    .intro{max-width:445px;margin:0;color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
+    .card{min-height:210px;padding:23px;border:1px solid var(--line);border-radius:4px;background:linear-gradient(140deg,rgba(28,36,32,.94),rgba(19,24,21,.88))}
+    .number{color:var(--gold);font-size:10px;font-weight:800;letter-spacing:.15em}
+    h3{margin:13px 0 8px;font-size:19px;font-weight:650;letter-spacing:-.02em}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+    .copy{max-width:530px;color:var(--muted);font-size:14px}
+    .copy strong{color:var(--ink)}
+    .promise{display:grid;gap:10px}
+    .promise div{padding:14px 16px;border-left:2px solid var(--gold);background:rgba(28,36,32,.72)}
+    .promise b{display:block;font-size:12px}
+    .promise span{color:var(--muted);font-size:11px}
+    .callout{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:30px;border:1px solid rgba(212,242,120,.24);background:linear-gradient(110deg,rgba(116,137,54,.17),rgba(28,36,32,.65))}
+    .callout p{max-width:610px;margin:10px 0 0;color:var(--muted);font-size:13px}
+    footer{padding:25px 0 33px;border-top:1px solid var(--line);color:var(--soft);font-size:10px}
+    .foot{display:flex;justify-content:space-between;gap:20px}
+    .foot a{color:#c2c9bd;text-decoration:none}
+    @media(max-width:760px){.audience{grid-template-columns:1fr 1fr}.audience div:nth-child(2){border-right:0}.audience div:nth-child(-n+2){border-bottom:1px solid var(--line)}.split{grid-template-columns:1fr;gap:23px}}
+    @media(max-width:560px){.wrap{width:calc(100% - 34px)}.nav{min-height:68px}.navlinks{gap:12px}.navlinks a{font-size:10px}.navlinks a:nth-child(1){display:none}.hero{padding:72px 0 57px}.audience div{padding:13px}.head{display:block}.intro{margin-top:14px}.grid{grid-template-columns:1fr}.card{min-height:190px}.callout{grid-template-columns:1fr;padding:23px}.foot{flex-direction:column;gap:6px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="#top">DataSoft<small>Industry & AI Futures</small></a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#questions">Areas of inquiry</a>
+        <a href="#method">Our approach</a>
+        <a class="pill" href="#participate">Collaborate ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">A business and industry perspective</div>
+        <h1>Who shapes AI’s future?<br><em>What will it change?</em></h1>
+        <p class="lead">We examine the companies, institutions, entrepreneurs, and industrial sectors influencing machine learning—and the emerging role of humanoid robotics in work and society.</p>
+        <p class="hero-note">This platform is being developed to connect research with the decisions shaping technology. Topics below describe areas of inquiry, not completed findings or forecasts.</p>
+        <div class="actions">
+          <a class="button primary" href="#questions">Explore the questions ↓</a>
+          <a class="button" href="https://github.com/datasoftcompany-org/Advanced-AI-Research">Research organization ↗</a>
+        </div>
+        <div class="audience" aria-label="Intended audiences">
+          <div><b>Entrepreneurs</b>Choices, opportunities, and evidence</div>
+          <div><b>Global companies</b>Technology direction and adoption</div>
+          <div><b>Institutions</b>Research, policy, and governance</div>
+          <div><b>Industrial sectors</b>Automation, robotics, and work</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="questions">
+      <div class="wrap">
+        <div class="head">
+          <div><div class="kicker">Areas of inquiry</div><h2>Questions with real-world stakes.</h2></div>
+          <p class="intro">We will make the evidence, assumptions, and uncertainty visible as these research tracks take shape.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><div class="number">01 / INDUSTRY</div><h3>Who steers machine learning?</h3><p>How do global companies, investors, research institutions, and public policy influence the direction and pace of machine learning development?</p></article>
+          <article class="card"><div class="number">02 / ENTERPRISE</div><h3>From capability to adoption</h3><p>Which technical, organizational, and economic conditions shape whether AI systems become useful and dependable in real operating environments?</p></article>
+          <article class="card"><div class="number">03 / ROBOTICS</div><h3>Humanoid robots in human settings</h3><p>What capabilities, safety properties, infrastructure, and social expectations will matter as humanoid robots move from demonstrations toward practical use?</p></article>
+          <article class="card"><div class="number">04 / FUTURES</div><h3>Signals, scenarios, and uncertainty</h3><p>Which emerging technical and institutional changes could alter the future of AI and robotics—and what observations would confirm or challenge those scenarios?</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="method">
+      <div class="wrap split">
+        <div>
+          <div class="kicker">Evidence-led perspective</div>
+          <h2>Analysis without hype.</h2>
+          <p class="copy">We aim to help decision-makers understand the forces shaping machine learning and robotics. We will separate documented facts from interpretation, identify whose perspective a claim represents, and state when evidence is incomplete.</p>
+          <p class="copy"><strong>Our goal is understanding, not promotion.</strong> We do not present a forecast as a fact or an industry perspective as a research finding.</p>
+        </div>
+        <div class="promise">
+          <div><b>Traceable sources</b><span>Link claims to public evidence wherever possible.</span></div>
+          <div><b>Clear status</b><span>Label published analysis, work in progress, and open questions.</span></div>
+          <div><b>Visible uncertainty</b><span>State assumptions, limitations, and competing explanations.</span></div>
+          <div><b>Open participation</b><span>Invite informed criticism and constructive collaboration.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="participate">
+      <div class="wrap callout">
+        <div><div class="kicker">Contribute to the discussion</div><h2>Bring evidence. Challenge assumptions.</h2><p>We welcome researchers, entrepreneurs, engineers, institutions, and industry practitioners who want to examine these questions openly and carefully.</p></div>
+        <a class="button primary" href="https://github.com/datasoftcompany-org/Advanced-AI-Research/issues">Start a discussion ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap foot"><span>© 2026 DataSoft · Industry & AI Futures</span><span>Planned home: datasoftcompany.biz · Publication and domain setup in progress.</span><a href="https://datasoftcompany.org/">Research organization ↗</a></div>
+  </footer>
+</body>
+</html>
