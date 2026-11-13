@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111b">
+  <meta name="description" content="Independent research, evaluation, and verification across advanced AI. Explore published work, methods, evidence, and open collaboration.">
+  <link rel="canonical" href="https://datasoftcompany.org/">
+  <title>DataSoft Advanced AI Research</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f2f6fa;
+      --muted: #a5b4c3;
+      --soft: #718496;
+      --surface: #0c1b28;
+      --surface-2: #102334;
+      --line: rgba(183, 207, 226, .15);
+      --cyan: #68e0d0;
+      --blue: #82baff;
+      --bg: #07111b;
+      --max: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 77% 5%, rgba(43, 119, 150, .2), transparent 34rem),
+        radial-gradient(ellipse at 5% 26%, rgba(35, 104, 126, .12), transparent 30rem),
+        var(--bg);
+      font: 16px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; border-radius: 3px; }
+    .wrap { width: min(var(--max), calc(100% - 48px)); margin-inline: auto; }
+    .topbar { border-bottom: 1px solid var(--line); }
+    .nav { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { display: inline-flex; align-items: center; gap: 13px; text-decoration: none; }
+    .brand img { width: 44px; height: 44px; object-fit: contain; border-radius: 50%; background: #fff; }
+    .brand strong { display: block; font-size: 14px; letter-spacing: .035em; }
+    .brand span { display: block; color: var(--muted); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+    .navlinks { display: flex; align-items: center; gap: 28px; }
+    .navlinks a { color: var(--muted); font-size: 13px; text-decoration: none; }
+    .navlinks a:hover { color: var(--ink); }
+    .navlinks .nav-cta { color: var(--bg); background: var(--cyan); padding: 10px 15px; border-radius: 4px; font-weight: 750; }
+    .hero { padding: 100px 0 88px; }
+    .eyebrow { display: flex; align-items: center; gap: 11px; color: var(--cyan); font-size: 11px; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
+    .eyebrow::before { width: 27px; height: 1px; background: currentColor; content: ""; }
+    h1 { max-width: 850px; margin: 21px 0 23px; font-size: clamp(46px, 7vw, 82px); font-weight: 560; letter-spacing: -.065em; line-height: .99; }
+    h1 em { color: var(--cyan); font-style: normal; }
+    .hero-copy { max-width: 690px; color: #b7c6d2; font-size: clamp(17px, 2vw, 20px); line-height: 1.65; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 13px; margin-top: 34px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 46px; padding: 0 17px; border: 1px solid var(--line); border-radius: 4px; color: var(--ink); text-decoration: none; font-size: 13px; font-weight: 700; transition: transform .18s ease, border-color .18s ease; }
+    .button:hover { transform: translateY(-2px); border-color: rgba(104, 224, 208, .65); }
+    .button.primary { border-color: var(--cyan); background: var(--cyan); color: #05131a; }
+    .arrow { font-size: 17px; line-height: 1; }
+    .principle { display: flex; flex-wrap: wrap; gap: 12px 25px; margin-top: 60px; padding-top: 22px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    .principle span::before { content: "•"; margin-right: 9px; color: var(--cyan); }
+    .section { padding: 74px 0; border-top: 1px solid var(--line); }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 30px; }
+    .kicker { color: var(--cyan); font-size: 11px; font-weight: 750; letter-spacing: .15em; text-transform: uppercase; }
+    h2 { margin: 8px 0 0; font-size: clamp(29px, 4vw, 42px); font-weight: 560; letter-spacing: -.045em; line-height: 1.12; }
+    .section-intro { max-width: 450px; margin: 0; color: var(--muted); font-size: 14px; }
+    .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .work-card { display: flex; flex-direction: column; min-height: 306px; padding: 24px; border: 1px solid var(--line); border-radius: 6px; background: linear-gradient(145deg, rgba(18, 39, 56, .92), rgba(10, 24, 36, .9)); }
+    .card-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .type { color: var(--blue); font-size: 10px; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+    .status { padding: 4px 8px; border: 1px solid rgba(104, 224, 208, .32); border-radius: 100px; color: var(--cyan); font-size: 10px; white-space: nowrap; }
+    .work-card h3 { margin: 25px 0 10px; font-size: 21px; font-weight: 600; letter-spacing: -.025em; }
+    .work-card p { margin: 0; color: var(--muted); font-size: 13px; }
+    .facts { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+    .fact { padding: 5px 8px; border-radius: 3px; background: rgba(170, 199, 220, .08); color: #c2d2de; font-size: 10px; }
+    .card-link { display: inline-flex; align-items: center; gap: 7px; margin-top: auto; padding-top: 24px; color: var(--cyan); font-size: 12px; font-weight: 700; text-decoration: none; }
+    .card-link:hover { text-decoration: underline; }
+    .principles-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: start; }
+    .principles-copy { max-width: 500px; color: var(--muted); font-size: 15px; }
+    .principles-copy strong { color: var(--ink); font-weight: 650; }
+    .values { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+    .value { padding: 17px; border-left: 2px solid var(--cyan); background: rgba(16, 35, 52, .72); }
+    .value strong { display: block; margin-bottom: 5px; font-size: 13px; }
+    .value span { color: var(--muted); font-size: 11px; }
+    .participate { display: grid; grid-template-columns: 1fr auto; gap: 35px; align-items: center; padding: 34px; border: 1px solid rgba(104, 224, 208, .26); border-radius: 6px; background: linear-gradient(110deg, rgba(29, 77, 84, .3), rgba(13, 33, 47, .72)); }
+    .participate h2 { font-size: 30px; }
+    .participate p { max-width: 600px; margin: 11px 0 0; color: var(--muted); font-size: 13px; }
+    .footer { padding: 27px 0 34px; border-top: 1px solid var(--line); color: var(--soft); font-size: 11px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 24px; }
+    .footer a { color: #a9bccb; text-decoration: none; }
+    .footer a:hover { color: var(--cyan); }
+    @media (max-width: 800px) {
+      .navlinks { gap: 17px; }
+      .work-grid { grid-template-columns: 1fr 1fr; }
+      .work-card:last-child { grid-column: 1 / -1; min-height: 255px; }
+      .principles-grid { grid-template-columns: 1fr; gap: 25px; }
+    }
+    @media (max-width: 580px) {
+      .wrap { width: min(var(--max), calc(100% - 34px)); }
+      .nav { min-height: 69px; }
+      .brand img { width: 37px; height: 37px; }
+      .brand strong { font-size: 12px; }
+      .brand span { font-size: 9px; }
+      .navlinks { gap: 13px; }
+      .navlinks a { font-size: 11px; }
+      .navlinks a:nth-child(2) { display: none; }
+      .navlinks .nav-cta { padding: 8px 10px; }
+      .hero { padding: 76px 0 64px; }
+      .principle { margin-top: 44px; }
+      .section { padding: 57px 0; }
+      .section-head { display: block; }
+      .section-intro { margin-top: 14px; }
+      .work-grid { grid-template-columns: 1fr; }
+      .work-card, .work-card:last-child { grid-column: auto; min-height: 260px; }
+      .values { grid-template-columns: 1fr; }
+      .participate { grid-template-columns: 1fr; padding: 25px; }
+      .footer-row { flex-direction: column; gap: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="DataSoft Advanced AI Research home">
+        <img src="assets/DataSoftOrg_Logo_512_512.jpg" alt="">
+        <span><strong>DataSoft</strong><span>Advanced AI Research</span></span>
+      </a>
+      <nav class="navlinks" aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#principles">Principles</a>
+        <a class="nav-cta" href="#participate">Participate <span class="arrow" aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Independent research organization</div>
+        <h1>Understand advanced AI.<br><em>Verify what matters.</em></h1>
+        <p class="hero-copy">We study the behavior, transparency, and reliability of intelligent systems through evaluation and verification. We publish methods, evidence, and limitations so others can inspect the work and build on it.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#research">Explore the research <span class="arrow" aria-hidden="true">↓</span></a>
+          <a class="button" href="https://github.com/datasoftcompany-org/Advanced-AI-Research">Open the public repository <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <div class="principle" aria-label="Research commitments">
+          <span>Evidence before claims</span>
+          <span>Reproducibility where possible</span>
+          <span>Open collaboration</span>
+          <span>Limits stated plainly</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Research portfolio</div><h2>Work in the open</h2></div>
+          <p class="section-intro">A concise record of completed evaluations and released research artifacts. Each entry states its scope; inclusion does not imply independent replication or peer review.</p>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="card-top"><span class="type">Transparency evaluation</span><span class="status">Completed · H000</span></div>
+            <h3>Transparency Lab</h3>
+            <p>H000 recorded a PASS under the specified C0/C2 checks. The result applies to this evaluation and does not establish a general claim about model transparency.</p>
+            <div class="facts"><span class="fact">7 nodes</span><span class="fact">7 edges</span><span class="fact">Scope-limited result</span></div>
+            <a class="card-link" href="https://github.com/datasoftcompany-org/Advanced-AI-Research">View portfolio record <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="work-card">
+            <div class="card-top"><span class="type">Benchmark artifact</span><span class="status">Released · v0.1</span></div>
+            <h3>Oracle</h3>
+            <p>An initial sentiment-classification research artifact using RoBERTa-large and GLUE SST-2. No benchmark score or broader performance claim is asserted here.</p>
+            <div class="facts"><span class="fact">RoBERTa-large</span><span class="fact">GLUE SST-2</span><span class="fact">v0.1</span></div>
+            <a class="card-link" href="https://github.com/datasoftcompany-org/Advanced-AI-Research">View portfolio record <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="work-card">
+            <div class="card-top"><span class="type">Agent evaluation</span><span class="status">Released · v1.1</span></div>
+            <h3>AGENTS policy battery</h3>
+            <p>A versioned policy and evaluation artifact defining HOTFIX, ENGINEER, REFACTOR, and TEACH modes for task-specific agent behavior.</p>
+            <div class="facts"><span class="fact">Policy modes</span><span class="fact">v1.1</span></div>
+            <a class="card-link" href="https://github.com/datasoftcompany-org/Advanced-AI-Research">View portfolio record <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="principles">
+      <div class="wrap principles-grid">
+        <div>
+          <div class="kicker">How we work</div>
+          <h2>Clarity is part of the result.</h2>
+          <p class="principles-copy">Our purpose is to improve understanding of advanced AI through careful evaluation, verification, and open research. <strong>We do not build or train new foundation models.</strong> We aim to make research inspectable and useful to the wider community.</p>
+          <p class="principles-copy">We distinguish measured results from interpretation, and completed work from ongoing work. When evidence is limited, the claim stays limited too.</p>
+        </div>
+        <div class="values" aria-label="Research principles">
+          <div class="value"><strong>Explicit questions</strong><span>State what the research is intended to resolve.</span></div>
+          <div class="value"><strong>Recorded methods</strong><span>Describe conditions and procedures clearly.</span></div>
+          <div class="value"><strong>Preserved evidence</strong><span>Keep results traceable to their supporting materials.</span></div>
+          <div class="value"><strong>Honest limitations</strong><span>Make uncertainty and unresolved work visible.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="participate">
+      <div class="wrap">
+        <div class="participate">
+          <div>
+            <div class="kicker">Open collaboration</div>
+            <h2>Help us ask better questions.</h2>
+            <p>Researchers, engineers, and organizations can review the public work, identify gaps, and propose collaborations through the repository. We welcome substantive criticism and reproducibility efforts.</p>
+          </div>
+          <a class="button primary" href="https://github.com/datasoftcompany-org/Advanced-AI-Research/issues">Contribute on GitHub <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <span>© 2026 DataSoft Advanced AI Research Organization</span>
+      <span>Published in English to support international research and collaboration.</span>
+      <span><a href="https://github.com/datasoftcompany-org/Advanced-AI-Research">GitHub repository</a> · datasoftcompany.org</span>
+    </div>
+  </footer>
+</body>
+</html>
