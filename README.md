@@ -68,7 +68,21 @@ Researchers, engineers, and organizations are welcome to review the public work,
 - `projects/index.html` — public research register summarizing records already documented in this repository.
 - `business/index.html` — English-language draft for the distinct Industry & AI Futures platform intended for `datasoftcompany.biz`; not deployed.
 - `assets/` — organization branding.
+- [`research/`](research/README.md) — layout and reproduction template for new public research projects.
 - Project-specific code, data, and reports will be linked or added when they are ready for public release.
+
+
+## GitHub workflow
+
+Start from a clean working tree. Update the local default branch and create a branch for the work.
+
+```sh
+git switch main
+git pull --ff-only origin main
+git switch -c research/<project-name>
+```
+
+Replace `<project-name>` with the project name before running the command. Stage the intended files, review `git diff --cached`, and commit on the project branch. Publish the branch with `git push -u origin HEAD`, then open a pull request targeting `main`. After the pull request is merged, switch back to `main` and run `git pull --ff-only origin main` again.
 
 ---
 
