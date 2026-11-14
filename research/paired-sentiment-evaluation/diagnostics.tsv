@@ -1,0 +1,25 @@
+id	group	label	text
+n01	negation	positive	I did not regret trying the special.
+n02	negation	negative	I cannot recommend the soup.
+n03	negation	positive	The server never once made us feel rushed.
+n04	negation	negative	The bread was nowhere near fresh.
+n05	negation	positive	There wasn't a single dish I disliked.
+n06	negation	negative	I don't think the coffee was worth the price.
+n07	negation	positive	The kitchen made no mistakes with our complicated order.
+n08	negation	negative	Not even the dessert made up for the wait.
+n09	negation	positive	The noodles didn't disappoint.
+n10	negation	negative	The staff offered no help when our order went missing.
+n11	negation	positive	I can't fault the way they handled our allergy request.
+n12	negation	negative	I would never pay that much for a sandwich like this again.
+m01	mixed_or_implicit	positive	We waited a long time, but I would gladly wait again for that pasta.
+m02	mixed_or_implicit	negative	The lighting was beautiful. We ate dinner somewhere else afterward.
+m03	mixed_or_implicit	positive	When the plates arrived, our table went quiet until every plate was empty.
+m04	mixed_or_implicit	negative	The menu looked promising, but the leftovers went straight into the bin.
+m05	mixed_or_implicit	positive	The chairs were uncomfortable, but I have already told three friends to book.
+m06	mixed_or_implicit	negative	The portion was generous enough to leave almost all of it behind.
+m07	mixed_or_implicit	positive	We ordered a second serving to take home for tomorrow.
+m08	mixed_or_implicit	negative	The apologies were sincere, but our main courses arrived after closing time.
+m09	mixed_or_implicit	positive	The soup looked plain, and I spent the rest of the evening trying to guess the recipe.
+m10	mixed_or_implicit	negative	Our waiter was kind, but the only thing I finished was the water.
+m11	mixed_or_implicit	positive	I had planned to skip dessert, then asked whether they sold the cake whole.
+m12	mixed_or_implicit	negative	The place photographs well. Next time I will just look at the pictures.

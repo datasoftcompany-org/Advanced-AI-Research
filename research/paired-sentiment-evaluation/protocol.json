@@ -1,0 +1,10 @@
+{
+  "split_salt": "datasoft-paired-sentiment-v1",
+  "test_per_label": 60,
+  "orders": [
+    ["llama3.2:3b", "qwen2.5:7b"],
+    ["qwen2.5:7b", "llama3.2:3b"]
+  ],
+  "warmup": "I enjoyed the meal and would happily return.",
+  "keep_alive": "5m"
+}
