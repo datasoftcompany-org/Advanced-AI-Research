@@ -20,7 +20,7 @@ def sha256(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def read_split(archive, protocol):
+def read_split(archive, protocol, excluded_ids=()):
     if sha256(archive) != protocol["dataset_sha256"]:
         raise ValueError("Dataset archive SHA-256 does not match the protocol")
     with zipfile.ZipFile(io.BytesIO(archive)) as source:
@@ -36,11 +36,12 @@ def read_split(archive, protocol):
             "id": f"yelp:{index}", "text": text.strip(), "label": {"0": "negative", "1": "positive"}[label],
         })
 
+    excluded_ids = set(excluded_ids)
     test, training = [], []
     for label in LABELS:
         rows = [
             rows[0] for rows in groups.values()
-            if {row["label"] for row in rows} == {label}
+            if {row["label"] for row in rows} == {label} and rows[0]["id"] not in excluded_ids
         ]
         def rank(row):
             return sha256(f'{protocol["split_salt"]}:{row["id"]}'.encode())

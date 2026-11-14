@@ -10,3 +10,4 @@ Keep credentials, private datasets, unpublished material, large model weights, a
 
 - [Sentiment classification baseline](classification-baseline/README.md)
 - [Local sentiment evaluation](local-sentiment-evaluation/README.md)
+- [Paired local sentiment evaluation](paired-sentiment-evaluation/README.md)
