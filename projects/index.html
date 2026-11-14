@@ -20,36 +20,38 @@
     .ongoing{margin-top:29px;padding:22px;border:1px solid var(--line);background:rgba(12,27,40,.7)}.ongoing p{max-width:800px;margin:8px 0 0;color:var(--muted);font-size:12px}
     footer{padding:23px 0 31px;border-top:1px solid var(--line);color:var(--soft);font-size:10px}.foot{display:flex;justify-content:space-between;gap:20px}.foot a{color:#b6c7d2;text-decoration:none}
     @media(max-width:650px){.cards{grid-template-columns:1fr}.card:first-child{grid-column:auto}.foot{flex-direction:column;gap:7px}.nav{min-height:68px}}
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
+  <link rel="stylesheet" href="../assets/glass.css">
 </head>
-<body>
+<body data-theme="register">
   <header><div class="wrap nav"><a class="brand" href="../">DATASOFT<small>Advanced AI Research</small></a><a href="../">Organization home ↗</a></div></header>
   <main class="wrap">
     <div class="eyebrow">Public research register</div>
-    <h1>Research, with its limits in view.</h1>
+    <h1>Research, <span class="accent" data-tone="blue">with its limits in view.</span></h1>
     <p class="lead">A concise register of the research artifacts currently documented in the public organization repository. Each summary states what the record supports—and what it does not.</p>
-    <div class="scope"><strong>Scope:</strong> this page summarizes public records in this repository; it is not a complete inventory of every project or internal workstream. Additional entries will be added with public source material and a clearly stated status.</div>
+    <div class="scope glass" data-tone="blue"><strong>Scope:</strong> this page summarizes public records in this repository; it is not a complete inventory of every project or internal workstream. Additional entries will be added with public source material and a clearly stated status.</div>
 
     <section>
       <div class="head"><div class="kicker">Published portfolio</div><h2>Current public records</h2></div>
       <div class="cards">
-        <article class="card">
+        <article class="card glass" data-tone="blue">
           <div class="meta"><span class="type">Transparency evaluation</span><span class="status">Completed · H000</span></div>
-          <h3>Transparency Lab</h3>
+          <h3><span class="emoji" aria-hidden="true">🔍</span>Transparency Lab</h3>
           <p>H000 records a PASS under the specified C0/C2 checks. The result applies to this evaluation only and does not establish a general claim about model transparency.</p>
           <div class="facts"><span>7 nodes</span><span>7 edges</span><span>Scope-limited result</span></div>
           <a class="link" href="https://github.com/datasoftcompany-org/Advanced-AI-Research#completed-research">Read the public record ↗</a>
         </article>
-        <article class="card">
+        <article class="card glass" data-tone="yellow">
           <div class="meta"><span class="type">Benchmark artifact</span><span class="status">Released · v0.1</span></div>
-          <h3>Oracle</h3>
+          <h3><span class="emoji" aria-hidden="true">📊</span>Oracle</h3>
           <p>An initial sentiment-classification research artifact using RoBERTa-large and GLUE SST-2. The current public record asserts no benchmark score or broader performance claim.</p>
           <div class="facts"><span>RoBERTa-large</span><span>GLUE SST-2</span></div>
           <a class="link" href="https://github.com/datasoftcompany-org/Advanced-AI-Research#released-research-artifacts">Read the public record ↗</a>
         </article>
-        <article class="card">
+        <article class="card glass" data-tone="green">
           <div class="meta"><span class="type">Agent policy artifact</span><span class="status">Released · v1.1</span></div>
-          <h3>AGENTS policy battery</h3>
+          <h3><span class="emoji" aria-hidden="true">🧩</span>AGENTS policy battery</h3>
           <p>A versioned policy and evaluation artifact defining HOTFIX, ENGINEER, REFACTOR, and TEACH modes for task-specific agent behavior.</p>
           <div class="facts"><span>Policy modes</span><span>Versioned artifact</span></div>
           <a class="link" href="https://github.com/datasoftcompany-org/Advanced-AI-Research#released-research-artifacts">Read the public record ↗</a>
@@ -57,9 +59,9 @@
       </div>
     </section>
 
-    <div class="ongoing">
+    <div class="ongoing glass" data-tone="red">
       <div class="kicker">Work in progress</div>
-      <h2>Transparent status, added with evidence.</h2>
+      <h2><span class="emoji" aria-hidden="true">🧪</span>Transparent status, added with evidence.</h2>
       <p>Project summaries will be added as their public status, source material, methods, and evidence are ready for review. Work not documented in this public repository is not represented here as completed or current.</p>
     </div>
   </main>

@@ -1,0 +1,63 @@
+:root {
+  --glass-red: 255, 155, 164;
+  --glass-yellow: 255, 220, 132;
+  --glass-green: 137, 236, 180;
+  --glass-blue: 149, 195, 255;
+}
+
+body[data-theme] {
+  background:
+    radial-gradient(ellipse at 85% 0, rgba(var(--glass-blue), .17), transparent 42rem),
+    radial-gradient(ellipse at 8% 36rem, rgba(var(--glass-red), .12), transparent 42rem),
+    radial-gradient(ellipse at 90% 75rem, rgba(var(--glass-green), .11), transparent 44rem),
+    radial-gradient(ellipse at 10% 105rem, rgba(var(--glass-yellow), .09), transparent 40rem),
+    var(--bg);
+}
+
+[data-tone="red"] { --glass-color: var(--glass-red); }
+[data-tone="yellow"] { --glass-color: var(--glass-yellow); }
+[data-tone="green"] { --glass-color: var(--glass-green); }
+[data-tone="blue"] { --glass-color: var(--glass-blue); }
+
+.glass {
+  border: 1px solid rgba(var(--glass-color), .29);
+  border-top-color: rgba(var(--glass-color), .55);
+  border-radius: 20px;
+  background:
+    linear-gradient(145deg, rgba(var(--glass-color), .19), rgba(var(--glass-color), .025) 72%),
+    rgba(9, 16, 28, .55);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), 0 14px 36px rgba(0, 0, 0, .22);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.glass :is(h2, h3, .type, .topic, .card-link, .link, .kicker, strong:first-child) {
+  color: rgb(var(--glass-color));
+}
+
+body[data-theme] .accent { color: rgb(var(--glass-color)); }
+
+.emoji {
+  display: inline-grid;
+  place-items: center;
+  width: 2em;
+  height: 2em;
+  margin-inline-end: .35em;
+  border: 1px solid rgba(var(--glass-color, var(--glass-blue)), .27);
+  border-radius: .65em;
+  background: rgba(var(--glass-color, var(--glass-blue)), .12);
+  font-size: .72em;
+  line-height: 1;
+  vertical-align: .14em;
+  letter-spacing: normal;
+}
+
+body[data-theme] :is(.button, .nav-cta, .pill) { border-radius: 12px; }
+.glass :is(.card-top, .meta) { flex-wrap: wrap; }
+.glass .topic { font-size: 11px; font-weight: 800; letter-spacing: .13em; }
+
+@media (max-width: 580px) {
+  body[data-theme] .nav { flex-wrap: wrap; gap: 8px 16px; padding-block: 12px; }
+  body[data-theme] .navlinks { flex-wrap: wrap; }
+  body[data-theme] .navlinks a:nth-child(n) { display: inline-flex; }
+}

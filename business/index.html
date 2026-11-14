@@ -49,7 +49,6 @@
     .intro{max-width:445px;margin:0;color:var(--muted);font-size:13px}
     .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
     .card{min-height:210px;padding:23px;border:1px solid var(--line);border-radius:4px;background:linear-gradient(140deg,rgba(28,36,32,.94),rgba(19,24,21,.88))}
-    .number{color:var(--gold);font-size:10px;font-weight:800;letter-spacing:.15em}
     h3{margin:13px 0 8px;font-size:19px;font-weight:650;letter-spacing:-.02em}
     .card p{margin:0;color:var(--muted);font-size:13px}
     .split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
@@ -68,8 +67,9 @@
     @media(max-width:560px){.wrap{width:calc(100% - 34px)}.nav{min-height:68px}.navlinks{gap:12px}.navlinks a{font-size:10px}.navlinks a:nth-child(1){display:none}.hero{padding:72px 0 57px}.audience div{padding:13px}.head{display:block}.intro{margin-top:14px}.grid{grid-template-columns:1fr}.card{min-height:190px}.callout{grid-template-columns:1fr;padding:23px}.foot{flex-direction:column;gap:6px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
+  <link rel="stylesheet" href="../assets/glass.css">
 </head>
-<body>
+<body data-theme="business">
   <header class="top">
     <div class="wrap nav">
       <a class="brand" href="#top">DataSoft<small>Industry & AI Futures</small></a>
@@ -84,7 +84,7 @@
     <section class="hero">
       <div class="wrap">
         <div class="eyebrow">A business and industry perspective</div>
-        <h1>Who shapes AI’s future?<br><em>What will it change?</em></h1>
+        <h1>Who shapes AI’s future?<br><em class="accent" data-tone="yellow">What will it change?</em></h1>
         <p class="lead">We examine the companies, institutions, entrepreneurs, and industrial sectors influencing machine learning—and the emerging role of humanoid robotics in work and society.</p>
         <p class="hero-note">This platform is being developed to connect research with the decisions shaping technology. Topics below describe areas of inquiry, not completed findings or forecasts.</p>
         <div class="actions">
@@ -107,10 +107,10 @@
           <p class="intro">We will make the evidence, assumptions, and uncertainty visible as these research tracks take shape.</p>
         </div>
         <div class="grid">
-          <article class="card"><div class="number">01 / INDUSTRY</div><h3>Who steers machine learning?</h3><p>How do global companies, investors, research institutions, and public policy influence the direction and pace of machine learning development?</p></article>
-          <article class="card"><div class="number">02 / ENTERPRISE</div><h3>From capability to adoption</h3><p>Which technical, organizational, and economic conditions shape whether AI systems become useful and dependable in real operating environments?</p></article>
-          <article class="card"><div class="number">03 / ROBOTICS</div><h3>Humanoid robots in human settings</h3><p>What capabilities, safety properties, infrastructure, and social expectations will matter as humanoid robots move from demonstrations toward practical use?</p></article>
-          <article class="card"><div class="number">04 / FUTURES</div><h3>Signals, scenarios, and uncertainty</h3><p>Which emerging technical and institutional changes could alter the future of AI and robotics—and what observations would confirm or challenge those scenarios?</p></article>
+          <article class="card glass" data-tone="blue"><div class="topic">INDUSTRY</div><h3><span class="emoji" aria-hidden="true">🏭</span>Who steers machine learning?</h3><p>How do global companies, investors, research institutions, and public policy influence the direction and pace of machine learning development?</p></article>
+          <article class="card glass" data-tone="yellow"><div class="topic">ENTERPRISE</div><h3><span class="emoji" aria-hidden="true">📈</span>From capability to adoption</h3><p>Which technical, organizational, and economic conditions shape whether AI systems become useful and dependable in real operating environments?</p></article>
+          <article class="card glass" data-tone="green"><div class="topic">ROBOTICS</div><h3><span class="emoji" aria-hidden="true">🤖</span>Humanoid robots in human settings</h3><p>What capabilities, safety properties, infrastructure, and social expectations will matter as humanoid robots move from demonstrations toward practical use?</p></article>
+          <article class="card glass" data-tone="red"><div class="topic">FUTURES</div><h3><span class="emoji" aria-hidden="true">🔭</span>Signals, scenarios, and uncertainty</h3><p>Which emerging technical and institutional changes could alter the future of AI and robotics—and what observations would confirm or challenge those scenarios?</p></article>
         </div>
       </div>
     </section>
@@ -133,8 +133,8 @@
     </section>
 
     <section class="content" id="participate">
-      <div class="wrap callout">
-        <div><div class="kicker">Contribute to the discussion</div><h2>Bring evidence. Challenge assumptions.</h2><p>We welcome researchers, entrepreneurs, engineers, institutions, and industry practitioners who want to examine these questions openly and carefully.</p></div>
+      <div class="wrap callout glass" data-tone="blue">
+        <div><div class="kicker">Contribute to the discussion</div><h2><span class="emoji" aria-hidden="true">🤝</span>Bring evidence. Challenge assumptions.</h2><p>We welcome researchers, entrepreneurs, engineers, institutions, and industry practitioners who want to examine these questions openly and carefully.</p></div>
         <a class="button primary" href="https://github.com/datasoftcompany-org/Advanced-AI-Research/issues">Start a discussion ↗</a>
       </div>
     </section>

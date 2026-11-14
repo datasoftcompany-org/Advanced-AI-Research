@@ -81,7 +81,7 @@
     .values { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
     .value { padding: 17px; border-left: 2px solid var(--cyan); background: rgba(16, 35, 52, .72); }
     .value strong { display: block; margin-bottom: 5px; font-size: 13px; }
-    .value span { color: var(--muted); font-size: 11px; }
+    .value > span { color: var(--muted); font-size: 11px; }
     .participate { display: grid; grid-template-columns: 1fr auto; gap: 35px; align-items: center; padding: 34px; border: 1px solid rgba(104, 224, 208, .26); border-radius: 6px; background: linear-gradient(110deg, rgba(29, 77, 84, .3), rgba(13, 33, 47, .72)); }
     .participate h2 { font-size: 30px; }
     .participate p { max-width: 600px; margin: 11px 0 0; color: var(--muted); font-size: 13px; }
@@ -121,8 +121,9 @@
       *, *::before, *::after { transition-duration: .01ms !important; }
     }
   </style>
+  <link rel="stylesheet" href="assets/glass.css">
 </head>
-<body>
+<body data-theme="research">
   <header class="topbar">
     <div class="wrap nav">
       <a class="brand" href="#top" aria-label="DataSoft Advanced AI Research home">
@@ -142,7 +143,7 @@
     <section class="hero">
       <div class="wrap">
         <div class="eyebrow">Independent research organization</div>
-        <h1>Understand advanced AI.<br><em>Verify what matters.</em></h1>
+        <h1>Understand advanced AI.<br><em class="accent" data-tone="blue">Verify what matters.</em></h1>
         <p class="hero-copy">We study the behavior, transparency, and reliability of intelligent systems through evaluation and verification. We publish methods, evidence, and limitations so others can inspect the work and build on it.</p>
         <div class="hero-actions">
           <a class="button primary" href="#research">Explore the research <span class="arrow" aria-hidden="true">↓</span></a>
@@ -164,23 +165,23 @@
           <p class="section-intro">A concise record of completed evaluations and released research artifacts. Each entry states its scope; inclusion does not imply independent replication or peer review.</p>
         </div>
         <div class="work-grid">
-          <article class="work-card">
+          <article class="work-card glass" data-tone="blue">
             <div class="card-top"><span class="type">Transparency evaluation</span><span class="status">Completed · H000</span></div>
-            <h3>Transparency Lab</h3>
+            <h3><span class="emoji" aria-hidden="true">🔍</span>Transparency Lab</h3>
             <p>H000 recorded a PASS under the specified C0/C2 checks. The result applies to this evaluation and does not establish a general claim about model transparency.</p>
             <div class="facts"><span class="fact">7 nodes</span><span class="fact">7 edges</span><span class="fact">Scope-limited result</span></div>
             <a class="card-link" href="https://github.com/datasoftcompany-org/Advanced-AI-Research">View portfolio record <span aria-hidden="true">↗</span></a>
           </article>
-          <article class="work-card">
+          <article class="work-card glass" data-tone="yellow">
             <div class="card-top"><span class="type">Benchmark artifact</span><span class="status">Released · v0.1</span></div>
-            <h3>Oracle</h3>
+            <h3><span class="emoji" aria-hidden="true">📊</span>Oracle</h3>
             <p>An initial sentiment-classification research artifact using RoBERTa-large and GLUE SST-2. No benchmark score or broader performance claim is asserted here.</p>
             <div class="facts"><span class="fact">RoBERTa-large</span><span class="fact">GLUE SST-2</span><span class="fact">v0.1</span></div>
             <a class="card-link" href="https://github.com/datasoftcompany-org/Advanced-AI-Research">View portfolio record <span aria-hidden="true">↗</span></a>
           </article>
-          <article class="work-card">
+          <article class="work-card glass" data-tone="green">
             <div class="card-top"><span class="type">Agent evaluation</span><span class="status">Released · v1.1</span></div>
-            <h3>AGENTS policy battery</h3>
+            <h3><span class="emoji" aria-hidden="true">🧩</span>AGENTS policy battery</h3>
             <p>A versioned policy and evaluation artifact defining HOTFIX, ENGINEER, REFACTOR, and TEACH modes for task-specific agent behavior.</p>
             <div class="facts"><span class="fact">Policy modes</span><span class="fact">v1.1</span></div>
             <a class="card-link" href="https://github.com/datasoftcompany-org/Advanced-AI-Research">View portfolio record <span aria-hidden="true">↗</span></a>
@@ -198,20 +199,20 @@
           <p class="principles-copy">We distinguish measured results from interpretation, and completed work from ongoing work. When evidence is limited, the claim stays limited too.</p>
         </div>
         <div class="values" aria-label="Research principles">
-          <div class="value"><strong>Explicit questions</strong><span>State what the research is intended to resolve.</span></div>
-          <div class="value"><strong>Recorded methods</strong><span>Describe conditions and procedures clearly.</span></div>
-          <div class="value"><strong>Preserved evidence</strong><span>Keep results traceable to their supporting materials.</span></div>
-          <div class="value"><strong>Honest limitations</strong><span>Make uncertainty and unresolved work visible.</span></div>
+          <div class="value glass" data-tone="red"><strong><span class="emoji" aria-hidden="true">❓</span>Explicit questions</strong><span>State what the research is intended to resolve.</span></div>
+          <div class="value glass" data-tone="yellow"><strong><span class="emoji" aria-hidden="true">📝</span>Recorded methods</strong><span>Describe conditions and procedures clearly.</span></div>
+          <div class="value glass" data-tone="green"><strong><span class="emoji" aria-hidden="true">📁</span>Preserved evidence</strong><span>Keep results traceable to their supporting materials.</span></div>
+          <div class="value glass" data-tone="blue"><strong><span class="emoji" aria-hidden="true">🧭</span>Honest limitations</strong><span>Make uncertainty and unresolved work visible.</span></div>
         </div>
       </div>
     </section>
 
     <section class="section" id="participate">
       <div class="wrap">
-        <div class="participate">
+        <div class="participate glass" data-tone="red">
           <div>
             <div class="kicker">Open collaboration</div>
-            <h2>Help us ask better questions.</h2>
+            <h2><span class="emoji" aria-hidden="true">🤝</span>Help us ask better questions.</h2>
             <p>Researchers, engineers, and organizations can review the public work, identify gaps, and propose collaborations through the repository. We welcome substantive criticism and reproducibility efforts.</p>
           </div>
           <a class="button primary" href="https://github.com/datasoftcompany-org/Advanced-AI-Research/issues">Contribute on GitHub <span class="arrow" aria-hidden="true">↗</span></a>
