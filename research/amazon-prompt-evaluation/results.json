@@ -1,0 +1,3715 @@
+{
+  "runtime": {
+    "python": "3.13.4",
+    "architecture": "arm64"
+  },
+  "sample": {
+    "archive_sha256": "afc26626d710899948693e1a61405dce197f57ffa719fa1130d346b4cc095343",
+    "inherited_protocol_sha256": "82b7c144b38b380220cc64434a8b71e1357025a79201d10a7b7238721180be2c",
+    "protocol_sha256": "309d0ed9769d33a9cf987c09b551d8d278906c6012ac22feaf1ccd0760c6fed4",
+    "training_counts": {
+      "negative": 436,
+      "positive": 431
+    },
+    "test_ids": [
+      "amazon:967",
+      "amazon:691",
+      "amazon:359",
+      "amazon:795",
+      "amazon:240",
+      "amazon:487",
+      "amazon:336",
+      "amazon:42",
+      "amazon:182",
+      "amazon:345",
+      "amazon:966",
+      "amazon:467",
+      "amazon:44",
+      "amazon:57",
+      "amazon:997",
+      "amazon:914",
+      "amazon:555",
+      "amazon:289",
+      "amazon:98",
+      "amazon:441",
+      "amazon:929",
+      "amazon:944",
+      "amazon:998",
+      "amazon:920",
+      "amazon:170",
+      "amazon:981",
+      "amazon:178",
+      "amazon:28",
+      "amazon:994",
+      "amazon:833",
+      "amazon:191",
+      "amazon:273",
+      "amazon:980",
+      "amazon:95",
+      "amazon:415",
+      "amazon:308",
+      "amazon:245",
+      "amazon:141",
+      "amazon:882",
+      "amazon:249",
+      "amazon:986",
+      "amazon:834",
+      "amazon:685",
+      "amazon:908",
+      "amazon:713",
+      "amazon:232",
+      "amazon:791",
+      "amazon:857",
+      "amazon:48",
+      "amazon:619",
+      "amazon:974",
+      "amazon:211",
+      "amazon:542",
+      "amazon:621",
+      "amazon:443",
+      "amazon:716",
+      "amazon:991",
+      "amazon:6",
+      "amazon:437",
+      "amazon:67",
+      "amazon:115",
+      "amazon:331",
+      "amazon:395",
+      "amazon:572",
+      "amazon:863",
+      "amazon:438",
+      "amazon:928",
+      "amazon:476",
+      "amazon:926",
+      "amazon:403",
+      "amazon:794",
+      "amazon:702",
+      "amazon:636",
+      "amazon:941",
+      "amazon:830",
+      "amazon:306",
+      "amazon:90",
+      "amazon:318",
+      "amazon:73",
+      "amazon:754",
+      "amazon:140",
+      "amazon:481",
+      "amazon:282",
+      "amazon:700",
+      "amazon:670",
+      "amazon:515",
+      "amazon:714",
+      "amazon:234",
+      "amazon:759",
+      "amazon:305",
+      "amazon:900",
+      "amazon:664",
+      "amazon:575",
+      "amazon:238",
+      "amazon:466",
+      "amazon:302",
+      "amazon:953",
+      "amazon:236",
+      "amazon:552",
+      "amazon:160",
+      "amazon:802",
+      "amazon:214",
+      "amazon:462",
+      "amazon:662",
+      "amazon:579",
+      "amazon:762",
+      "amazon:874",
+      "amazon:24",
+      "amazon:750",
+      "amazon:492",
+      "amazon:111",
+      "amazon:603",
+      "amazon:162",
+      "amazon:27",
+      "amazon:493",
+      "amazon:601",
+      "amazon:320",
+      "amazon:942",
+      "amazon:757",
+      "amazon:511"
+    ]
+  },
+  "baseline_label": "negative",
+  "baseline": {
+    "n": 120,
+    "accuracy": 0.5,
+    "macro_f1": 0.3333333333333333,
+    "invalid": 0,
+    "failures": 0,
+    "confusion": {
+      "negative": {
+        "negative": 60,
+        "positive": 0,
+        "invalid": 0,
+        "failure": 0
+      },
+      "positive": {
+        "negative": 60,
+        "positive": 0,
+        "invalid": 0,
+        "failure": 0
+      }
+    }
+  },
+  "rounds": [
+    {
+      "order": [
+        "direct",
+        "overall"
+      ],
+      "runs": {
+        "direct": {
+          "identity": {
+            "name": "llama3.2:3b",
+            "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+            "ollama": "0.40.16"
+          },
+          "metrics": {
+            "test": {
+              "n": 120,
+              "accuracy": 0.9583333333333334,
+              "macro_f1": 0.9583304396138621,
+              "invalid": 0,
+              "failures": 0,
+              "confusion": {
+                "negative": {
+                  "negative": 57,
+                  "positive": 3,
+                  "invalid": 0,
+                  "failure": 0
+                },
+                "positive": {
+                  "negative": 2,
+                  "positive": 58,
+                  "invalid": 0,
+                  "failure": 0
+                }
+              },
+              "median_seconds": 0.062055,
+              "timed_responses": 120
+            }
+          },
+          "rows": [
+            {
+              "id": "amazon:967",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085352
+            },
+            {
+              "id": "amazon:691",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083483
+            },
+            {
+              "id": "amazon:359",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061833
+            },
+            {
+              "id": "amazon:795",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.087291
+            },
+            {
+              "id": "amazon:240",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060695
+            },
+            {
+              "id": "amazon:487",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059109
+            },
+            {
+              "id": "amazon:336",
+              "group": "test",
+              "label": "negative",
+              "prediction": "positive",
+              "seconds": 0.084761
+            },
+            {
+              "id": "amazon:42",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061281
+            },
+            {
+              "id": "amazon:182",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083503
+            },
+            {
+              "id": "amazon:345",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058906
+            },
+            {
+              "id": "amazon:966",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060972
+            },
+            {
+              "id": "amazon:467",
+              "group": "test",
+              "label": "negative",
+              "prediction": "positive",
+              "seconds": 0.060672
+            },
+            {
+              "id": "amazon:44",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060532
+            },
+            {
+              "id": "amazon:57",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.05954
+            },
+            {
+              "id": "amazon:997",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.087548
+            },
+            {
+              "id": "amazon:914",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060103
+            },
+            {
+              "id": "amazon:555",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083342
+            },
+            {
+              "id": "amazon:289",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060016
+            },
+            {
+              "id": "amazon:98",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085447
+            },
+            {
+              "id": "amazon:441",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058995
+            },
+            {
+              "id": "amazon:929",
+              "group": "test",
+              "label": "negative",
+              "prediction": "positive",
+              "seconds": 0.083008
+            },
+            {
+              "id": "amazon:944",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058827
+            },
+            {
+              "id": "amazon:998",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059244
+            },
+            {
+              "id": "amazon:920",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059468
+            },
+            {
+              "id": "amazon:170",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086356
+            },
+            {
+              "id": "amazon:981",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060466
+            },
+            {
+              "id": "amazon:178",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.126457
+            },
+            {
+              "id": "amazon:28",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086375
+            },
+            {
+              "id": "amazon:994",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.047933
+            },
+            {
+              "id": "amazon:833",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.057845
+            },
+            {
+              "id": "amazon:191",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060293
+            },
+            {
+              "id": "amazon:273",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061563
+            },
+            {
+              "id": "amazon:980",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058327
+            },
+            {
+              "id": "amazon:95",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059506
+            },
+            {
+              "id": "amazon:415",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086751
+            },
+            {
+              "id": "amazon:308",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083305
+            },
+            {
+              "id": "amazon:245",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.062422
+            },
+            {
+              "id": "amazon:141",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058267
+            },
+            {
+              "id": "amazon:882",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061111
+            },
+            {
+              "id": "amazon:249",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.062277
+            },
+            {
+              "id": "amazon:986",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085214
+            },
+            {
+              "id": "amazon:834",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.088864
+            },
+            {
+              "id": "amazon:685",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060515
+            },
+            {
+              "id": "amazon:908",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061001
+            },
+            {
+              "id": "amazon:713",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.047192
+            },
+            {
+              "id": "amazon:232",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.062765
+            },
+            {
+              "id": "amazon:791",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.062383
+            },
+            {
+              "id": "amazon:857",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059405
+            },
+            {
+              "id": "amazon:48",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.127751
+            },
+            {
+              "id": "amazon:619",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085049
+            },
+            {
+              "id": "amazon:974",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058301
+            },
+            {
+              "id": "amazon:211",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.17101
+            },
+            {
+              "id": "amazon:542",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061742
+            },
+            {
+              "id": "amazon:621",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084641
+            },
+            {
+              "id": "amazon:443",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086484
+            },
+            {
+              "id": "amazon:716",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086896
+            },
+            {
+              "id": "amazon:991",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083441
+            },
+            {
+              "id": "amazon:6",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.082561
+            },
+            {
+              "id": "amazon:437",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084879
+            },
+            {
+              "id": "amazon:67",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.087017
+            },
+            {
+              "id": "amazon:115",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.046124
+            },
+            {
+              "id": "amazon:331",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.046144
+            },
+            {
+              "id": "amazon:395",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.085913
+            },
+            {
+              "id": "amazon:572",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.05954
+            },
+            {
+              "id": "amazon:863",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.06041
+            },
+            {
+              "id": "amazon:438",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059724
+            },
+            {
+              "id": "amazon:928",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060507
+            },
+            {
+              "id": "amazon:476",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059004
+            },
+            {
+              "id": "amazon:926",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084895
+            },
+            {
+              "id": "amazon:403",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059022
+            },
+            {
+              "id": "amazon:794",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.082007
+            },
+            {
+              "id": "amazon:702",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058639
+            },
+            {
+              "id": "amazon:636",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.083258
+            },
+            {
+              "id": "amazon:941",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.082448
+            },
+            {
+              "id": "amazon:830",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.057404
+            },
+            {
+              "id": "amazon:306",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060836
+            },
+            {
+              "id": "amazon:90",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058984
+            },
+            {
+              "id": "amazon:318",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.082756
+            },
+            {
+              "id": "amazon:73",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.046837
+            },
+            {
+              "id": "amazon:754",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08259
+            },
+            {
+              "id": "amazon:140",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059056
+            },
+            {
+              "id": "amazon:481",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.082432
+            },
+            {
+              "id": "amazon:282",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059688
+            },
+            {
+              "id": "amazon:700",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083522
+            },
+            {
+              "id": "amazon:670",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.05874
+            },
+            {
+              "id": "amazon:515",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059734
+            },
+            {
+              "id": "amazon:714",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086696
+            },
+            {
+              "id": "amazon:234",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058227
+            },
+            {
+              "id": "amazon:759",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059493
+            },
+            {
+              "id": "amazon:305",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084499
+            },
+            {
+              "id": "amazon:900",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084256
+            },
+            {
+              "id": "amazon:664",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084877
+            },
+            {
+              "id": "amazon:575",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086683
+            },
+            {
+              "id": "amazon:238",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.085024
+            },
+            {
+              "id": "amazon:466",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.06044
+            },
+            {
+              "id": "amazon:302",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.062671
+            },
+            {
+              "id": "amazon:953",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.06335
+            },
+            {
+              "id": "amazon:236",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.062408
+            },
+            {
+              "id": "amazon:552",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.06177
+            },
+            {
+              "id": "amazon:160",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060178
+            },
+            {
+              "id": "amazon:802",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060752
+            },
+            {
+              "id": "amazon:214",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.129043
+            },
+            {
+              "id": "amazon:462",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061822
+            },
+            {
+              "id": "amazon:662",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.087646
+            },
+            {
+              "id": "amazon:579",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060243
+            },
+            {
+              "id": "amazon:762",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083671
+            },
+            {
+              "id": "amazon:874",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061346
+            },
+            {
+              "id": "amazon:24",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.08322
+            },
+            {
+              "id": "amazon:750",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084017
+            },
+            {
+              "id": "amazon:492",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083896
+            },
+            {
+              "id": "amazon:111",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.127396
+            },
+            {
+              "id": "amazon:603",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059909
+            },
+            {
+              "id": "amazon:162",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.045979
+            },
+            {
+              "id": "amazon:27",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083118
+            },
+            {
+              "id": "amazon:493",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083283
+            },
+            {
+              "id": "amazon:601",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.085598
+            },
+            {
+              "id": "amazon:320",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.056796
+            },
+            {
+              "id": "amazon:942",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.082532
+            },
+            {
+              "id": "amazon:757",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.082685
+            },
+            {
+              "id": "amazon:511",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060757
+            }
+          ]
+        },
+        "overall": {
+          "identity": {
+            "name": "llama3.2:3b",
+            "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+            "ollama": "0.40.16"
+          },
+          "metrics": {
+            "test": {
+              "n": 120,
+              "accuracy": 0.8666666666666667,
+              "macro_f1": 0.8686740175289793,
+              "invalid": 1,
+              "failures": 0,
+              "confusion": {
+                "negative": {
+                  "negative": 58,
+                  "positive": 2,
+                  "invalid": 0,
+                  "failure": 0
+                },
+                "positive": {
+                  "negative": 13,
+                  "positive": 46,
+                  "invalid": 1,
+                  "failure": 0
+                }
+              },
+              "median_seconds": 0.0612165,
+              "timed_responses": 120
+            }
+          },
+          "rows": [
+            {
+              "id": "amazon:967",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083975
+            },
+            {
+              "id": "amazon:691",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083077
+            },
+            {
+              "id": "amazon:359",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060467
+            },
+            {
+              "id": "amazon:795",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086514
+            },
+            {
+              "id": "amazon:240",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.0608
+            },
+            {
+              "id": "amazon:487",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058843
+            },
+            {
+              "id": "amazon:336",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084022
+            },
+            {
+              "id": "amazon:42",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060224
+            },
+            {
+              "id": "amazon:182",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083391
+            },
+            {
+              "id": "amazon:345",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059253
+            },
+            {
+              "id": "amazon:966",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059893
+            },
+            {
+              "id": "amazon:467",
+              "group": "test",
+              "label": "negative",
+              "prediction": "positive",
+              "seconds": 0.059239
+            },
+            {
+              "id": "amazon:44",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061586
+            },
+            {
+              "id": "amazon:57",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060509
+            },
+            {
+              "id": "amazon:997",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.087992
+            },
+            {
+              "id": "amazon:914",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060665
+            },
+            {
+              "id": "amazon:555",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085642
+            },
+            {
+              "id": "amazon:289",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061312
+            },
+            {
+              "id": "amazon:98",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.087523
+            },
+            {
+              "id": "amazon:441",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058767
+            },
+            {
+              "id": "amazon:929",
+              "group": "test",
+              "label": "negative",
+              "prediction": "positive",
+              "seconds": 0.083692
+            },
+            {
+              "id": "amazon:944",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.0613
+            },
+            {
+              "id": "amazon:998",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.063438
+            },
+            {
+              "id": "amazon:920",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060825
+            },
+            {
+              "id": "amazon:170",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.088027
+            },
+            {
+              "id": "amazon:981",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060881
+            },
+            {
+              "id": "amazon:178",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.129191
+            },
+            {
+              "id": "amazon:28",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086253
+            },
+            {
+              "id": "amazon:994",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.046715
+            },
+            {
+              "id": "amazon:833",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058214
+            },
+            {
+              "id": "amazon:191",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059083
+            },
+            {
+              "id": "amazon:273",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060003
+            },
+            {
+              "id": "amazon:980",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058741
+            },
+            {
+              "id": "amazon:95",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060095
+            },
+            {
+              "id": "amazon:415",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086252
+            },
+            {
+              "id": "amazon:308",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084122
+            },
+            {
+              "id": "amazon:245",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060658
+            },
+            {
+              "id": "amazon:141",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.057012
+            },
+            {
+              "id": "amazon:882",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.05812
+            },
+            {
+              "id": "amazon:249",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.0608
+            },
+            {
+              "id": "amazon:986",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.082813
+            },
+            {
+              "id": "amazon:834",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085484
+            },
+            {
+              "id": "amazon:685",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.06043
+            },
+            {
+              "id": "amazon:908",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059027
+            },
+            {
+              "id": "amazon:713",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.046448
+            },
+            {
+              "id": "amazon:232",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060543
+            },
+            {
+              "id": "amazon:791",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060403
+            },
+            {
+              "id": "amazon:857",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.057515
+            },
+            {
+              "id": "amazon:48",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.126387
+            },
+            {
+              "id": "amazon:619",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084326
+            },
+            {
+              "id": "amazon:974",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058078
+            },
+            {
+              "id": "amazon:211",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083939
+            },
+            {
+              "id": "amazon:542",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060507
+            },
+            {
+              "id": "amazon:621",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083267
+            },
+            {
+              "id": "amazon:443",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.08631
+            },
+            {
+              "id": "amazon:716",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085398
+            },
+            {
+              "id": "amazon:991",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.082466
+            },
+            {
+              "id": "amazon:6",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.082844
+            },
+            {
+              "id": "amazon:437",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085935
+            },
+            {
+              "id": "amazon:67",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085769
+            },
+            {
+              "id": "amazon:115",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.046103
+            },
+            {
+              "id": "amazon:331",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.047623
+            },
+            {
+              "id": "amazon:395",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086539
+            },
+            {
+              "id": "amazon:572",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.06119
+            },
+            {
+              "id": "amazon:863",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060495
+            },
+            {
+              "id": "amazon:438",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.059514
+            },
+            {
+              "id": "amazon:928",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.060642
+            },
+            {
+              "id": "amazon:476",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059238
+            },
+            {
+              "id": "amazon:926",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086168
+            },
+            {
+              "id": "amazon:403",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059653
+            },
+            {
+              "id": "amazon:794",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084731
+            },
+            {
+              "id": "amazon:702",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060415
+            },
+            {
+              "id": "amazon:636",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.083834
+            },
+            {
+              "id": "amazon:941",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.085184
+            },
+            {
+              "id": "amazon:830",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058142
+            },
+            {
+              "id": "amazon:306",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061103
+            },
+            {
+              "id": "amazon:90",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.061391
+            },
+            {
+              "id": "amazon:318",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083748
+            },
+            {
+              "id": "amazon:73",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.049235
+            },
+            {
+              "id": "amazon:754",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.083904
+            },
+            {
+              "id": "amazon:140",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059895
+            },
+            {
+              "id": "amazon:481",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.085597
+            },
+            {
+              "id": "amazon:282",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060148
+            },
+            {
+              "id": "amazon:700",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.085248
+            },
+            {
+              "id": "amazon:670",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058788
+            },
+            {
+              "id": "amazon:515",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060501
+            },
+            {
+              "id": "amazon:714",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086241
+            },
+            {
+              "id": "amazon:234",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058542
+            },
+            {
+              "id": "amazon:759",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059815
+            },
+            {
+              "id": "amazon:305",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083793
+            },
+            {
+              "id": "amazon:900",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084157
+            },
+            {
+              "id": "amazon:664",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083608
+            },
+            {
+              "id": "amazon:575",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.083616
+            },
+            {
+              "id": "amazon:238",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083501
+            },
+            {
+              "id": "amazon:466",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058075
+            },
+            {
+              "id": "amazon:302",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.059995
+            },
+            {
+              "id": "amazon:953",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060882
+            },
+            {
+              "id": "amazon:236",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061243
+            },
+            {
+              "id": "amazon:552",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060839
+            },
+            {
+              "id": "amazon:160",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059438
+            },
+            {
+              "id": "amazon:802",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.06077
+            },
+            {
+              "id": "amazon:214",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.126103
+            },
+            {
+              "id": "amazon:462",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.060546
+            },
+            {
+              "id": "amazon:662",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08536
+            },
+            {
+              "id": "amazon:579",
+              "group": "test",
+              "label": "positive",
+              "prediction": "invalid",
+              "seconds": 0.060731
+            },
+            {
+              "id": "amazon:762",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08372
+            },
+            {
+              "id": "amazon:874",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.060386
+            },
+            {
+              "id": "amazon:24",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.083069
+            },
+            {
+              "id": "amazon:750",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083289
+            },
+            {
+              "id": "amazon:492",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083167
+            },
+            {
+              "id": "amazon:111",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.127154
+            },
+            {
+              "id": "amazon:603",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.06014
+            },
+            {
+              "id": "amazon:162",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.046079
+            },
+            {
+              "id": "amazon:27",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084531
+            },
+            {
+              "id": "amazon:493",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083657
+            },
+            {
+              "id": "amazon:601",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086329
+            },
+            {
+              "id": "amazon:320",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058203
+            },
+            {
+              "id": "amazon:942",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083126
+            },
+            {
+              "id": "amazon:757",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.088293
+            },
+            {
+              "id": "amazon:511",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.069334
+            }
+          ]
+        }
+      },
+      "paired_outcomes": {
+        "direct_only": [
+          "amazon:438",
+          "amazon:928",
+          "amazon:941",
+          "amazon:90",
+          "amazon:754",
+          "amazon:575",
+          "amazon:302",
+          "amazon:214",
+          "amazon:462",
+          "amazon:579",
+          "amazon:874",
+          "amazon:603"
+        ],
+        "overall_only": [
+          "amazon:336"
+        ]
+      }
+    },
+    {
+      "order": [
+        "overall",
+        "direct"
+      ],
+      "runs": {
+        "overall": {
+          "identity": {
+            "name": "llama3.2:3b",
+            "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+            "ollama": "0.40.16"
+          },
+          "metrics": {
+            "test": {
+              "n": 120,
+              "accuracy": 0.8666666666666667,
+              "macro_f1": 0.8686740175289793,
+              "invalid": 1,
+              "failures": 0,
+              "confusion": {
+                "negative": {
+                  "negative": 58,
+                  "positive": 2,
+                  "invalid": 0,
+                  "failure": 0
+                },
+                "positive": {
+                  "negative": 13,
+                  "positive": 46,
+                  "invalid": 1,
+                  "failure": 0
+                }
+              },
+              "median_seconds": 0.061278,
+              "timed_responses": 120
+            }
+          },
+          "rows": [
+            {
+              "id": "amazon:967",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085672
+            },
+            {
+              "id": "amazon:691",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085078
+            },
+            {
+              "id": "amazon:359",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061491
+            },
+            {
+              "id": "amazon:795",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.089039
+            },
+            {
+              "id": "amazon:240",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060871
+            },
+            {
+              "id": "amazon:487",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060893
+            },
+            {
+              "id": "amazon:336",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086188
+            },
+            {
+              "id": "amazon:42",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060464
+            },
+            {
+              "id": "amazon:182",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084973
+            },
+            {
+              "id": "amazon:345",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059394
+            },
+            {
+              "id": "amazon:966",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059609
+            },
+            {
+              "id": "amazon:467",
+              "group": "test",
+              "label": "negative",
+              "prediction": "positive",
+              "seconds": 0.05892
+            },
+            {
+              "id": "amazon:44",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059949
+            },
+            {
+              "id": "amazon:57",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060564
+            },
+            {
+              "id": "amazon:997",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086517
+            },
+            {
+              "id": "amazon:914",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058884
+            },
+            {
+              "id": "amazon:555",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083774
+            },
+            {
+              "id": "amazon:289",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059187
+            },
+            {
+              "id": "amazon:98",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085437
+            },
+            {
+              "id": "amazon:441",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059363
+            },
+            {
+              "id": "amazon:929",
+              "group": "test",
+              "label": "negative",
+              "prediction": "positive",
+              "seconds": 0.083674
+            },
+            {
+              "id": "amazon:944",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059542
+            },
+            {
+              "id": "amazon:998",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.06063
+            },
+            {
+              "id": "amazon:920",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060688
+            },
+            {
+              "id": "amazon:170",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086642
+            },
+            {
+              "id": "amazon:981",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059535
+            },
+            {
+              "id": "amazon:178",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.126078
+            },
+            {
+              "id": "amazon:28",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.08625
+            },
+            {
+              "id": "amazon:994",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.046518
+            },
+            {
+              "id": "amazon:833",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059436
+            },
+            {
+              "id": "amazon:191",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059231
+            },
+            {
+              "id": "amazon:273",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059236
+            },
+            {
+              "id": "amazon:980",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058078
+            },
+            {
+              "id": "amazon:95",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059677
+            },
+            {
+              "id": "amazon:415",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085618
+            },
+            {
+              "id": "amazon:308",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.08432
+            },
+            {
+              "id": "amazon:245",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060547
+            },
+            {
+              "id": "amazon:141",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.057128
+            },
+            {
+              "id": "amazon:882",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.057915
+            },
+            {
+              "id": "amazon:249",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.06068
+            },
+            {
+              "id": "amazon:986",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083
+            },
+            {
+              "id": "amazon:834",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085943
+            },
+            {
+              "id": "amazon:685",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061408
+            },
+            {
+              "id": "amazon:908",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058728
+            },
+            {
+              "id": "amazon:713",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.046588
+            },
+            {
+              "id": "amazon:232",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061147
+            },
+            {
+              "id": "amazon:791",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.06046
+            },
+            {
+              "id": "amazon:857",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.057344
+            },
+            {
+              "id": "amazon:48",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.124775
+            },
+            {
+              "id": "amazon:619",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083706
+            },
+            {
+              "id": "amazon:974",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.056915
+            },
+            {
+              "id": "amazon:211",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084426
+            },
+            {
+              "id": "amazon:542",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061772
+            },
+            {
+              "id": "amazon:621",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085251
+            },
+            {
+              "id": "amazon:443",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.088345
+            },
+            {
+              "id": "amazon:716",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.088215
+            },
+            {
+              "id": "amazon:991",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085281
+            },
+            {
+              "id": "amazon:6",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086498
+            },
+            {
+              "id": "amazon:437",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086833
+            },
+            {
+              "id": "amazon:67",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.088591
+            },
+            {
+              "id": "amazon:115",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.047256
+            },
+            {
+              "id": "amazon:331",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.046963
+            },
+            {
+              "id": "amazon:395",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.088578
+            },
+            {
+              "id": "amazon:572",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061678
+            },
+            {
+              "id": "amazon:863",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060517
+            },
+            {
+              "id": "amazon:438",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.060566
+            },
+            {
+              "id": "amazon:928",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.061583
+            },
+            {
+              "id": "amazon:476",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059241
+            },
+            {
+              "id": "amazon:926",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086047
+            },
+            {
+              "id": "amazon:403",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060153
+            },
+            {
+              "id": "amazon:794",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083447
+            },
+            {
+              "id": "amazon:702",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060889
+            },
+            {
+              "id": "amazon:636",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.084495
+            },
+            {
+              "id": "amazon:941",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.082783
+            },
+            {
+              "id": "amazon:830",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058062
+            },
+            {
+              "id": "amazon:306",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061148
+            },
+            {
+              "id": "amazon:90",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.059186
+            },
+            {
+              "id": "amazon:318",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084493
+            },
+            {
+              "id": "amazon:73",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.046629
+            },
+            {
+              "id": "amazon:754",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.083121
+            },
+            {
+              "id": "amazon:140",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059402
+            },
+            {
+              "id": "amazon:481",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083277
+            },
+            {
+              "id": "amazon:282",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059667
+            },
+            {
+              "id": "amazon:700",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083613
+            },
+            {
+              "id": "amazon:670",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058883
+            },
+            {
+              "id": "amazon:515",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060892
+            },
+            {
+              "id": "amazon:714",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.087312
+            },
+            {
+              "id": "amazon:234",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058105
+            },
+            {
+              "id": "amazon:759",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.05883
+            },
+            {
+              "id": "amazon:305",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08317
+            },
+            {
+              "id": "amazon:900",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08298
+            },
+            {
+              "id": "amazon:664",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084103
+            },
+            {
+              "id": "amazon:575",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.083376
+            },
+            {
+              "id": "amazon:238",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.082239
+            },
+            {
+              "id": "amazon:466",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059189
+            },
+            {
+              "id": "amazon:302",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.060527
+            },
+            {
+              "id": "amazon:953",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059687
+            },
+            {
+              "id": "amazon:236",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060363
+            },
+            {
+              "id": "amazon:552",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060109
+            },
+            {
+              "id": "amazon:160",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059109
+            },
+            {
+              "id": "amazon:802",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.05946
+            },
+            {
+              "id": "amazon:214",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.126611
+            },
+            {
+              "id": "amazon:462",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.060207
+            },
+            {
+              "id": "amazon:662",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.085931
+            },
+            {
+              "id": "amazon:579",
+              "group": "test",
+              "label": "positive",
+              "prediction": "invalid",
+              "seconds": 0.059844
+            },
+            {
+              "id": "amazon:762",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.085169
+            },
+            {
+              "id": "amazon:874",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.061839
+            },
+            {
+              "id": "amazon:24",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.085123
+            },
+            {
+              "id": "amazon:750",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08457
+            },
+            {
+              "id": "amazon:492",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08523
+            },
+            {
+              "id": "amazon:111",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.127971
+            },
+            {
+              "id": "amazon:603",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.062326
+            },
+            {
+              "id": "amazon:162",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.048117
+            },
+            {
+              "id": "amazon:27",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086515
+            },
+            {
+              "id": "amazon:493",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08575
+            },
+            {
+              "id": "amazon:601",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.088704
+            },
+            {
+              "id": "amazon:320",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060261
+            },
+            {
+              "id": "amazon:942",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084503
+            },
+            {
+              "id": "amazon:757",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084881
+            },
+            {
+              "id": "amazon:511",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061139
+            }
+          ]
+        },
+        "direct": {
+          "identity": {
+            "name": "llama3.2:3b",
+            "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+            "ollama": "0.40.16"
+          },
+          "metrics": {
+            "test": {
+              "n": 120,
+              "accuracy": 0.9583333333333334,
+              "macro_f1": 0.9583304396138621,
+              "invalid": 0,
+              "failures": 0,
+              "confusion": {
+                "negative": {
+                  "negative": 57,
+                  "positive": 3,
+                  "invalid": 0,
+                  "failure": 0
+                },
+                "positive": {
+                  "negative": 2,
+                  "positive": 58,
+                  "invalid": 0,
+                  "failure": 0
+                }
+              },
+              "median_seconds": 0.061909,
+              "timed_responses": 120
+            }
+          },
+          "rows": [
+            {
+              "id": "amazon:967",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084489
+            },
+            {
+              "id": "amazon:691",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084301
+            },
+            {
+              "id": "amazon:359",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060883
+            },
+            {
+              "id": "amazon:795",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085142
+            },
+            {
+              "id": "amazon:240",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060737
+            },
+            {
+              "id": "amazon:487",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059274
+            },
+            {
+              "id": "amazon:336",
+              "group": "test",
+              "label": "negative",
+              "prediction": "positive",
+              "seconds": 0.084152
+            },
+            {
+              "id": "amazon:42",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060483
+            },
+            {
+              "id": "amazon:182",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084152
+            },
+            {
+              "id": "amazon:345",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.057742
+            },
+            {
+              "id": "amazon:966",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.06101
+            },
+            {
+              "id": "amazon:467",
+              "group": "test",
+              "label": "negative",
+              "prediction": "positive",
+              "seconds": 0.060635
+            },
+            {
+              "id": "amazon:44",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060814
+            },
+            {
+              "id": "amazon:57",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058975
+            },
+            {
+              "id": "amazon:997",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085443
+            },
+            {
+              "id": "amazon:914",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.06016
+            },
+            {
+              "id": "amazon:555",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083821
+            },
+            {
+              "id": "amazon:289",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060183
+            },
+            {
+              "id": "amazon:98",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086306
+            },
+            {
+              "id": "amazon:441",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.057968
+            },
+            {
+              "id": "amazon:929",
+              "group": "test",
+              "label": "negative",
+              "prediction": "positive",
+              "seconds": 0.082509
+            },
+            {
+              "id": "amazon:944",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.05905
+            },
+            {
+              "id": "amazon:998",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059133
+            },
+            {
+              "id": "amazon:920",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059825
+            },
+            {
+              "id": "amazon:170",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.0862
+            },
+            {
+              "id": "amazon:981",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.05934
+            },
+            {
+              "id": "amazon:178",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.126271
+            },
+            {
+              "id": "amazon:28",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084827
+            },
+            {
+              "id": "amazon:994",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.04639
+            },
+            {
+              "id": "amazon:833",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058621
+            },
+            {
+              "id": "amazon:191",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060606
+            },
+            {
+              "id": "amazon:273",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.06114
+            },
+            {
+              "id": "amazon:980",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058545
+            },
+            {
+              "id": "amazon:95",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061044
+            },
+            {
+              "id": "amazon:415",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.087685
+            },
+            {
+              "id": "amazon:308",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084873
+            },
+            {
+              "id": "amazon:245",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.06235
+            },
+            {
+              "id": "amazon:141",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059542
+            },
+            {
+              "id": "amazon:882",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059328
+            },
+            {
+              "id": "amazon:249",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.062405
+            },
+            {
+              "id": "amazon:986",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084792
+            },
+            {
+              "id": "amazon:834",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.087693
+            },
+            {
+              "id": "amazon:685",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.063332
+            },
+            {
+              "id": "amazon:908",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.059512
+            },
+            {
+              "id": "amazon:713",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.047905
+            },
+            {
+              "id": "amazon:232",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061153
+            },
+            {
+              "id": "amazon:791",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.060472
+            },
+            {
+              "id": "amazon:857",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.057401
+            },
+            {
+              "id": "amazon:48",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.127035
+            },
+            {
+              "id": "amazon:619",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084038
+            },
+            {
+              "id": "amazon:974",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.058587
+            },
+            {
+              "id": "amazon:211",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083962
+            },
+            {
+              "id": "amazon:542",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.061175
+            },
+            {
+              "id": "amazon:621",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084785
+            },
+            {
+              "id": "amazon:443",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.085967
+            },
+            {
+              "id": "amazon:716",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.087328
+            },
+            {
+              "id": "amazon:991",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.082895
+            },
+            {
+              "id": "amazon:6",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.083401
+            },
+            {
+              "id": "amazon:437",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.084862
+            },
+            {
+              "id": "amazon:67",
+              "group": "test",
+              "label": "negative",
+              "prediction": "negative",
+              "seconds": 0.086379
+            },
+            {
+              "id": "amazon:115",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.046664
+            },
+            {
+              "id": "amazon:331",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.047188
+            },
+            {
+              "id": "amazon:395",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08588
+            },
+            {
+              "id": "amazon:572",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059506
+            },
+            {
+              "id": "amazon:863",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060951
+            },
+            {
+              "id": "amazon:438",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059653
+            },
+            {
+              "id": "amazon:928",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060558
+            },
+            {
+              "id": "amazon:476",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058267
+            },
+            {
+              "id": "amazon:926",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086573
+            },
+            {
+              "id": "amazon:403",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060567
+            },
+            {
+              "id": "amazon:794",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083479
+            },
+            {
+              "id": "amazon:702",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060511
+            },
+            {
+              "id": "amazon:636",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.083528
+            },
+            {
+              "id": "amazon:941",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083423
+            },
+            {
+              "id": "amazon:830",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058246
+            },
+            {
+              "id": "amazon:306",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059591
+            },
+            {
+              "id": "amazon:90",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058459
+            },
+            {
+              "id": "amazon:318",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083927
+            },
+            {
+              "id": "amazon:73",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.046096
+            },
+            {
+              "id": "amazon:754",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084902
+            },
+            {
+              "id": "amazon:140",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.057897
+            },
+            {
+              "id": "amazon:481",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083494
+            },
+            {
+              "id": "amazon:282",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059088
+            },
+            {
+              "id": "amazon:700",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083207
+            },
+            {
+              "id": "amazon:670",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059219
+            },
+            {
+              "id": "amazon:515",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060927
+            },
+            {
+              "id": "amazon:714",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08647
+            },
+            {
+              "id": "amazon:234",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058042
+            },
+            {
+              "id": "amazon:759",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061944
+            },
+            {
+              "id": "amazon:305",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086666
+            },
+            {
+              "id": "amazon:900",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084892
+            },
+            {
+              "id": "amazon:664",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086144
+            },
+            {
+              "id": "amazon:575",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.085811
+            },
+            {
+              "id": "amazon:238",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.086146
+            },
+            {
+              "id": "amazon:466",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059036
+            },
+            {
+              "id": "amazon:302",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.063199
+            },
+            {
+              "id": "amazon:953",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.062244
+            },
+            {
+              "id": "amazon:236",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061874
+            },
+            {
+              "id": "amazon:552",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061653
+            },
+            {
+              "id": "amazon:160",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061136
+            },
+            {
+              "id": "amazon:802",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.062577
+            },
+            {
+              "id": "amazon:214",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.128846
+            },
+            {
+              "id": "amazon:462",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059436
+            },
+            {
+              "id": "amazon:662",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084716
+            },
+            {
+              "id": "amazon:579",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.06102
+            },
+            {
+              "id": "amazon:762",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083284
+            },
+            {
+              "id": "amazon:874",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.060503
+            },
+            {
+              "id": "amazon:24",
+              "group": "test",
+              "label": "positive",
+              "prediction": "negative",
+              "seconds": 0.08439
+            },
+            {
+              "id": "amazon:750",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083735
+            },
+            {
+              "id": "amazon:492",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.083173
+            },
+            {
+              "id": "amazon:111",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.125456
+            },
+            {
+              "id": "amazon:603",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.059057
+            },
+            {
+              "id": "amazon:162",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.046797
+            },
+            {
+              "id": "amazon:27",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.084379
+            },
+            {
+              "id": "amazon:493",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08419
+            },
+            {
+              "id": "amazon:601",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.085948
+            },
+            {
+              "id": "amazon:320",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.058055
+            },
+            {
+              "id": "amazon:942",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.08302
+            },
+            {
+              "id": "amazon:757",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.082848
+            },
+            {
+              "id": "amazon:511",
+              "group": "test",
+              "label": "positive",
+              "prediction": "positive",
+              "seconds": 0.061582
+            }
+          ]
+        }
+      },
+      "paired_outcomes": {
+        "direct_only": [
+          "amazon:438",
+          "amazon:928",
+          "amazon:941",
+          "amazon:90",
+          "amazon:754",
+          "amazon:575",
+          "amazon:302",
+          "amazon:214",
+          "amazon:462",
+          "amazon:579",
+          "amazon:874",
+          "amazon:603"
+        ],
+        "overall_only": [
+          "amazon:336"
+        ]
+      }
+    }
+  ],
+  "changed_predictions": {
+    "direct": [],
+    "overall": []
+  }
+}
