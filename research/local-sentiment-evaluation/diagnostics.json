@@ -1,0 +1,10 @@
+[
+  {"id": "n1", "group": "negation", "text": "I would not order that soup again.", "label": "negative"},
+  {"id": "n2", "group": "negation", "text": "The meal was not disappointing at all.", "label": "positive"},
+  {"id": "n3", "group": "negation", "text": "There was nothing fresh about the salad.", "label": "negative"},
+  {"id": "n4", "group": "negation", "text": "I have no complaints about the service.", "label": "positive"},
+  {"id": "a1", "group": "mixed_or_implicit", "text": "The decor was lovely, but we left hungry and would never return.", "label": "negative"},
+  {"id": "a2", "group": "mixed_or_implicit", "text": "The room was noisy, but the food alone makes this worth another visit.", "label": "positive"},
+  {"id": "a3", "group": "mixed_or_implicit", "text": "They brought the bill before an edible dish reached the table.", "label": "negative"},
+  {"id": "a4", "group": "mixed_or_implicit", "text": "We booked another table before we even finished dessert.", "label": "positive"}
+]
