@@ -26,6 +26,7 @@ def read_split(archive, protocol, excluded_ids=()):
     with zipfile.ZipFile(io.BytesIO(archive)) as source:
         lines = source.read(protocol["member"]).decode("utf-8").splitlines()
 
+    prefix = protocol.get("row_prefix", "yelp")
     groups = defaultdict(list)
     for index, line in enumerate(lines, 1):
         if not line.strip():
@@ -33,7 +34,7 @@ def read_split(archive, protocol, excluded_ids=()):
         text, label = line.rsplit("\t", 1)
         normalized = " ".join(text.casefold().split())
         groups[normalized].append({
-            "id": f"yelp:{index}", "text": text.strip(), "label": {"0": "negative", "1": "positive"}[label],
+            "id": f"{prefix}:{index}", "text": text.strip(), "label": {"0": "negative", "1": "positive"}[label],
         })
 
     excluded_ids = set(excluded_ids)
