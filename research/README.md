@@ -14,3 +14,8 @@ Keep credentials, private datasets, unpublished material, large model weights, a
 - [Amazon sentiment prompt evaluation](amazon-prompt-evaluation/README.md)
 - [IMDb model and prompt evaluation](imdb-model-prompt-evaluation/README.md)
 - [Incremental sentiment prompt instructions](prompt-instruction-ablation/README.md)
+- [Final held-out sentiment validation](final-sentiment-validation/README.md)
+
+## Series report
+
+[Completed evaluation series and final prompt decision](FINAL_REPORT.md)
