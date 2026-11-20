@@ -12,3 +12,4 @@ Keep credentials, private datasets, unpublished material, large model weights, a
 - [Local sentiment evaluation](local-sentiment-evaluation/README.md)
 - [Paired local sentiment evaluation](paired-sentiment-evaluation/README.md)
 - [Amazon sentiment prompt evaluation](amazon-prompt-evaluation/README.md)
+- [IMDb model and prompt evaluation](imdb-model-prompt-evaluation/README.md)

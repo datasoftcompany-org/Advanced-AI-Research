@@ -22,13 +22,8 @@ class MultilineTests(unittest.TestCase):
         data, settings = self.fixture(
             "The script is\nexcellent\t1\nAnother good movie\t1\nThird good movie\t1\nBad\t0\nAwful\t0\nTerrible\t0\n"
         )
-        test, counts = read_split(data, settings | {"test_per_label": 2})
+        test, counts = read_split(data, settings | {"test_per_label": 2, "split_salt": "0"})
         self.assertEqual(len(test), 4)
-        # Choose a salt that puts the multiline row in the fixed test split.
-        for salt in range(100):
-            test, counts = read_split(data, settings | {"test_per_label": 2, "split_salt": str(salt)})
-            if any(row["id"] == "imdb:2" for row in test):
-                break
         row = next(row for row in test if row["id"] == "imdb:2")
         self.assertEqual(row["text"], "The script is\nexcellent")
         self.assertEqual(row["label"], "positive")
