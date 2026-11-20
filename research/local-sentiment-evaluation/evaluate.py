@@ -28,14 +28,23 @@ def read_split(archive, protocol, excluded_ids=()):
 
     prefix = protocol.get("row_prefix", "yelp")
     groups = defaultdict(list)
+    pending = []
     for index, line in enumerate(lines, 1):
-        if not line.strip():
+        if not line.strip() and not pending:
             continue
-        text, label = line.rsplit("\t", 1)
+        pending.append(line)
+        if protocol.get("multiline_records") and not line.endswith(("\t0", "\t1")):
+            continue
+        text, label = "\n".join(pending).rsplit("\t", 1)
+        if not text.strip():
+            raise ValueError("Empty review")
         normalized = " ".join(text.casefold().split())
         groups[normalized].append({
             "id": f"{prefix}:{index}", "text": text.strip(), "label": {"0": "negative", "1": "positive"}[label],
         })
+        pending = []
+    if pending:
+        raise ValueError("Unterminated multiline review")
 
     excluded_ids = set(excluded_ids)
     test, training = [], []
