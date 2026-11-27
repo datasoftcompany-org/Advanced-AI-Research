@@ -32,3 +32,4 @@ Keep credentials, private datasets, unpublished material, large model weights, a
 ## Local capability research
 
 - [Stage 1 — Local Phonon speech generation](local-speech-phonon/README.md)
+- [Stage 2 — Local image description and spatial reasoning](local-vision-spatial/README.md)

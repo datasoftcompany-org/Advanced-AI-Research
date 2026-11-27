@@ -1,0 +1,861 @@
+{
+  "runtime": {
+    "python": "3.13.4",
+    "architecture": "arm64"
+  },
+  "manifest": {
+    "sources": "d2b46931f71872e965063dbc5eaf6d34c51e887e00f567e191e0384116d3bf1f",
+    "cases": "82df6bf2527fdd6115a2f8acb48c66f7459bbaa0cf95602dbe40b68ceb0d8b37",
+    "protocol": "08179528a89ab0c578ed58d85911440a9366f7651a2bd06dfbcba71b66481e11"
+  },
+  "rounds": [
+    {
+      "order": [
+        "qwen2.5vl:7b",
+        "gemma3:4b"
+      ],
+      "runs": {
+        "qwen2.5vl:7b": {
+          "identity": {
+            "name": "qwen2.5vl:7b",
+            "digest": "5ced39dfa4bac325dc183dd1e4febaa1c46b3ea28bce48896c8e69c1e79611cc",
+            "ollama": "0.40.16"
+          },
+          "scores": {
+            "n": 24,
+            "correct": 24,
+            "counts": {
+              "yes": 12,
+              "no": 12
+            }
+          },
+          "rows": [
+            {
+              "id": "tableware:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 13.772056542002247
+            },
+            {
+              "id": "tableware:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.14290162500401493
+            },
+            {
+              "id": "tableware:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.19351887500670273
+            },
+            {
+              "id": "tableware:4",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.13151112500054296
+            },
+            {
+              "id": "tableware:5",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.12805837499035988
+            },
+            {
+              "id": "tableware:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.12595516598958056
+            },
+            {
+              "id": "jar-apples:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 6.034517458989285
+            },
+            {
+              "id": "jar-apples:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.1291725830087671
+            },
+            {
+              "id": "jar-apples:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.1283437079982832
+            },
+            {
+              "id": "jar-apples:4",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.12891949999902863
+            },
+            {
+              "id": "jar-apples:5",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.13265583300380968
+            },
+            {
+              "id": "jar-apples:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.12806174998695496
+            },
+            {
+              "id": "books:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 5.897276542003965
+            },
+            {
+              "id": "books:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.14287045899254736
+            },
+            {
+              "id": "books:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.15355983399786055
+            },
+            {
+              "id": "books:4",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.16101920799701475
+            },
+            {
+              "id": "books:5",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.17006404099811334
+            },
+            {
+              "id": "books:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.1408322909992421
+            },
+            {
+              "id": "strawberries:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 5.967939374997513
+            },
+            {
+              "id": "strawberries:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.18974833299580496
+            },
+            {
+              "id": "strawberries:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.13070208299905062
+            },
+            {
+              "id": "strawberries:4",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.12944066600175574
+            },
+            {
+              "id": "strawberries:5",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.18814075000409503
+            },
+            {
+              "id": "strawberries:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.13147970900172368
+            }
+          ],
+          "descriptions": [
+            {
+              "image": "tableware",
+              "done": true,
+              "description": "The image depicts a still life arrangement featuring a terracotta jug, a glass of amber liquid, a round loaf of bread, a plate with what appears to be pickled or preserved food, a lemon slice, and a few walnuts. The objects are arranged on a tablecloth, with the jug and glass positioned to the left, the bread to the right, and the plate in the center. The lemon slice is placed near the plate, and the walnuts are scattered on the tablecloth."
+            },
+            {
+              "image": "jar-apples",
+              "done": true,
+              "description": "The image depicts a still life arrangement featuring a green jar, a white and green striped cup, and a collection of fruits, including apples and possibly plums, placed on a white cloth. The background includes a decorative pattern with blue and white elements. The objects are arranged on a flat surface, with the jar and cup positioned to the left of the fruits. The fruits are clustered towards the right side of the cloth."
+            },
+            {
+              "image": "books",
+              "done": true,
+              "description": "The image shows a collection of books stacked in various piles, with some books standing upright and others lying flat. A single open book is visible on the left side, partially obscuring the view of the books behind it. The background is a plain, dark surface, possibly a table or a shelf, which contrasts with the lighter color of the books. The arrangement of the books appears somewhat haphazard, suggesting a casual or temporary display."
+            },
+            {
+              "image": "strawberries",
+              "done": true,
+              "description": "The image depicts a still life painting featuring a variety of fruits and vegetables. On the left, there are green beans and a red rose, while on the right, there is a bowl filled with red berries and small white flowers. In the foreground, there are asparagus spears and what appears to be a piece of fruit or vegetable with a brownish hue. The objects are arranged on a dark surface, and the background is a deep black, which contrasts with the vibrant colors of the food items."
+            }
+          ]
+        },
+        "gemma3:4b": {
+          "identity": {
+            "name": "gemma3:4b",
+            "digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+            "ollama": "0.40.16"
+          },
+          "scores": {
+            "n": 24,
+            "correct": 16,
+            "counts": {
+              "yes": 18,
+              "no": 6
+            }
+          },
+          "rows": [
+            {
+              "id": "tableware:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 7.067370791992289
+            },
+            {
+              "id": "tableware:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.6891301669966197
+            },
+            {
+              "id": "tableware:3",
+              "reference": "yes",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.8838736249890644
+            },
+            {
+              "id": "tableware:4",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.911525540999719
+            },
+            {
+              "id": "tableware:5",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.9027664169989293
+            },
+            {
+              "id": "tableware:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.7791579159966204
+            },
+            {
+              "id": "jar-apples:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.9254585830058204
+            },
+            {
+              "id": "jar-apples:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.9438045419956325
+            },
+            {
+              "id": "jar-apples:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.7986871660104953
+            },
+            {
+              "id": "jar-apples:4",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.893403833004413
+            },
+            {
+              "id": "jar-apples:5",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 3.1686877500033006
+            },
+            {
+              "id": "jar-apples:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.7726270830025896
+            },
+            {
+              "id": "books:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.7907163749914616
+            },
+            {
+              "id": "books:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.7953468329942552
+            },
+            {
+              "id": "books:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.801841542008333
+            },
+            {
+              "id": "books:4",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 3.0016518750053365
+            },
+            {
+              "id": "books:5",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.8051285830006236
+            },
+            {
+              "id": "books:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.7936950420116773
+            },
+            {
+              "id": "strawberries:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.80849720799597
+            },
+            {
+              "id": "strawberries:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.823597916009021
+            },
+            {
+              "id": "strawberries:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.8597623750101775
+            },
+            {
+              "id": "strawberries:4",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.8411057079938473
+            },
+            {
+              "id": "strawberries:5",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.8094414999941364
+            },
+            {
+              "id": "strawberries:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.808405000003404
+            }
+          ],
+          "descriptions": [
+            {
+              "image": "tableware",
+              "done": true,
+              "description": "Here's a description of the visible objects in the image, with relative positions and uncertainty where applicable:\n\nThe image depicts a still life arrangement on a table, featuring a large, ornate earthenware pitcher on the left, a glass filled with a dark liquid (likely wine or beer) in the center, and a glass with a smaller amount of the same liquid to its right. A silver plate holds a selection of olives and sliced pears, while a partially peeled turnip and a few walnuts are positioned near the turnip. The overall composition is dark, with a cloth draped across the table, suggesting a traditional Dutch still-life style."
+            },
+            {
+              "image": "jar-apples",
+              "done": true,
+              "description": "Here's a description of the visible objects in the image:\n\nThe painting depicts a still life arrangement on a wooden table, featuring a green ceramic jar positioned to the left of a white ceramic cup and saucer. Several peaches and plums are scattered across a white cloth draped over the table, with one plum slightly overlapping the cup. The background consists of a patterned wall with a repeating geometric design in shades of brown and blue."
+            },
+            {
+              "image": "books",
+              "done": true,
+              "description": "Here's a description of the image:\n\nThe image depicts a large, carefully arranged pile of books on a dark, draped table. Several stacks of books are layered on top of each other, with a smaller stack of books positioned in the foreground and a single open book resting on the table. The overall composition suggests a deliberate artistic arrangement, though the exact titles and condition of the books are difficult to discern due to the monochrome image and the density of the pile."
+            },
+            {
+              "image": "strawberries",
+              "done": true,
+              "description": "Here's a description of the visible objects in the image, with relative positions and uncertainty where applicable:\n\nThe painting depicts a still life arrangement on a wooden table, dominated by a dark background. A large, ornate silver bowl filled with red cherries and surrounded by white flowers sits centrally, while to the left, a plate holds a bouquet of green beans, roses, and white flowers.  On the right, a pile of fish and a small dish containing more white flowers are present, with a small bird sculpture positioned near the edge of the table."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "order": [
+        "gemma3:4b",
+        "qwen2.5vl:7b"
+      ],
+      "runs": {
+        "gemma3:4b": {
+          "identity": {
+            "name": "gemma3:4b",
+            "digest": "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+            "ollama": "0.40.16"
+          },
+          "scores": {
+            "n": 24,
+            "correct": 16,
+            "counts": {
+              "yes": 18,
+              "no": 6
+            }
+          },
+          "rows": [
+            {
+              "id": "tableware:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 4.413960749996477
+            },
+            {
+              "id": "tableware:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.9786510830017505
+            },
+            {
+              "id": "tableware:3",
+              "reference": "yes",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.9348225419962546
+            },
+            {
+              "id": "tableware:4",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.816340791992843
+            },
+            {
+              "id": "tableware:5",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.8333677080081543
+            },
+            {
+              "id": "tableware:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.8070585829991614
+            },
+            {
+              "id": "jar-apples:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.822901499996078
+            },
+            {
+              "id": "jar-apples:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.817031416008831
+            },
+            {
+              "id": "jar-apples:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.823130417003995
+            },
+            {
+              "id": "jar-apples:4",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.8283799580094637
+            },
+            {
+              "id": "jar-apples:5",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.81677837499592
+            },
+            {
+              "id": "jar-apples:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.8312134580046404
+            },
+            {
+              "id": "books:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.8323713340068934
+            },
+            {
+              "id": "books:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.8255646670004353
+            },
+            {
+              "id": "books:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.8254511669947533
+            },
+            {
+              "id": "books:4",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.837279416009551
+            },
+            {
+              "id": "books:5",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.826980249999906
+            },
+            {
+              "id": "books:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.835199749999447
+            },
+            {
+              "id": "strawberries:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.850387665996095
+            },
+            {
+              "id": "strawberries:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.9311582499940414
+            },
+            {
+              "id": "strawberries:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.9205962919950252
+            },
+            {
+              "id": "strawberries:4",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.9178660830075387
+            },
+            {
+              "id": "strawberries:5",
+              "reference": "no",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 2.9422348749940284
+            },
+            {
+              "id": "strawberries:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 2.8714040000049863
+            }
+          ],
+          "descriptions": [
+            {
+              "image": "tableware",
+              "done": true,
+              "description": "Here's a description of the visible objects in the image, with relative positions and uncertainty where applicable:\n\nThe image depicts a still life arrangement on a table, featuring a large, ornate earthenware pitcher on the left, a glass filled with a dark liquid (likely wine or beer) in the center, and a glass with a smaller amount of the same liquid to its right. A silver plate holds a selection of olives and sliced pears, while a partially peeled turnip and a few walnuts are positioned near the turnip. The overall composition is dark, with a cloth draped across the table, suggesting a traditional Dutch still-life style."
+            },
+            {
+              "image": "jar-apples",
+              "done": true,
+              "description": "Here's a description of the visible objects in the image:\n\nThe painting depicts a still life arrangement on a wooden table, featuring a green ceramic jar positioned to the left of a white ceramic cup and saucer. Several peaches and plums are scattered across a white cloth draped over the table, with one plum slightly overlapping the cup. The background consists of a patterned wall with a repeating geometric design in shades of brown and blue."
+            },
+            {
+              "image": "books",
+              "done": true,
+              "description": "Here's a description of the image:\n\nThe image depicts a large, carefully arranged pile of books on a dark, draped table. Several stacks of books are layered on top of each other, with a smaller stack of books positioned in the foreground and a single open book resting on the table. The overall composition suggests a deliberate artistic arrangement, though the exact titles and condition of the books are difficult to discern due to the monochrome image and the density of the pile."
+            },
+            {
+              "image": "strawberries",
+              "done": true,
+              "description": "Here's a description of the visible objects in the image, with relative positions and uncertainty where applicable:\n\nThe painting depicts a still life arrangement on a wooden table, dominated by a dark background. A large, ornate silver bowl filled with red cherries and surrounded by white flowers sits centrally, while to the left, a plate holds a bouquet of green beans, roses, and white flowers.  On the right, a pile of fish and a small dish containing more white flowers are present, with a small bird sculpture positioned near the edge of the table."
+            }
+          ]
+        },
+        "qwen2.5vl:7b": {
+          "identity": {
+            "name": "qwen2.5vl:7b",
+            "digest": "5ced39dfa4bac325dc183dd1e4febaa1c46b3ea28bce48896c8e69c1e79611cc",
+            "ollama": "0.40.16"
+          },
+          "scores": {
+            "n": 24,
+            "correct": 24,
+            "counts": {
+              "yes": 12,
+              "no": 12
+            }
+          },
+          "rows": [
+            {
+              "id": "tableware:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 10.922418999994989
+            },
+            {
+              "id": "tableware:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.14422750000085216
+            },
+            {
+              "id": "tableware:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.1911883749999106
+            },
+            {
+              "id": "tableware:4",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.1349341250024736
+            },
+            {
+              "id": "tableware:5",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.13116570800775662
+            },
+            {
+              "id": "tableware:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.13122691700118594
+            },
+            {
+              "id": "jar-apples:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 6.115479541011155
+            },
+            {
+              "id": "jar-apples:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.13283308398968074
+            },
+            {
+              "id": "jar-apples:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.12925095799437258
+            },
+            {
+              "id": "jar-apples:4",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.13173579100111965
+            },
+            {
+              "id": "jar-apples:5",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.12950695799372625
+            },
+            {
+              "id": "jar-apples:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.1337517499923706
+            },
+            {
+              "id": "books:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 6.064677041009418
+            },
+            {
+              "id": "books:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.12823204199958127
+            },
+            {
+              "id": "books:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.12990145799994934
+            },
+            {
+              "id": "books:4",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.1347942919965135
+            },
+            {
+              "id": "books:5",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.13160570799664129
+            },
+            {
+              "id": "books:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.12801674999354873
+            },
+            {
+              "id": "strawberries:1",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 6.066013166986522
+            },
+            {
+              "id": "strawberries:2",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.19126649999816436
+            },
+            {
+              "id": "strawberries:3",
+              "reference": "yes",
+              "prediction": "yes",
+              "raw_response": "yes",
+              "seconds": 0.1289027500024531
+            },
+            {
+              "id": "strawberries:4",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.12916070900973864
+            },
+            {
+              "id": "strawberries:5",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.19124095900042448
+            },
+            {
+              "id": "strawberries:6",
+              "reference": "no",
+              "prediction": "no",
+              "raw_response": "no",
+              "seconds": 0.13004999999247957
+            }
+          ],
+          "descriptions": [
+            {
+              "image": "tableware",
+              "done": true,
+              "description": "The image depicts a still life arrangement featuring a terracotta jug, a glass of amber liquid, a round loaf of bread, a plate with what appears to be pickled or preserved food, a lemon slice, and a few walnuts. The objects are arranged on a tablecloth, with the jug and glass positioned to the left, the bread to the right, and the plate in the center. The lemon slice is placed near the plate, and the walnuts are scattered on the tablecloth."
+            },
+            {
+              "image": "jar-apples",
+              "done": true,
+              "description": "The image depicts a still life arrangement featuring a green jar, a white and green striped cup, and a collection of fruits, including apples and possibly plums, placed on a white cloth. The background includes a decorative pattern with blue and white elements. The objects are arranged on a flat surface, with the jar and cup positioned to the left of the fruits. The fruits are clustered towards the right side of the cloth."
+            },
+            {
+              "image": "books",
+              "done": true,
+              "description": "The image shows a collection of books stacked in various piles, with some books standing upright and others lying flat. A single open book is visible on the left side, partially obscuring the view of the books behind it. The background is a plain, dark surface, possibly a table or a shelf, which contrasts with the lighter color of the books. The arrangement of the books appears somewhat haphazard, suggesting a casual or temporary display."
+            },
+            {
+              "image": "strawberries",
+              "done": true,
+              "description": "The image depicts a still life painting featuring a variety of fruits and vegetables. On the left, there are green beans and a red rose, while on the right, there is a bowl filled with red berries and small white flowers. In the foreground, there are asparagus spears and what appears to be a piece of fruit or vegetable with a brownish hue. The objects are arranged on a dark surface, and the background is a deep black, which contrasts with the vibrant colors of the food items."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "changed_predictions": {
+    "qwen2.5vl:7b": [],
+    "gemma3:4b": []
+  }
+}

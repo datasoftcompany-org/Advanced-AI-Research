@@ -1,0 +1,50 @@
+[
+  {
+    "id": "tableware",
+    "file": "images/tableware.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Still_Life_MET_DT1572.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Still_Life_MET_DT1572.jpg/330px-Still_Life_MET_DT1572.jpg",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "preprocessing": "Aspect ratio preserved; resized to fit 512x512 and centered on light gray padding; metadata removed; JPEG quality 85",
+    "download_bytes": 27822,
+    "bytes": 43928,
+    "sha256": "5414fa2051560cfe9bbc3bdd85efa2d82adea9e111c42ff296db1d21af1d7f71"
+  },
+  {
+    "id": "jar-apples",
+    "file": "images/jar-apples.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Still_Life_with_Jar%2C_Cup%2C_and_Apples_MET_DP130322.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Still_Life_with_Jar%2C_Cup%2C_and_Apples_MET_DP130322.jpg/330px-Still_Life_with_Jar%2C_Cup%2C_and_Apples_MET_DP130322.jpg",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "preprocessing": "Aspect ratio preserved; resized to fit 512x512 and centered on light gray padding; metadata removed; JPEG quality 85",
+    "download_bytes": 27354,
+    "bytes": 43997,
+    "sha256": "b12dc45174b30f8da5fe0cfdd52dbac7684f0280136f06152cd8decac1ba2279"
+  },
+  {
+    "id": "books",
+    "file": "images/books.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Still_Life_with_Books_MET_DP139567.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Still_Life_with_Books_MET_DP139567.jpg/330px-Still_Life_with_Books_MET_DP139567.jpg",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "preprocessing": "Aspect ratio preserved; resized to fit 512x512 and centered on light gray padding; metadata removed; JPEG quality 85",
+    "download_bytes": 25751,
+    "bytes": 36432,
+    "sha256": "f5ad509d80d2a9c75f9b4f8b1ae5f023dd718b9cb549d5408766541b8b9f696d"
+  },
+  {
+    "id": "strawberries",
+    "file": "images/strawberries.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Still_Life_with_Strawberries_MET_DT1577.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Still_Life_with_Strawberries_MET_DT1577.jpg/330px-Still_Life_with_Strawberries_MET_DT1577.jpg",
+    "license": "CC0-1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "preprocessing": "Aspect ratio preserved; resized to fit 512x512 and centered on light gray padding; metadata removed; JPEG quality 85",
+    "download_bytes": 26726,
+    "bytes": 40608,
+    "sha256": "1ca092f6785b78035b032cdc2456dfed51c6d562e2a03e53598dffe08dc6c4a1"
+  }
+]
