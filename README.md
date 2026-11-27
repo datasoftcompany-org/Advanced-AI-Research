@@ -74,7 +74,7 @@ Researchers, engineers, and organizations are welcome to review the public work,
 
 ## Local sentiment tool
 
-Use the [local sentiment tool](tools/sentiment/README.md) to classify a short English review or a CSV file with a locally installed Ollama model and export the results.
+Use the [local sentiment tool](tools/sentiment/README.md) to classify a short English review or a CSV file with a locally installed Ollama model and export the results. A local browser interface is available with `python3 tools/sentiment/serve.py`.
 
 ## GitHub workflow
 

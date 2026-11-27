@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="session-token" content="__TOKEN__">
+<title>DataSoft · تصنيف المشاعر المحلي</title>
+<link rel="stylesheet" href="/glass.css">
+<link rel="stylesheet" href="/style.css">
+<script src="/app.js" defer></script>
+</head>
+<body data-theme="sentiment">
+<main>
+<header><span class="brand">DATASOFT / AI RESEARCH</span><h1>صنّف المراجعات <span class="accent" data-tone="blue">محليًا.</span></h1>
+<p>أدخل مراجعات قصيرة بالإنجليزية. يعمل التصنيف عبر Ollama على هذا الجهاز.</p></header>
+<form id="form" class="glass" data-tone="blue">
+<h2><span aria-hidden="true">💬</span> المراجعات</h2>
+<fieldset id="inputs">
+<label for="model">النموذج</label>
+<select id="model"><option value="llama3.2:3b">Llama 3.2 · 3B</option><option value="qwen2.5:7b">Qwen 2.5 · 7B</option></select>
+<div class="modes"><label><input type="radio" name="mode" value="text" checked> نص واحد</label><label><input type="radio" name="mode" value="csv"> ملف CSV</label></div>
+<div id="text-panel"><label for="text">المراجعة الإنجليزية</label><textarea id="text" rows="5" dir="auto" placeholder="The food was excellent and I would return."></textarea></div>
+<div id="csv-panel" hidden><label for="file">ملف CSV بترميز UTF-8</label><input id="file" type="file" accept=".csv,text/csv"><label for="column">اسم عمود المراجعات</label><input id="column" value="text" dir="ltr"><p class="hint">تُعرض الصفوف الفارغة ضمن النتائج. الحد الأقصى للطلب 10 MiB.</p></div>
+<button type="submit" id="start">بدء التصنيف ←</button>
+</fieldset>
+</form>
+<section class="glass progress-card" data-tone="yellow" aria-labelledby="progress-title">
+<h2 id="progress-title"><span aria-hidden="true">⏳</span> حالة التشغيل</h2>
+<p id="status" role="status" aria-live="polite">جاهز. شغّل Ollama واختر نموذجًا مثبّتًا.</p>
+<progress id="progress" max="1" value="0" aria-label="تقدم التصنيف"></progress>
+<p id="error" role="alert" hidden></p>
+</section>
+<section id="results" class="glass" data-tone="green" hidden>
+<div class="result-head"><h2><span aria-hidden="true">📊</span> النتائج</h2><button id="download" type="button">تنزيل CSV ↓</button></div>
+<p id="summary"></p>
+<div class="table-wrap" tabindex="0" aria-label="جدول النتائج"><table><thead><tr><th>الصف</th><th>المراجعة</th><th>التصنيف</th><th>الحالة</th></tr></thead><tbody id="rows"></tbody></table></div>
+</section>
+<footer class="glass" data-tone="red"><strong>🧭 نطاق الاستخدام</strong><p>تقييم الصياغة المعتمدة يخص المراجعات القصيرة بالإنجليزية. يُظهر التصدير بصمة النموذج وإصدار Ollama، وتبقى الملفات المرفوعة في ذاكرة جلسة التشغيل.</p></footer>
+</main>
+</body>
+</html>
