@@ -23,3 +23,4 @@ Keep credentials, private datasets, unpublished material, large model weights, a
 ## New research series
 
 - [Stage 1 — Independent-source binary sentiment validation](independent-source-validation/README.md)
+- [Stage 2 — Neutrality, ambiguity and human-review deferral](uncertain-sentiment-evaluation/README.md)
