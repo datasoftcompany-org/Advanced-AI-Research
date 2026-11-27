@@ -34,3 +34,4 @@ Keep credentials, private datasets, unpublished material, large model weights, a
 - [Stage 1 — Local Phonon speech generation](local-speech-phonon/README.md)
 - [Stage 2 — Local image description and spatial reasoning](local-vision-spatial/README.md)
 - [Stage 3 — Bounded local tool calling](local-tool-calling/README.md)
+- [Stage 4 — Local embeddings and semantic retrieval](local-semantic-retrieval/README.md)
