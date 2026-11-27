@@ -46,12 +46,13 @@ def dispatch(name, args, inventory):
     raise ValueError("Unknown tool or invalid argument keys")
 
 
-def correct(task, answer, calls, rejected):
+def correct(task, answer, calls, rejected, tool_results):
     if type(answer) in (int, float) and type(task["expected"]) in (int, float):
         matches = math.isclose(answer, task["expected"], rel_tol=1e-9, abs_tol=1e-9)
     else:
         matches = type(answer) is type(task["expected"]) and answer == task["expected"]
-    return matches and Counter(calls) == Counter(task["required_tools"]) and rejected == 0
+    return (matches and Counter(calls) == Counter(task["required_tools"])
+            and rejected == 0 and tool_results == task["expected_tool_results"])
 
 
 def run_task(model, task, config):
@@ -112,7 +113,7 @@ def run_task(model, task, config):
     return {"id": task["id"], "answer": answer, "outcome": outcome,
             "calls": calls, "rejected": rejected, "trace": trace,
             "seconds": time.perf_counter()-start,
-            "correct": outcome == "completed" and correct(task, answer, calls, rejected)}
+            "correct": outcome == "completed" and correct(task, answer, calls, rejected, [entry["result"] for entry in trace if "tool" in entry])}
 
 
 def main():
