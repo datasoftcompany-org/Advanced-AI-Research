@@ -1,0 +1,8 @@
+{
+  "models": [
+    "llama3.2:3b",
+    "qwen2.5:7b"
+  ],
+  "warmup": "I enjoyed this experience and would happily repeat it.",
+  "scope": "Authored meaning-preserving pairs; references reviewed by the author before inference; no independent semantic annotation."
+}
