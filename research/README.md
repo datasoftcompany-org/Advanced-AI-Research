@@ -19,3 +19,7 @@ Keep credentials, private datasets, unpublished material, large model weights, a
 ## Series report
 
 [Completed evaluation series and final prompt decision](FINAL_REPORT.md)
+
+## New research series
+
+- [Stage 1 — Independent-source binary sentiment validation](independent-source-validation/README.md)
