@@ -28,3 +28,7 @@ Keep credentials, private datasets, unpublished material, large model weights, a
 - [Stage 4 — Local quality, latency and allocation tradeoffs](local-resource-tradeoffs/README.md)
 
 [Four-stage series report and operational recommendation](NEW_SERIES_REPORT.md)
+
+## Local capability research
+
+- [Stage 1 — Local Phonon speech generation](local-speech-phonon/README.md)

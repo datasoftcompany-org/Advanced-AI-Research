@@ -1,0 +1,12 @@
+{
+  "model": "phonon:latest",
+  "voice": "default",
+  "response_format": "pcm",
+  "sample_rate": 24000,
+  "channels": 1,
+  "sample_width": 2,
+  "rounds": 2,
+  "read_chunk_bytes": 1024,
+  "timeout_seconds": 120,
+  "scope": "English text-to-speech technical validation. Pronunciation and naturalness require listening review; waveform checks do not assess linguistic fidelity."
+}

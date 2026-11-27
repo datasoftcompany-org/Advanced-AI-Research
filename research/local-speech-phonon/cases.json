@@ -1,0 +1,52 @@
+[
+  {
+    "id": "greeting",
+    "focus": "plain speech",
+    "text": "Good morning. This is a local speech generation test."
+  },
+  {
+    "id": "counts",
+    "focus": "integers",
+    "text": "We reviewed twenty four examples and found three errors."
+  },
+  {
+    "id": "prices",
+    "focus": "currency and decimals",
+    "text": "The first item costs $4.59, and the second costs $12.50."
+  },
+  {
+    "id": "abbreviations",
+    "focus": "abbreviations",
+    "text": "The CPU and GPU completed the test. Please export the CSV file."
+  },
+  {
+    "id": "written_date",
+    "focus": "written dates",
+    "text": "The next meeting is on November twenty seventh, at ten thirty in the morning."
+  },
+  {
+    "id": "numeric_date",
+    "focus": "numeric dates",
+    "text": "The meeting is on 11/27 at 10:30."
+  },
+  {
+    "id": "punctuation",
+    "focus": "questions and pauses",
+    "text": "Is the model ready? Yes, it is. Let's begin!"
+  },
+  {
+    "id": "negation",
+    "focus": "negation",
+    "text": "The result is not negative. I cannot recommend changing the settings yet."
+  },
+  {
+    "id": "contact",
+    "focus": "email and URL",
+    "text": "Send the report to test@example.com, or visit https://example.com."
+  },
+  {
+    "id": "paragraph",
+    "focus": "multiline continuity",
+    "text": "The model runs on this computer. No new model was downloaded.\nWe saved the generated audio and recorded the time required to produce it. The next step is to listen carefully and check the pronunciation."
+  }
+]
