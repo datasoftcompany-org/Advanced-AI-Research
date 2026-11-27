@@ -1,0 +1,10 @@
+{
+  "model": "nomic-embed-text:v1.5",
+  "dimensions": 768,
+  "document_prefix": "search_document: ",
+  "query_prefix": "search_query: ",
+  "rounds": 2,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "scope": "Authored fictional support policies; one document per passage, no chunking, 32 answerable queries with one relevant passage each. Retrieval only."
+}
