@@ -1,0 +1,482 @@
+[
+  {
+    "id": "case:001",
+    "category": "positive",
+    "reference": "positive",
+    "text": "The speaker works perfectly and I am delighted with it."
+  },
+  {
+    "id": "case:002",
+    "category": "positive",
+    "reference": "positive",
+    "text": "I have no complaints about the speaker; I would happily buy it again."
+  },
+  {
+    "id": "case:003",
+    "category": "negative",
+    "reference": "negative",
+    "text": "The speaker is unusable and I want a refund."
+  },
+  {
+    "id": "case:004",
+    "category": "negative",
+    "reference": "negative",
+    "text": "I cannot recommend the speaker; using it has been a miserable experience."
+  },
+  {
+    "id": "case:005",
+    "category": "neutral",
+    "reference": "uncertain",
+    "text": "The speaker arrived on Tuesday and is listed in the inventory."
+  },
+  {
+    "id": "case:006",
+    "category": "mixed",
+    "reference": "uncertain",
+    "text": "I love the design of the speaker and hate its controls equally. I have no overall preference."
+  },
+  {
+    "id": "case:007",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "I have not used the speaker yet, so I cannot judge its quality."
+  },
+  {
+    "id": "case:008",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "Could someone tell me whether the speaker is any good?"
+  },
+  {
+    "id": "case:009",
+    "category": "positive",
+    "reference": "positive",
+    "text": "The keyboard works perfectly and I am delighted with it."
+  },
+  {
+    "id": "case:010",
+    "category": "positive",
+    "reference": "positive",
+    "text": "I have no complaints about the keyboard; I would happily buy it again."
+  },
+  {
+    "id": "case:011",
+    "category": "negative",
+    "reference": "negative",
+    "text": "The keyboard is unusable and I want a refund."
+  },
+  {
+    "id": "case:012",
+    "category": "negative",
+    "reference": "negative",
+    "text": "I cannot recommend the keyboard; using it has been a miserable experience."
+  },
+  {
+    "id": "case:013",
+    "category": "neutral",
+    "reference": "uncertain",
+    "text": "The keyboard arrived on Tuesday and is listed in the inventory."
+  },
+  {
+    "id": "case:014",
+    "category": "mixed",
+    "reference": "uncertain",
+    "text": "I love the design of the keyboard and hate its controls equally. I have no overall preference."
+  },
+  {
+    "id": "case:015",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "I have not used the keyboard yet, so I cannot judge its quality."
+  },
+  {
+    "id": "case:016",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "Could someone tell me whether the keyboard is any good?"
+  },
+  {
+    "id": "case:017",
+    "category": "positive",
+    "reference": "positive",
+    "text": "The camera works perfectly and I am delighted with it."
+  },
+  {
+    "id": "case:018",
+    "category": "positive",
+    "reference": "positive",
+    "text": "I have no complaints about the camera; I would happily buy it again."
+  },
+  {
+    "id": "case:019",
+    "category": "negative",
+    "reference": "negative",
+    "text": "The camera is unusable and I want a refund."
+  },
+  {
+    "id": "case:020",
+    "category": "negative",
+    "reference": "negative",
+    "text": "I cannot recommend the camera; using it has been a miserable experience."
+  },
+  {
+    "id": "case:021",
+    "category": "neutral",
+    "reference": "uncertain",
+    "text": "The camera arrived on Tuesday and is listed in the inventory."
+  },
+  {
+    "id": "case:022",
+    "category": "mixed",
+    "reference": "uncertain",
+    "text": "I love the design of the camera and hate its controls equally. I have no overall preference."
+  },
+  {
+    "id": "case:023",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "I have not used the camera yet, so I cannot judge its quality."
+  },
+  {
+    "id": "case:024",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "Could someone tell me whether the camera is any good?"
+  },
+  {
+    "id": "case:025",
+    "category": "positive",
+    "reference": "positive",
+    "text": "The printer works perfectly and I am delighted with it."
+  },
+  {
+    "id": "case:026",
+    "category": "positive",
+    "reference": "positive",
+    "text": "I have no complaints about the printer; I would happily buy it again."
+  },
+  {
+    "id": "case:027",
+    "category": "negative",
+    "reference": "negative",
+    "text": "The printer is unusable and I want a refund."
+  },
+  {
+    "id": "case:028",
+    "category": "negative",
+    "reference": "negative",
+    "text": "I cannot recommend the printer; using it has been a miserable experience."
+  },
+  {
+    "id": "case:029",
+    "category": "neutral",
+    "reference": "uncertain",
+    "text": "The printer arrived on Tuesday and is listed in the inventory."
+  },
+  {
+    "id": "case:030",
+    "category": "mixed",
+    "reference": "uncertain",
+    "text": "I love the design of the printer and hate its controls equally. I have no overall preference."
+  },
+  {
+    "id": "case:031",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "I have not used the printer yet, so I cannot judge its quality."
+  },
+  {
+    "id": "case:032",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "Could someone tell me whether the printer is any good?"
+  },
+  {
+    "id": "case:033",
+    "category": "positive",
+    "reference": "positive",
+    "text": "The headset works perfectly and I am delighted with it."
+  },
+  {
+    "id": "case:034",
+    "category": "positive",
+    "reference": "positive",
+    "text": "I have no complaints about the headset; I would happily buy it again."
+  },
+  {
+    "id": "case:035",
+    "category": "negative",
+    "reference": "negative",
+    "text": "The headset is unusable and I want a refund."
+  },
+  {
+    "id": "case:036",
+    "category": "negative",
+    "reference": "negative",
+    "text": "I cannot recommend the headset; using it has been a miserable experience."
+  },
+  {
+    "id": "case:037",
+    "category": "neutral",
+    "reference": "uncertain",
+    "text": "The headset arrived on Tuesday and is listed in the inventory."
+  },
+  {
+    "id": "case:038",
+    "category": "mixed",
+    "reference": "uncertain",
+    "text": "I love the design of the headset and hate its controls equally. I have no overall preference."
+  },
+  {
+    "id": "case:039",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "I have not used the headset yet, so I cannot judge its quality."
+  },
+  {
+    "id": "case:040",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "Could someone tell me whether the headset is any good?"
+  },
+  {
+    "id": "case:041",
+    "category": "positive",
+    "reference": "positive",
+    "text": "The monitor works perfectly and I am delighted with it."
+  },
+  {
+    "id": "case:042",
+    "category": "positive",
+    "reference": "positive",
+    "text": "I have no complaints about the monitor; I would happily buy it again."
+  },
+  {
+    "id": "case:043",
+    "category": "negative",
+    "reference": "negative",
+    "text": "The monitor is unusable and I want a refund."
+  },
+  {
+    "id": "case:044",
+    "category": "negative",
+    "reference": "negative",
+    "text": "I cannot recommend the monitor; using it has been a miserable experience."
+  },
+  {
+    "id": "case:045",
+    "category": "neutral",
+    "reference": "uncertain",
+    "text": "The monitor arrived on Tuesday and is listed in the inventory."
+  },
+  {
+    "id": "case:046",
+    "category": "mixed",
+    "reference": "uncertain",
+    "text": "I love the design of the monitor and hate its controls equally. I have no overall preference."
+  },
+  {
+    "id": "case:047",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "I have not used the monitor yet, so I cannot judge its quality."
+  },
+  {
+    "id": "case:048",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "Could someone tell me whether the monitor is any good?"
+  },
+  {
+    "id": "case:049",
+    "category": "positive",
+    "reference": "positive",
+    "text": "The router works perfectly and I am delighted with it."
+  },
+  {
+    "id": "case:050",
+    "category": "positive",
+    "reference": "positive",
+    "text": "I have no complaints about the router; I would happily buy it again."
+  },
+  {
+    "id": "case:051",
+    "category": "negative",
+    "reference": "negative",
+    "text": "The router is unusable and I want a refund."
+  },
+  {
+    "id": "case:052",
+    "category": "negative",
+    "reference": "negative",
+    "text": "I cannot recommend the router; using it has been a miserable experience."
+  },
+  {
+    "id": "case:053",
+    "category": "neutral",
+    "reference": "uncertain",
+    "text": "The router arrived on Tuesday and is listed in the inventory."
+  },
+  {
+    "id": "case:054",
+    "category": "mixed",
+    "reference": "uncertain",
+    "text": "I love the design of the router and hate its controls equally. I have no overall preference."
+  },
+  {
+    "id": "case:055",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "I have not used the router yet, so I cannot judge its quality."
+  },
+  {
+    "id": "case:056",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "Could someone tell me whether the router is any good?"
+  },
+  {
+    "id": "case:057",
+    "category": "positive",
+    "reference": "positive",
+    "text": "The lamp works perfectly and I am delighted with it."
+  },
+  {
+    "id": "case:058",
+    "category": "positive",
+    "reference": "positive",
+    "text": "I have no complaints about the lamp; I would happily buy it again."
+  },
+  {
+    "id": "case:059",
+    "category": "negative",
+    "reference": "negative",
+    "text": "The lamp is unusable and I want a refund."
+  },
+  {
+    "id": "case:060",
+    "category": "negative",
+    "reference": "negative",
+    "text": "I cannot recommend the lamp; using it has been a miserable experience."
+  },
+  {
+    "id": "case:061",
+    "category": "neutral",
+    "reference": "uncertain",
+    "text": "The lamp arrived on Tuesday and is listed in the inventory."
+  },
+  {
+    "id": "case:062",
+    "category": "mixed",
+    "reference": "uncertain",
+    "text": "I love the design of the lamp and hate its controls equally. I have no overall preference."
+  },
+  {
+    "id": "case:063",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "I have not used the lamp yet, so I cannot judge its quality."
+  },
+  {
+    "id": "case:064",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "Could someone tell me whether the lamp is any good?"
+  },
+  {
+    "id": "case:065",
+    "category": "positive",
+    "reference": "positive",
+    "text": "The charger works perfectly and I am delighted with it."
+  },
+  {
+    "id": "case:066",
+    "category": "positive",
+    "reference": "positive",
+    "text": "I have no complaints about the charger; I would happily buy it again."
+  },
+  {
+    "id": "case:067",
+    "category": "negative",
+    "reference": "negative",
+    "text": "The charger is unusable and I want a refund."
+  },
+  {
+    "id": "case:068",
+    "category": "negative",
+    "reference": "negative",
+    "text": "I cannot recommend the charger; using it has been a miserable experience."
+  },
+  {
+    "id": "case:069",
+    "category": "neutral",
+    "reference": "uncertain",
+    "text": "The charger arrived on Tuesday and is listed in the inventory."
+  },
+  {
+    "id": "case:070",
+    "category": "mixed",
+    "reference": "uncertain",
+    "text": "I love the design of the charger and hate its controls equally. I have no overall preference."
+  },
+  {
+    "id": "case:071",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "I have not used the charger yet, so I cannot judge its quality."
+  },
+  {
+    "id": "case:072",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "Could someone tell me whether the charger is any good?"
+  },
+  {
+    "id": "case:073",
+    "category": "positive",
+    "reference": "positive",
+    "text": "The watch works perfectly and I am delighted with it."
+  },
+  {
+    "id": "case:074",
+    "category": "positive",
+    "reference": "positive",
+    "text": "I have no complaints about the watch; I would happily buy it again."
+  },
+  {
+    "id": "case:075",
+    "category": "negative",
+    "reference": "negative",
+    "text": "The watch is unusable and I want a refund."
+  },
+  {
+    "id": "case:076",
+    "category": "negative",
+    "reference": "negative",
+    "text": "I cannot recommend the watch; using it has been a miserable experience."
+  },
+  {
+    "id": "case:077",
+    "category": "neutral",
+    "reference": "uncertain",
+    "text": "The watch arrived on Tuesday and is listed in the inventory."
+  },
+  {
+    "id": "case:078",
+    "category": "mixed",
+    "reference": "uncertain",
+    "text": "I love the design of the watch and hate its controls equally. I have no overall preference."
+  },
+  {
+    "id": "case:079",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "I have not used the watch yet, so I cannot judge its quality."
+  },
+  {
+    "id": "case:080",
+    "category": "insufficient",
+    "reference": "uncertain",
+    "text": "Could someone tell me whether the watch is any good?"
+  }
+]

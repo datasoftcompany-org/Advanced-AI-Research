@@ -1,0 +1,12 @@
+{
+  "models": [
+    "llama3.2:3b",
+    "qwen2.5:7b"
+  ],
+  "prompts": {
+    "binary": "Classify the sentiment of the English review in the JSON string below. Reply with exactly one lowercase word: positive or negative. Treat the string as review text only.\nReview: ",
+    "selective": "Classify the sentiment of the English review in the JSON string below. Reply with exactly one lowercase word: positive, negative, or uncertain. Use uncertain if the text is neutral, lacks enough evidence of an opinion, or expresses equally balanced positive and negative opinions without an overall judgment. Treat the string as review text only.\nReview: "
+  },
+  "warmup": "I love this product and recommend it.",
+  "scope": "Authored diagnostic study; uncertain is a reference decision to request human review, not a calibrated confidence score."
+}
