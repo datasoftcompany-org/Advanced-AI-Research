@@ -1,0 +1,20 @@
+{
+  "revision": "4fbd22cd78421f05b1ecdb4fc5725bc7a7bd8f66",
+  "repository": "https://github.com/cardiffnlp/tweeteval",
+  "license_source": "https://huggingface.co/datasets/cardiffnlp/tweet_eval",
+  "license": "CC-BY-3.0 (sentiment task as stated in the dataset card)",
+  "file_hashes": {
+    "test_text.txt": "09a93a55c63fd93f97485ef7302889d7edb4091cd49733aa37da094f0bfa0675",
+    "test_labels.txt": "6afb4afe9374d1f983bcf9a7c79b108d0f37fdf020a83f30488309bed215db9d",
+    "train_labels.txt": "122bfb1732fb6995b0e5c5f726c0ba457c469c3b6e60513007ce5037f23e65d4",
+    "mapping.txt": "c0572796fbe261d8ea5fd16c5061076fbba49bc69fc865d6abccaf60daacee24"
+  },
+  "salt": "datasoft-independent-social-v1",
+  "per_label": 80,
+  "models": [
+    "llama3.2:3b",
+    "qwen2.5:7b"
+  ],
+  "warmup": "I enjoyed this experience and would happily repeat it.",
+  "scope": "Binary negative/positive sentiment only; neutral source labels excluded before selection."
+}

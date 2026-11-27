@@ -1,0 +1,823 @@
+{
+  "file_hashes": {
+    "test_text.txt": "09a93a55c63fd93f97485ef7302889d7edb4091cd49733aa37da094f0bfa0675",
+    "test_labels.txt": "6afb4afe9374d1f983bcf9a7c79b108d0f37fdf020a83f30488309bed215db9d",
+    "train_labels.txt": "122bfb1732fb6995b0e5c5f726c0ba457c469c3b6e60513007ce5037f23e65d4",
+    "mapping.txt": "c0572796fbe261d8ea5fd16c5061076fbba49bc69fc865d6abccaf60daacee24"
+  },
+  "original_test_counts": {
+    "1": 5937,
+    "2": 2375,
+    "0": 3972
+  },
+  "training_counts": {
+    "2": 17849,
+    "1": 20673,
+    "0": 7093
+  },
+  "eligible_binary_records": 6343,
+  "test": [
+    {
+      "id": "tweeteval:test:11670",
+      "label": "negative",
+      "text_sha256": "9e2c71e087e74a36ce23663e09de75cdfe5f7b67ac2c52a6790dc8430905ff10"
+    },
+    {
+      "id": "tweeteval:test:5106",
+      "label": "negative",
+      "text_sha256": "d151e80b0db73b714aef880cc877f66518146037d167370be5149943b3e1e858"
+    },
+    {
+      "id": "tweeteval:test:7160",
+      "label": "negative",
+      "text_sha256": "2e0508c01586093b49f75b7c3b0b6a92a72ca9d8ebd1a0972f42e38e8175c988"
+    },
+    {
+      "id": "tweeteval:test:9457",
+      "label": "negative",
+      "text_sha256": "c4cd1e6963db97504f4d88a382b6c5bfdaaea29acfa9e25b729e9860df2da387"
+    },
+    {
+      "id": "tweeteval:test:7480",
+      "label": "negative",
+      "text_sha256": "af83e6869512a63158a41f867ac76dd8e152e2d7674fe52aaed0ff71a42499a1"
+    },
+    {
+      "id": "tweeteval:test:7498",
+      "label": "negative",
+      "text_sha256": "03353afc51f74815a8927e58665c10f14b9645af9f7e75b21a6e22990e2eb431"
+    },
+    {
+      "id": "tweeteval:test:6168",
+      "label": "negative",
+      "text_sha256": "8d9679c56025935a2696f798f8279806be8abd1b7a95e657d04413ab09372045"
+    },
+    {
+      "id": "tweeteval:test:11528",
+      "label": "negative",
+      "text_sha256": "541405ddcc3707575274650f873472a342f7e7304106068ce4fb32dce4e8624d"
+    },
+    {
+      "id": "tweeteval:test:5426",
+      "label": "negative",
+      "text_sha256": "a70e507e8ba52c68fb2e9a9983cbb28c89869cdddf34999f76b892f8ea200761"
+    },
+    {
+      "id": "tweeteval:test:911",
+      "label": "negative",
+      "text_sha256": "210ccc5e32832e53dfff68d4cf33a3390eeb868cdd46f0af4083b6cf3cd6f1e7"
+    },
+    {
+      "id": "tweeteval:test:8602",
+      "label": "negative",
+      "text_sha256": "08f91a97c04f2c197bfbaeb154e87324fe091319e32b35d0849aeb09cafacd3d"
+    },
+    {
+      "id": "tweeteval:test:1279",
+      "label": "negative",
+      "text_sha256": "c92df945065c6b0907baff7d8057970cf460a51ac026a064f1394742e9e80c25"
+    },
+    {
+      "id": "tweeteval:test:11969",
+      "label": "negative",
+      "text_sha256": "56be16f3fd265c150813b23f9e8019bd3455ad737ea84b1748771bfe8456309d"
+    },
+    {
+      "id": "tweeteval:test:7078",
+      "label": "negative",
+      "text_sha256": "19f22bcbd042f60dbf5020c50e191c7d72daf02d56e72d24df605543516dfa3d"
+    },
+    {
+      "id": "tweeteval:test:11523",
+      "label": "negative",
+      "text_sha256": "cea28ccd6eb2f7c26e449879ea17a77db908d7633884739ac0f7b6a1aa58283a"
+    },
+    {
+      "id": "tweeteval:test:8090",
+      "label": "negative",
+      "text_sha256": "8c4bc54eb621ecd3451d8e8762badf91978e05bd83f8d54cde57c967e788acbe"
+    },
+    {
+      "id": "tweeteval:test:3164",
+      "label": "negative",
+      "text_sha256": "0aa8102ba2d10d5d604a72529dd133e464f5f53f3eb450bf48f3940779d24002"
+    },
+    {
+      "id": "tweeteval:test:9978",
+      "label": "negative",
+      "text_sha256": "0de998c594b4fadcb3e69043aea1d534f76ce530f4bc36b759296b4e2e0177a7"
+    },
+    {
+      "id": "tweeteval:test:6894",
+      "label": "negative",
+      "text_sha256": "3e8bf757c76aaf824b3e6633ce55e14b9dbc594cade861d0a661b10be7f5825a"
+    },
+    {
+      "id": "tweeteval:test:5709",
+      "label": "negative",
+      "text_sha256": "3b46bdbc67dff409a7a98b327e4bb68ba53950facb4f52f592c8195ecf9cf398"
+    },
+    {
+      "id": "tweeteval:test:1660",
+      "label": "negative",
+      "text_sha256": "a8302c09d167299d88fd64e27935f5cae7cc31ab3bafd74111b9817722353b72"
+    },
+    {
+      "id": "tweeteval:test:11219",
+      "label": "negative",
+      "text_sha256": "062ff032ae023a84b7b94634eacc76581e8b192f19cb0bd605fc397f2aab9ac6"
+    },
+    {
+      "id": "tweeteval:test:5208",
+      "label": "negative",
+      "text_sha256": "947a14f084897b991ab13ac79787542c92e47eec3c5d2ffce2038573def556ee"
+    },
+    {
+      "id": "tweeteval:test:10577",
+      "label": "negative",
+      "text_sha256": "14ed21501ff270d62653654f53f88750b192257bd853ecaeaf3f0c48ef868dd0"
+    },
+    {
+      "id": "tweeteval:test:1202",
+      "label": "negative",
+      "text_sha256": "9be1018e53660d8c632780c2fd41ab3903d4e34c4b67d111bf61bc6d453a617f"
+    },
+    {
+      "id": "tweeteval:test:8320",
+      "label": "negative",
+      "text_sha256": "e330c6d8bfb7d0f7ced4e670d1adb7ce9923405b8d5fbf9fa2f19db7ae58b157"
+    },
+    {
+      "id": "tweeteval:test:5",
+      "label": "negative",
+      "text_sha256": "5651f6a9cccef4f26d1a1ba32127c604e9050aacce43c2a85cb4aa460506fb38"
+    },
+    {
+      "id": "tweeteval:test:1314",
+      "label": "negative",
+      "text_sha256": "ec5bfdea3228ab672c722211d48ffa526442a8c787c9137dfc393b359cb3140a"
+    },
+    {
+      "id": "tweeteval:test:4262",
+      "label": "negative",
+      "text_sha256": "8e938d9672f8bcb1d61ad9e00118b818c892c3e5dabfd184ebd594460ea9d776"
+    },
+    {
+      "id": "tweeteval:test:10364",
+      "label": "negative",
+      "text_sha256": "0e4a750396e6757adaf23bd90436778210776ac29a800eadcfebc0a7a9c7ab9e"
+    },
+    {
+      "id": "tweeteval:test:5651",
+      "label": "negative",
+      "text_sha256": "cda94f73114ce43f26b8d195166135ce55ae02d2df074a0d9007f003df83abed"
+    },
+    {
+      "id": "tweeteval:test:5911",
+      "label": "negative",
+      "text_sha256": "842aecde80ef59332af769cede735345f3db941747c165e4084674a8144cbca9"
+    },
+    {
+      "id": "tweeteval:test:11000",
+      "label": "negative",
+      "text_sha256": "c2d58196fcd0e6f069d09183929a39e2018d680532106491c16da92efc4089e3"
+    },
+    {
+      "id": "tweeteval:test:12127",
+      "label": "negative",
+      "text_sha256": "0473019cbc17e0729ee863dc35ea7a863ff377df7fb6203733ba42e0002609b9"
+    },
+    {
+      "id": "tweeteval:test:7295",
+      "label": "negative",
+      "text_sha256": "edbcaba052ae8b3a2c6e3afb05be226d3bd01a7eddba2f43b3d21a4e3007123d"
+    },
+    {
+      "id": "tweeteval:test:2763",
+      "label": "negative",
+      "text_sha256": "2bbe5a0315751dc0b8a408dfaec016f2aeae97d997370224b731eaf02b83471b"
+    },
+    {
+      "id": "tweeteval:test:5680",
+      "label": "negative",
+      "text_sha256": "3c5077dfe839dedf2ca853e67432c25a7073a826920e81dcae1f7d1c1865d070"
+    },
+    {
+      "id": "tweeteval:test:7962",
+      "label": "negative",
+      "text_sha256": "df0b116e59f7357fed41ad7221c6887a1202a66b4fa04922674bc3590a93dc89"
+    },
+    {
+      "id": "tweeteval:test:2491",
+      "label": "negative",
+      "text_sha256": "22d8c5f8e7a67bb4211f7065858d19a4f9fd6f72cdbbd8a332cc82e00989d54f"
+    },
+    {
+      "id": "tweeteval:test:7341",
+      "label": "negative",
+      "text_sha256": "ebc63e189fe23bf3daa6e9ced0d896d08a340fedab3f26e30a3ad5cd38199dc8"
+    },
+    {
+      "id": "tweeteval:test:3218",
+      "label": "negative",
+      "text_sha256": "8a7ad537a648783df65f2ba2d8c00d198ed5fb7fd457c35c922ebce11c8aea9b"
+    },
+    {
+      "id": "tweeteval:test:2539",
+      "label": "negative",
+      "text_sha256": "76e3b800aa686c2e212413bdcf032eddabe37dfa1633d212b709199b9f44cbad"
+    },
+    {
+      "id": "tweeteval:test:8616",
+      "label": "negative",
+      "text_sha256": "e920f2ea4a3520b4748806a0a041d5192b3b82a8102a5caf6c3ca2e3a8f9dce3"
+    },
+    {
+      "id": "tweeteval:test:6357",
+      "label": "negative",
+      "text_sha256": "8c642d02e086776e34fe105f82b2fdcbd8ad4f41bc9f42ecfbd40ec4af0b4449"
+    },
+    {
+      "id": "tweeteval:test:674",
+      "label": "negative",
+      "text_sha256": "60accd00be8b7c95b21469d56313683288357383c322958102565d155ab75c1a"
+    },
+    {
+      "id": "tweeteval:test:2950",
+      "label": "negative",
+      "text_sha256": "82381e3346f39028b9a663ee8b35e079e5dde8a6a483ce85e3a086903b8f7e85"
+    },
+    {
+      "id": "tweeteval:test:8783",
+      "label": "negative",
+      "text_sha256": "86a2fd754acb8203618936ba2a80734743cac43ac523a3dc78537a710ddb3e12"
+    },
+    {
+      "id": "tweeteval:test:4308",
+      "label": "negative",
+      "text_sha256": "d2000ba727b081c3672497f08aecd504c05c25c26cab8cb830edf22164db6727"
+    },
+    {
+      "id": "tweeteval:test:6228",
+      "label": "negative",
+      "text_sha256": "24eee1d99828803eb6c05ad454994113f281a378142c63d74e1d846c31cda3f8"
+    },
+    {
+      "id": "tweeteval:test:2215",
+      "label": "negative",
+      "text_sha256": "27990db2b9852a6a9df37f16850f841611ee0e3f9d942a4ce48b6633c1e46116"
+    },
+    {
+      "id": "tweeteval:test:1870",
+      "label": "negative",
+      "text_sha256": "c16159f07b35fdc83e1e6bdd7731bbe5e4b04f45cbca59e640fea228e9253f5e"
+    },
+    {
+      "id": "tweeteval:test:3986",
+      "label": "negative",
+      "text_sha256": "7da2f0e970cd7d461ad30395320b71511fbf4ae46c730f8736ca564ae8a46a85"
+    },
+    {
+      "id": "tweeteval:test:10719",
+      "label": "negative",
+      "text_sha256": "31c11f3f7d9d112b614a290f1f3424c81899a219a2932279e0b9212444dd8f4a"
+    },
+    {
+      "id": "tweeteval:test:11095",
+      "label": "negative",
+      "text_sha256": "fdb8504f7b655037fc04f846b96e8794932391a12957707d99e7f8e194d52e45"
+    },
+    {
+      "id": "tweeteval:test:2617",
+      "label": "negative",
+      "text_sha256": "748ded2592f456b383f4e0c7ca73ea09c0747d4b6d24930edee0e1a3695bb5fc"
+    },
+    {
+      "id": "tweeteval:test:1867",
+      "label": "negative",
+      "text_sha256": "bb46447f37a35c5cbbd4010fc767a8701d816d3e4728b2fa3a33431633c8bbc6"
+    },
+    {
+      "id": "tweeteval:test:6100",
+      "label": "negative",
+      "text_sha256": "d8f067eb13236ed1fdfa75d74002c27df50905f94992355ed7d9b99ea36d5dc4"
+    },
+    {
+      "id": "tweeteval:test:627",
+      "label": "negative",
+      "text_sha256": "087025c142eed7f7fe43c2e9a31b8d426e473ca25f829adbfb150988301676fc"
+    },
+    {
+      "id": "tweeteval:test:10472",
+      "label": "negative",
+      "text_sha256": "d7024b35002c10e4eb6e44b7400fe9c0fb3b6d53a241984587e525d2fc30be21"
+    },
+    {
+      "id": "tweeteval:test:5310",
+      "label": "negative",
+      "text_sha256": "d5f649e9075ee6d0e506077a97268f7f935795240cda9de54da362f04f7361fe"
+    },
+    {
+      "id": "tweeteval:test:7826",
+      "label": "negative",
+      "text_sha256": "0abb547c45f993e70dda63e85471cae995e0daa1fb45d6aaa94fba9e87c109e9"
+    },
+    {
+      "id": "tweeteval:test:11029",
+      "label": "negative",
+      "text_sha256": "d51c6e5eb6cb4ee8c70b336c5252aa37e90e640331c04a5d18852e47777dcecb"
+    },
+    {
+      "id": "tweeteval:test:10571",
+      "label": "negative",
+      "text_sha256": "8b0d92a061299cb49d192bdef3b20a2dc73456b5f8c13bff82cd06fcaa91298b"
+    },
+    {
+      "id": "tweeteval:test:5246",
+      "label": "negative",
+      "text_sha256": "a4eb84cc79e358e8f310270853410264da6851d42e03b8f68c069806a7229a07"
+    },
+    {
+      "id": "tweeteval:test:1668",
+      "label": "negative",
+      "text_sha256": "4a5685b72da4056108cca8b12f2bfa1f0a13f1525bf1132c4415a41381648ece"
+    },
+    {
+      "id": "tweeteval:test:5989",
+      "label": "negative",
+      "text_sha256": "f32b480536d09431f6ce381baf13e0ad32549d8660ac249761d8c56ad97b7255"
+    },
+    {
+      "id": "tweeteval:test:3678",
+      "label": "negative",
+      "text_sha256": "31d07d37314994757f03ee77ec7c5ffc2756b0183174201952e864b4016d8acd"
+    },
+    {
+      "id": "tweeteval:test:336",
+      "label": "negative",
+      "text_sha256": "79a8de43269f49928b97f751cbb76b10e6e7bea4ce92ac01c0887944a5b3f05e"
+    },
+    {
+      "id": "tweeteval:test:6283",
+      "label": "negative",
+      "text_sha256": "cfbe41da2aa992996b7a8a7e153c894a9e9451f1b10baf2fa0d83af23b164c47"
+    },
+    {
+      "id": "tweeteval:test:4801",
+      "label": "negative",
+      "text_sha256": "6d8b6b5842cb2835ec174f776db1dd746a1a357b9ac463c807309df11847b4d4"
+    },
+    {
+      "id": "tweeteval:test:3592",
+      "label": "negative",
+      "text_sha256": "36a0cc39f72437a3b35656bcb8ebdb85a2348e4458d7636a6812bacda1c6ae3d"
+    },
+    {
+      "id": "tweeteval:test:7790",
+      "label": "negative",
+      "text_sha256": "b866e28ab8e5bb180e76c250978cedf07d3bcd9739006015e8c28b4f646d0be5"
+    },
+    {
+      "id": "tweeteval:test:4235",
+      "label": "negative",
+      "text_sha256": "144ec7efe7d6fb3cd5c6230ffb4dbd5deaaf388d0c3231f37b4ef84d28eefd2f"
+    },
+    {
+      "id": "tweeteval:test:7014",
+      "label": "negative",
+      "text_sha256": "4c3d8574525da8da5a9c7507d6cee82076ab43b17c73c231ae8d6ee353e90e81"
+    },
+    {
+      "id": "tweeteval:test:3390",
+      "label": "negative",
+      "text_sha256": "cdab9f5501e459800462346881284709667e87e5cc952daed26a1fa74e8ac340"
+    },
+    {
+      "id": "tweeteval:test:9329",
+      "label": "negative",
+      "text_sha256": "fdc1bfef730984885ae24617f96016bbdcdc67d996b87d2416fa08b9e14a9eb7"
+    },
+    {
+      "id": "tweeteval:test:8092",
+      "label": "negative",
+      "text_sha256": "091cdff1a1cfbdc093586f696723503d85206550a344d1263c70014a3db89f7f"
+    },
+    {
+      "id": "tweeteval:test:10395",
+      "label": "negative",
+      "text_sha256": "5d0a6d775bcb1a5bbb5bfcb96b1a9c5558bccbdff7028d51a46f11a769f27602"
+    },
+    {
+      "id": "tweeteval:test:5314",
+      "label": "negative",
+      "text_sha256": "ae7e7709009350e60f19feb9cd405ca0b3000c9b9dcef8717801c71c21217fda"
+    },
+    {
+      "id": "tweeteval:test:9405",
+      "label": "negative",
+      "text_sha256": "1375d7a41bb410424d4e749196192ba5d58ccb73796d3ead46b58c909923470f"
+    },
+    {
+      "id": "tweeteval:test:11456",
+      "label": "positive",
+      "text_sha256": "81665ee65e9ebcb2ce03b27de56379f055922f1022933f210a7488e1eb68a331"
+    },
+    {
+      "id": "tweeteval:test:2822",
+      "label": "positive",
+      "text_sha256": "a0040865ef37331d2bc18c62c175d7425b2f1c350952cd38a57eccb2ecdaf5cc"
+    },
+    {
+      "id": "tweeteval:test:3196",
+      "label": "positive",
+      "text_sha256": "5e0fc011aab298df6fba816a1e907fe7f9b78ac4586f763016add2d1a8bfb3e3"
+    },
+    {
+      "id": "tweeteval:test:6430",
+      "label": "positive",
+      "text_sha256": "8f83a35c6f7a693535f5e9b710014a6a24483649f8e4f07f70466b44c50026e6"
+    },
+    {
+      "id": "tweeteval:test:5080",
+      "label": "positive",
+      "text_sha256": "f9b5179b2fa97f0a30a92cc4888d38da8f08fb7da3192f42939db6cfaa9e7265"
+    },
+    {
+      "id": "tweeteval:test:8352",
+      "label": "positive",
+      "text_sha256": "1554e088ba4d2c7005f4b91ab24e2361f4d6ebfd61e99339ebe0e9560d4b9219"
+    },
+    {
+      "id": "tweeteval:test:7482",
+      "label": "positive",
+      "text_sha256": "ca3ddf3bf119f7ef7663db22dde6d142aca425ca18fe8feb4f9e5a03081a3041"
+    },
+    {
+      "id": "tweeteval:test:1046",
+      "label": "positive",
+      "text_sha256": "ae81249cc86a4d12452a6fbc7f4d2fcf78332e4219c6adb15eca141870eea4a4"
+    },
+    {
+      "id": "tweeteval:test:5414",
+      "label": "positive",
+      "text_sha256": "0c93b8841d915e8850a9162e5ac466f6502a40642bb34090ffe04072906d5abf"
+    },
+    {
+      "id": "tweeteval:test:3887",
+      "label": "positive",
+      "text_sha256": "cb1d4cd3eb449f02efee28d286e21b7d5ef8e33c496a801ad2606a5b3b7ed7b4"
+    },
+    {
+      "id": "tweeteval:test:9852",
+      "label": "positive",
+      "text_sha256": "8c0f9504c2a1fdbd328ceb624a5408d1aac1b5c09ebb31138acf4aeba86f2e65"
+    },
+    {
+      "id": "tweeteval:test:3048",
+      "label": "positive",
+      "text_sha256": "9752f99b614bbd5e149a9e5a14c795c6a564c0c4c3077ac46d8b69def3be0305"
+    },
+    {
+      "id": "tweeteval:test:7484",
+      "label": "positive",
+      "text_sha256": "107f9a42b5287e332f78936db2611209fa8f81dd463ed1d9dff296b92550234b"
+    },
+    {
+      "id": "tweeteval:test:721",
+      "label": "positive",
+      "text_sha256": "37ed68ff5e744359b48e8d88c0cdfb7936ab96c68e7d4171b4ddee753e9e7ce1"
+    },
+    {
+      "id": "tweeteval:test:7878",
+      "label": "positive",
+      "text_sha256": "230fcceef5d00a30304e5ad0c50c9996e351c17b3ce7b7069a6bd4c125c7a81b"
+    },
+    {
+      "id": "tweeteval:test:9921",
+      "label": "positive",
+      "text_sha256": "bdcc16445807ec8d633d926ec0e5b45312edda0f162a79a570cf54627cc62e1a"
+    },
+    {
+      "id": "tweeteval:test:4050",
+      "label": "positive",
+      "text_sha256": "fd347cf936877dbebb7d679fe82f7ce6e012d4718fc008ccf492fc9e101beb46"
+    },
+    {
+      "id": "tweeteval:test:7993",
+      "label": "positive",
+      "text_sha256": "fb4be9770c2e6186fb42bb01c169035082eb604a8861dff59cdfde0c58c650af"
+    },
+    {
+      "id": "tweeteval:test:10348",
+      "label": "positive",
+      "text_sha256": "b7ece8fecee14e5a0e4ca223254be7f04175b9a390e6ef2c93916efb8859c817"
+    },
+    {
+      "id": "tweeteval:test:5877",
+      "label": "positive",
+      "text_sha256": "7a93b45abe11e8d06aafb6d9369680dd531249988dfafc8167fd231ddbaf5f93"
+    },
+    {
+      "id": "tweeteval:test:11137",
+      "label": "positive",
+      "text_sha256": "f3f0891dd9cc4cd452b42175cb1939eec1f04fec3d05f9f6b8905ffd3d74d75c"
+    },
+    {
+      "id": "tweeteval:test:883",
+      "label": "positive",
+      "text_sha256": "eaaa32c6c325ed88618de9ef61bc5f064789c9281651a9de8bf5d222cd4b82ca"
+    },
+    {
+      "id": "tweeteval:test:11978",
+      "label": "positive",
+      "text_sha256": "934364899d3597b196c18ab7d1075deeb296d3ad2c5f8e893bdc89b047ac332f"
+    },
+    {
+      "id": "tweeteval:test:8527",
+      "label": "positive",
+      "text_sha256": "7ab9ead62589c6e4e13dbf1c03d4c68bbf93766f0a554a28b3a393f675fbd4a8"
+    },
+    {
+      "id": "tweeteval:test:4662",
+      "label": "positive",
+      "text_sha256": "fa4280fbc5732f158e4794d2bee2bba03fb2a69995382db4ea6a2dedf3dc5a6a"
+    },
+    {
+      "id": "tweeteval:test:5618",
+      "label": "positive",
+      "text_sha256": "e5c1de09ec17dfc8451770c87f6a556b1b3339ac10c86053678fa86cea6f47ad"
+    },
+    {
+      "id": "tweeteval:test:7508",
+      "label": "positive",
+      "text_sha256": "b5eac8061b35fa8514a913bfec76bbd94fbf83ac7bf7ead31e56be657bcaa3a4"
+    },
+    {
+      "id": "tweeteval:test:7262",
+      "label": "positive",
+      "text_sha256": "390c69a2ef8fdb8857dd0c338cbde23909d63c3792921c603a7a1d52db337585"
+    },
+    {
+      "id": "tweeteval:test:10807",
+      "label": "positive",
+      "text_sha256": "ac022979c7f73335d2157799f7e10300450592af0319dc877f018ce65f75004e"
+    },
+    {
+      "id": "tweeteval:test:10417",
+      "label": "positive",
+      "text_sha256": "a12eca26c56edfbb7ec4ed990a3b256ec9cc15120706cabe93d285298a7a076f"
+    },
+    {
+      "id": "tweeteval:test:12241",
+      "label": "positive",
+      "text_sha256": "5f56b43239502ee5a63bdbceb6b77360135fa217582d8dd23d672c4d035e22f1"
+    },
+    {
+      "id": "tweeteval:test:2330",
+      "label": "positive",
+      "text_sha256": "eb1058a3d11d22515e3cfa3227d1a2591f9f287d14cd4439776874d0ae873961"
+    },
+    {
+      "id": "tweeteval:test:11790",
+      "label": "positive",
+      "text_sha256": "9a9cd2f60f770a4d529b4b22d49af2f1ae946b78fd70f30435b06e9cfd7064f7"
+    },
+    {
+      "id": "tweeteval:test:7347",
+      "label": "positive",
+      "text_sha256": "791a113eb2b3e9d00c0fc78ff24f0ddbff0c5ed6ae69816e688ff9818ab98315"
+    },
+    {
+      "id": "tweeteval:test:9738",
+      "label": "positive",
+      "text_sha256": "1b1a191415adcd62ca55934d80e56f69818b6d88715a389c7675a7dcab05b31b"
+    },
+    {
+      "id": "tweeteval:test:8993",
+      "label": "positive",
+      "text_sha256": "729cf80c6f66e521d9fc7d536bcc66120246ef1d57135edaacfc53a85ceb9e6a"
+    },
+    {
+      "id": "tweeteval:test:9623",
+      "label": "positive",
+      "text_sha256": "bae7b61c0895beef6ba15192d61eb8f0dcb273d38c16de50afa4c19b6e5885bf"
+    },
+    {
+      "id": "tweeteval:test:8771",
+      "label": "positive",
+      "text_sha256": "1850404ff791c2f61ede6c015fb94476a11adbe625ca20efd4b3a505a767462e"
+    },
+    {
+      "id": "tweeteval:test:4124",
+      "label": "positive",
+      "text_sha256": "e7c8b6aa5650881e5c09dd1241bbabd6730f14008ce84444c7c4c07c5d4cad51"
+    },
+    {
+      "id": "tweeteval:test:4441",
+      "label": "positive",
+      "text_sha256": "a66f7d089abdd75865d997b7ae459c16a59744704ed1377be95c83f722b93aa7"
+    },
+    {
+      "id": "tweeteval:test:8546",
+      "label": "positive",
+      "text_sha256": "a1bcd4a412dc3d572886e38e921a0a808648c227db0c9c7b0d160d5d60eefc0d"
+    },
+    {
+      "id": "tweeteval:test:4219",
+      "label": "positive",
+      "text_sha256": "72e767b0051b24d5cb4802bd18df3cb527b2ef0ae7faf4696bc22745de04e47c"
+    },
+    {
+      "id": "tweeteval:test:4106",
+      "label": "positive",
+      "text_sha256": "aa8328dfaac324bff5ba11324653eb02d88b39bc6985ed222b5d6655edefcd78"
+    },
+    {
+      "id": "tweeteval:test:6555",
+      "label": "positive",
+      "text_sha256": "74c135bdb5541b8b451c88998bcf7a914d062e0210ff468f4c299d9805a8a962"
+    },
+    {
+      "id": "tweeteval:test:5394",
+      "label": "positive",
+      "text_sha256": "374cb2536068807467841929082bc98728ff90bdce9c5ebef9cc2036b2e8f13e"
+    },
+    {
+      "id": "tweeteval:test:5783",
+      "label": "positive",
+      "text_sha256": "b6bc59f6085cc405ebc309448fbbf8cf962e74921bf564ff41229b0127d64840"
+    },
+    {
+      "id": "tweeteval:test:1461",
+      "label": "positive",
+      "text_sha256": "21d4ccf6e98400e4fd06c0641675233c8a07c171f46af765f18348ab13f75f9e"
+    },
+    {
+      "id": "tweeteval:test:11112",
+      "label": "positive",
+      "text_sha256": "33fd799d1b77fae2fc9c4c1fb813345f06516f54649351127c450e1ebfec5d98"
+    },
+    {
+      "id": "tweeteval:test:7797",
+      "label": "positive",
+      "text_sha256": "116d77a3e5c58fd4589451b0286d38d3907f75882a6a8b3f1407372cbebbe70d"
+    },
+    {
+      "id": "tweeteval:test:8650",
+      "label": "positive",
+      "text_sha256": "41ece9f0d932a3fb8ba66372fa00f81d6ccc9a43cbb3cbbd89dd58160767d6d1"
+    },
+    {
+      "id": "tweeteval:test:7621",
+      "label": "positive",
+      "text_sha256": "b2d3eac027afda5caf2f1071677f0348e5101f805e7218bc5b32ce09c6b17dc2"
+    },
+    {
+      "id": "tweeteval:test:2553",
+      "label": "positive",
+      "text_sha256": "a772e8a4a304b9bf0d84841b09aabccbcb4ddf1ab3e0f5865e8202414734459c"
+    },
+    {
+      "id": "tweeteval:test:10476",
+      "label": "positive",
+      "text_sha256": "881878176fcd730a356649f11e6b1f8bbbc7f8970b353eeee9b14b55f2cea931"
+    },
+    {
+      "id": "tweeteval:test:7948",
+      "label": "positive",
+      "text_sha256": "c9f528ae97e648c0e6e61744d5517b8637f9eca6eaca75eb5484783095b78523"
+    },
+    {
+      "id": "tweeteval:test:5893",
+      "label": "positive",
+      "text_sha256": "0360519ae8c3897ac5f740dc525e4fce604f4db76c227f855a005424669a3c15"
+    },
+    {
+      "id": "tweeteval:test:6192",
+      "label": "positive",
+      "text_sha256": "6213325ce85c43fc7018c9a98e30862ad03a53a8e1e2098394c3f3cdda48b467"
+    },
+    {
+      "id": "tweeteval:test:9488",
+      "label": "positive",
+      "text_sha256": "2d9c73258580f91bc8e8030c76b2fabdd9a2a4afe9c911718c7c4c79906659d7"
+    },
+    {
+      "id": "tweeteval:test:7387",
+      "label": "positive",
+      "text_sha256": "4fd60a24a7d2ae3e09db376b890c9da7d865f4e91847097575f50e1ebe541525"
+    },
+    {
+      "id": "tweeteval:test:2889",
+      "label": "positive",
+      "text_sha256": "19db9d276ed2c977df31705ee2a722e717592233a41b3a1dbf880bba5a4e243c"
+    },
+    {
+      "id": "tweeteval:test:10480",
+      "label": "positive",
+      "text_sha256": "034d43bb155b325e5c203560940dd42ec6b315d18fe57dd5a2c3b957a47dad5f"
+    },
+    {
+      "id": "tweeteval:test:1601",
+      "label": "positive",
+      "text_sha256": "c18e6327959d376fa0989afaeeca13e59050466c0bca109ed4a496e36cf6c6b5"
+    },
+    {
+      "id": "tweeteval:test:4224",
+      "label": "positive",
+      "text_sha256": "4d8a9a46d2fef17f13505cb82a1dbefd2dc726570b25cae96bb19c8776fe9f24"
+    },
+    {
+      "id": "tweeteval:test:8506",
+      "label": "positive",
+      "text_sha256": "249b750a9780f30b8e046e1d96c4e6911be15767f68c774847c0b412c6e50c21"
+    },
+    {
+      "id": "tweeteval:test:7143",
+      "label": "positive",
+      "text_sha256": "38a8d727e18912852c12cf6d726e335b87aca56157eac8a79d56408e477666cb"
+    },
+    {
+      "id": "tweeteval:test:108",
+      "label": "positive",
+      "text_sha256": "60710e187f2eee59eb68a24083b29f3b063567d067c2eb21a833d3ba7ad8a757"
+    },
+    {
+      "id": "tweeteval:test:1916",
+      "label": "positive",
+      "text_sha256": "152c6e024d7633c9eeb842e3932a688815f3503630fc147bcb4a2887153e901c"
+    },
+    {
+      "id": "tweeteval:test:7095",
+      "label": "positive",
+      "text_sha256": "23d1a531de164a388b4d02de1f670899e1f74953d5d7f69fdb967f817f99222a"
+    },
+    {
+      "id": "tweeteval:test:1717",
+      "label": "positive",
+      "text_sha256": "db9433e57b7b552ec3b71006b0f1f55e98c658608a898a362cd99b864ec8f1b3"
+    },
+    {
+      "id": "tweeteval:test:3323",
+      "label": "positive",
+      "text_sha256": "00f4242737e873664955e4ea83b8c35e10aeed25527dce14fa2fad4d26c45626"
+    },
+    {
+      "id": "tweeteval:test:11304",
+      "label": "positive",
+      "text_sha256": "f3ed6a28ce463d33ff7b845f3702506ed095ec52944e252060522de92e543d0c"
+    },
+    {
+      "id": "tweeteval:test:10885",
+      "label": "positive",
+      "text_sha256": "468e311c294268380d803556d6b82f47ac2ed646cd88e6c7be4b2ce20456db6c"
+    },
+    {
+      "id": "tweeteval:test:5853",
+      "label": "positive",
+      "text_sha256": "cb2888c7164a035c8c8411f6b384abcd05e610fcd4b06bfc976544319ef58990"
+    },
+    {
+      "id": "tweeteval:test:4832",
+      "label": "positive",
+      "text_sha256": "41b542e12e17f8a3d43a754e1bd7887e486745fcc83c4dd6c198d5252c65c1c2"
+    },
+    {
+      "id": "tweeteval:test:2344",
+      "label": "positive",
+      "text_sha256": "4041a0b06343cf69f54a22f125f490bb62892894e969e8fedfdfd22249a794d8"
+    },
+    {
+      "id": "tweeteval:test:2098",
+      "label": "positive",
+      "text_sha256": "a10031da2a4300296f6724a52ac5572dd80ea07effea284db0b1a233f910eb79"
+    },
+    {
+      "id": "tweeteval:test:194",
+      "label": "positive",
+      "text_sha256": "3aa67ef7a0074784ad24c17a4745edbb5f76271a670397576e9787ac3655a55a"
+    },
+    {
+      "id": "tweeteval:test:11266",
+      "label": "positive",
+      "text_sha256": "f5f47caa2fd77edb70da40c6fd3368698a8584b1290afcd0ef4af35cefa5e5ed"
+    },
+    {
+      "id": "tweeteval:test:11297",
+      "label": "positive",
+      "text_sha256": "b5f32c44bb6962ee3e82d3d196066f9ca769ae8f7cbe46696fb0753b790455b5"
+    },
+    {
+      "id": "tweeteval:test:8883",
+      "label": "positive",
+      "text_sha256": "8e7a5f99f12a73323a8d3fe63a310022b05054521306be10e6d425fc994316ce"
+    },
+    {
+      "id": "tweeteval:test:2442",
+      "label": "positive",
+      "text_sha256": "122edac2c6839fb9230a6a4b7c2660d3ed1e0e77cba06474d0e521f0403da2e9"
+    }
+  ],
+  "protocol_sha256": "581d5bd205a503ad1af64f1fc5517b120f0e0357c796ad9cb92da6b9e7e638b9",
+  "base_protocol_sha256": "82b7c144b38b380220cc64434a8b71e1357025a79201d10a7b7238721180be2c"
+}
