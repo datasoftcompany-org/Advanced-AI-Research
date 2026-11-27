@@ -25,7 +25,7 @@ Primary task outcomes, answers and call-name sequences repeated across rounds. G
 | Model | Primary passes /14 | Correct tool-result evidence /14 | Argument rejections | Median task time, rounds 1 / 2 |
 | --- | ---: | ---: | ---: | ---: |
 | Qwen3 8B, thinking disabled | 13 | 14 | 0 | 2.08 / 2.12 s |
-| Qwen2.5 7B | 4 | 13 | 0 | 1.67 / 1.67 s |
+| Qwen2.5 7B | 4 | 13 | 0 | 1.67 / 1.69 s |
 
 Tool-result evidence counts exact expected intermediate results and tool multiplicities, irrespective of final-answer formatting. Each model respected both explicit no-tool tasks. Neither had a request failure. Qwen3 made 14 calls and Qwen2.5 made 15 per round.
 
