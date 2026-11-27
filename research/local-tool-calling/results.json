@@ -1,0 +1,3020 @@
+{
+  "runtime": {
+    "python": "3.13.4",
+    "architecture": "arm64"
+  },
+  "manifest": {
+    "tasks": "5b691ccc3888a56d786b42583e59ec0bf090ed51e31af7fd5517a1cf810191b9",
+    "protocol": "02ede83d511e73a82313cfda577d447a9f372b654ee6619ecd9802daf9017c3c"
+  },
+  "rounds": [
+    {
+      "order": [
+        "qwen3:8b",
+        "qwen2.5:7b"
+      ],
+      "runs": {
+        "qwen3:8b": {
+          "identity": {
+            "name": "qwen3:8b",
+            "digest": "e4b5fd7f8af048d3c02e0357274238a9e93da51936665599ccb957aa42bfe173",
+            "ollama": "0.40.16"
+          },
+          "correct": 13,
+          "n": 14,
+          "rows": [
+            {
+              "id": "multiply",
+              "answer": 133,
+              "outcome": "completed",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "as1IKbijPG3ZkBcJbkzvqpGxdlVF7HqT",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "multiply",
+                            "left": 19,
+                            "right": 7
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "multiply",
+                    "left": 19,
+                    "right": 7
+                  },
+                  "result": {
+                    "value": 133
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 133}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 7.835382083008881,
+              "correct": true
+            },
+            {
+              "id": "divide",
+              "answer": 12.0,
+              "outcome": "completed",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "zKiWBvdyifNRhj4Nq5LVFzuxyJRJrP3c",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "divide",
+                            "left": 144,
+                            "right": 12
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "divide",
+                    "left": 144,
+                    "right": 12
+                  },
+                  "result": {
+                    "value": 12.0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 12.0}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.13252787500096,
+              "correct": true
+            },
+            {
+              "id": "subtract",
+              "answer": 63,
+              "outcome": "completed",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "UjA5AnuG1WoJhHFxZbTMmVl8OE70MuJF",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "subtract",
+                            "left": 100,
+                            "right": 37
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "subtract",
+                    "left": 100,
+                    "right": 37
+                  },
+                  "result": {
+                    "value": 63
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 63}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.039849000007962,
+              "correct": true
+            },
+            {
+              "id": "decimal",
+              "answer": 6.75,
+              "outcome": "completed",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "xk3a4JAdtGGIEtlg7IpCnc3EkuAAOCuf",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "add",
+                            "left": 4.5,
+                            "right": 2.25
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "add",
+                    "left": 4.5,
+                    "right": 2.25
+                  },
+                  "result": {
+                    "value": 6.75
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 6.75}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.175923333998071,
+              "correct": true
+            },
+            {
+              "id": "stock-one",
+              "answer": 17,
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "YPqhDx6zVxOYPeWOTrvuYdCeI4x8j8qy",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "A100"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "A100"
+                  },
+                  "result": {
+                    "quantity": 17
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 17}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.5120225419959752,
+              "correct": true
+            },
+            {
+              "id": "stock-two",
+              "answer": "0",
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "FFiFP2sX2dfxVNh6qCGUeHcRs37a0OvU",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "B200"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "B200"
+                  },
+                  "result": {
+                    "quantity": 0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": \"0\"}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.463346125005046,
+              "correct": false
+            },
+            {
+              "id": "stock-three",
+              "answer": 42,
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "4K2T6rrsnfZw3UMaMxwHMZRspiP95v69",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "C300"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "C300"
+                  },
+                  "result": {
+                    "quantity": 42
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 42}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.5185762920009438,
+              "correct": true
+            },
+            {
+              "id": "missing",
+              "answer": "unavailable",
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "KybcrGr0I9gAyfrtlgorcZvNKsVRJwkZ",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "X999"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "X999"
+                  },
+                  "result": {
+                    "error": "unknown SKU"
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": \"unavailable\"}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.5118519160023425,
+              "correct": true
+            },
+            {
+              "id": "km-to-m",
+              "answer": 2500.0,
+              "outcome": "completed",
+              "calls": [
+                "distance"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "gqAjxpPgRrCkd1NdF1aF0XeHzhg5XS0D",
+                        "function": {
+                          "index": 0,
+                          "name": "distance",
+                          "arguments": {
+                            "value": 2.5,
+                            "from_unit": "km",
+                            "to_unit": "m"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "distance",
+                  "arguments": {
+                    "value": 2.5,
+                    "from_unit": "km",
+                    "to_unit": "m"
+                  },
+                  "result": {
+                    "value": 2500.0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 2500.0}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.167733207999845,
+              "correct": true
+            },
+            {
+              "id": "m-to-km",
+              "answer": 0.75,
+              "outcome": "completed",
+              "calls": [
+                "distance"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "nmgE2weo1CKvzy3zKQa09u6kAtk0uZ1d",
+                        "function": {
+                          "index": 0,
+                          "name": "distance",
+                          "arguments": {
+                            "value": 750,
+                            "from_unit": "m",
+                            "to_unit": "km"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "distance",
+                  "arguments": {
+                    "value": 750,
+                    "from_unit": "m",
+                    "to_unit": "km"
+                  },
+                  "result": {
+                    "value": 0.75
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 0.75}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.1231237500032876,
+              "correct": true
+            },
+            {
+              "id": "no-tool-number",
+              "answer": 42,
+              "outcome": "completed",
+              "calls": [],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 42}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 0.4288229170051636,
+              "correct": true
+            },
+            {
+              "id": "no-tool-word",
+              "answer": "ready",
+              "outcome": "completed",
+              "calls": [],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": \"ready\"}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 0.3716272080055205,
+              "correct": true
+            },
+            {
+              "id": "stock-minus",
+              "answer": 12,
+              "outcome": "completed",
+              "calls": [
+                "stock",
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "BitMO2G45hBHLk4fGmQvzNdAZOJ0fPcL",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "A100"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "A100"
+                  },
+                  "result": {
+                    "quantity": 17
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "L7dAjmnV8ZYiHizD334VOhxxAi6WAcCX",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "subtract",
+                            "left": 17,
+                            "right": 5
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "subtract",
+                    "left": 17,
+                    "right": 5
+                  },
+                  "result": {
+                    "value": 12
+                  }
+                },
+                {
+                  "turn": 3,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 12}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 3.1543021660036175,
+              "correct": true
+            },
+            {
+              "id": "two-step",
+              "answer": 85,
+              "outcome": "completed",
+              "calls": [
+                "arithmetic",
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "TQm2g3a5zt5u8uLhnygWwCLUpGKXCetU",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "multiply",
+                            "left": 8,
+                            "right": 9
+                          }
+                        }
+                      },
+                      {
+                        "id": "9GVpedIeytGzIkvkqFSEd4OZIrzFZ7fi",
+                        "function": {
+                          "index": 1,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "add",
+                            "left": 72,
+                            "right": 13
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "multiply",
+                    "left": 8,
+                    "right": 9
+                  },
+                  "result": {
+                    "value": 72
+                  }
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "add",
+                    "left": 72,
+                    "right": 13
+                  },
+                  "result": {
+                    "value": 85
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 85}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 3.626096291001886,
+              "correct": true
+            }
+          ]
+        },
+        "qwen2.5:7b": {
+          "identity": {
+            "name": "qwen2.5:7b",
+            "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+            "ollama": "0.40.16"
+          },
+          "correct": 4,
+          "n": 14,
+          "rows": [
+            {
+              "id": "multiply",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_j6fqtdku",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "left": 19,
+                            "operation": "multiply",
+                            "right": 7
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "left": 19,
+                    "operation": "multiply",
+                    "right": 7
+                  },
+                  "result": {
+                    "value": 133
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "133"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 6.353012042003684,
+              "correct": false
+            },
+            {
+              "id": "divide",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_sp35qs4v",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "left": 144,
+                            "operation": "divide",
+                            "right": 12
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "left": 144,
+                    "operation": "divide",
+                    "right": 12
+                  },
+                  "result": {
+                    "value": 12.0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "12.0"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.6940587920107646,
+              "correct": false
+            },
+            {
+              "id": "subtract",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_scb45gni",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "left": 100,
+                            "operation": "subtract",
+                            "right": 37
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "left": 100,
+                    "operation": "subtract",
+                    "right": 37
+                  },
+                  "result": {
+                    "value": 63
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "63"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.6536049169953912,
+              "correct": false
+            },
+            {
+              "id": "decimal",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_e9fswahx",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "left": 4.5,
+                            "operation": "add",
+                            "right": 2.25
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "left": 4.5,
+                    "operation": "add",
+                    "right": 2.25
+                  },
+                  "result": {
+                    "value": 6.75
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "6.75"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.77477341699705,
+              "correct": false
+            },
+            {
+              "id": "stock-one",
+              "answer": 17,
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_tkxjzjpb",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "A100"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "A100"
+                  },
+                  "result": {
+                    "quantity": 17
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 17}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.2530835420038784,
+              "correct": true
+            },
+            {
+              "id": "stock-two",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_44hbrqbm",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "B200"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "B200"
+                  },
+                  "result": {
+                    "quantity": 0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "unavailable"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.0671827079931973,
+              "correct": false
+            },
+            {
+              "id": "stock-three",
+              "answer": 42,
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_gekqdhau",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "C300"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "C300"
+                  },
+                  "result": {
+                    "quantity": 42
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 42}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.2230762079998385,
+              "correct": true
+            },
+            {
+              "id": "missing",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_kzska8tv",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "X999"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "X999"
+                  },
+                  "result": {
+                    "error": "unknown SKU"
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "\"unavailable\""
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.1685648749989923,
+              "correct": false
+            },
+            {
+              "id": "km-to-m",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "distance"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_8d381u6e",
+                        "function": {
+                          "index": 0,
+                          "name": "distance",
+                          "arguments": {
+                            "from_unit": "km",
+                            "to_unit": "m",
+                            "value": 2.5
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "distance",
+                  "arguments": {
+                    "from_unit": "km",
+                    "to_unit": "m",
+                    "value": 2.5
+                  },
+                  "result": {
+                    "value": 2500.0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "2500.0"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.7976954169862438,
+              "correct": false
+            },
+            {
+              "id": "m-to-km",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "distance"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_h1wt9dde",
+                        "function": {
+                          "index": 0,
+                          "name": "distance",
+                          "arguments": {
+                            "to_unit": "km",
+                            "value": 750,
+                            "from_unit": "m"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "distance",
+                  "arguments": {
+                    "to_unit": "km",
+                    "value": 750,
+                    "from_unit": "m"
+                  },
+                  "result": {
+                    "value": 0.75
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "0.75"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.726116917008767,
+              "correct": false
+            },
+            {
+              "id": "no-tool-number",
+              "answer": 42,
+              "outcome": "completed",
+              "calls": [],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 42}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 0.38415050000185147,
+              "correct": true
+            },
+            {
+              "id": "no-tool-word",
+              "answer": "ready",
+              "outcome": "completed",
+              "calls": [],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": \"ready\"}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 0.31604612499359064,
+              "correct": true
+            },
+            {
+              "id": "stock-minus",
+              "answer": 90,
+              "outcome": "completed",
+              "calls": [
+                "stock",
+                "arithmetic",
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_l780nxtd",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "A100"
+                          }
+                        }
+                      },
+                      {
+                        "id": "call_eiiw351m",
+                        "function": {
+                          "index": 1,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "left": 100,
+                            "operation": "subtract",
+                            "right": 5
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "A100"
+                  },
+                  "result": {
+                    "quantity": 17
+                  }
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "left": 100,
+                    "operation": "subtract",
+                    "right": 5
+                  },
+                  "result": {
+                    "value": 95
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_bth693gq",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "left": 95,
+                            "operation": "subtract",
+                            "right": 5
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "left": 95,
+                    "operation": "subtract",
+                    "right": 5
+                  },
+                  "result": {
+                    "value": 90
+                  }
+                },
+                {
+                  "turn": 3,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 90}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 3.774505167006282,
+              "correct": false
+            },
+            {
+              "id": "two-step",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "arithmetic",
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_wziz3a9d",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "multiply",
+                            "left": 8,
+                            "right": 9
+                          }
+                        }
+                      },
+                      {
+                        "id": "call_g2mt0ca5",
+                        "function": {
+                          "index": 1,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "add",
+                            "left": 72,
+                            "right": 13
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "multiply",
+                    "left": 8,
+                    "right": 9
+                  },
+                  "result": {
+                    "value": 72
+                  }
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "add",
+                    "left": 72,
+                    "right": 13
+                  },
+                  "result": {
+                    "value": 85
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "85"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.9722840419999557,
+              "correct": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "order": [
+        "qwen2.5:7b",
+        "qwen3:8b"
+      ],
+      "runs": {
+        "qwen2.5:7b": {
+          "identity": {
+            "name": "qwen2.5:7b",
+            "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+            "ollama": "0.40.16"
+          },
+          "correct": 4,
+          "n": 14,
+          "rows": [
+            {
+              "id": "multiply",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_0iqe27zg",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "left": 19,
+                            "operation": "multiply",
+                            "right": 7
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "left": 19,
+                    "operation": "multiply",
+                    "right": 7
+                  },
+                  "result": {
+                    "value": 133
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "133"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 4.924057374999393,
+              "correct": false
+            },
+            {
+              "id": "divide",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_s5o6vovi",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "right": 12,
+                            "left": 144,
+                            "operation": "divide"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "right": 12,
+                    "left": 144,
+                    "operation": "divide"
+                  },
+                  "result": {
+                    "value": 12.0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "12.0"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.7420974999986356,
+              "correct": false
+            },
+            {
+              "id": "subtract",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_dxr7wp2w",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "right": 37,
+                            "left": 100,
+                            "operation": "subtract"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "right": 37,
+                    "left": 100,
+                    "operation": "subtract"
+                  },
+                  "result": {
+                    "value": 63
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "63"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.6437535419972846,
+              "correct": false
+            },
+            {
+              "id": "decimal",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_qw6u7iad",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "left": 4.5,
+                            "operation": "add",
+                            "right": 2.25
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "left": 4.5,
+                    "operation": "add",
+                    "right": 2.25
+                  },
+                  "result": {
+                    "value": 6.75
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "6.75"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.7950013749941718,
+              "correct": false
+            },
+            {
+              "id": "stock-one",
+              "answer": 17,
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_28wns0aq",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "A100"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "A100"
+                  },
+                  "result": {
+                    "quantity": 17
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 17}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.2630908749997616,
+              "correct": true
+            },
+            {
+              "id": "stock-two",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_2gyoweu4",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "B200"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "B200"
+                  },
+                  "result": {
+                    "quantity": 0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "unavailable"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.0609112919919426,
+              "correct": false
+            },
+            {
+              "id": "stock-three",
+              "answer": 42,
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_8ya1oyom",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "C300"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "C300"
+                  },
+                  "result": {
+                    "quantity": 42
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 42}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.2104964169993764,
+              "correct": true
+            },
+            {
+              "id": "missing",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_lalwzysz",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "X999"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "X999"
+                  },
+                  "result": {
+                    "error": "unknown SKU"
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "\"unavailable\""
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.1657702499942388,
+              "correct": false
+            },
+            {
+              "id": "km-to-m",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "distance"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_7o7btmre",
+                        "function": {
+                          "index": 0,
+                          "name": "distance",
+                          "arguments": {
+                            "from_unit": "km",
+                            "to_unit": "m",
+                            "value": 2.5
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "distance",
+                  "arguments": {
+                    "from_unit": "km",
+                    "to_unit": "m",
+                    "value": 2.5
+                  },
+                  "result": {
+                    "value": 2500.0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "2500.0"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.8017896660021506,
+              "correct": false
+            },
+            {
+              "id": "m-to-km",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "distance"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_4u7qlgfo",
+                        "function": {
+                          "index": 0,
+                          "name": "distance",
+                          "arguments": {
+                            "value": 750,
+                            "from_unit": "m",
+                            "to_unit": "km"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "distance",
+                  "arguments": {
+                    "value": 750,
+                    "from_unit": "m",
+                    "to_unit": "km"
+                  },
+                  "result": {
+                    "value": 0.75
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "0.75"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.736280708006234,
+              "correct": false
+            },
+            {
+              "id": "no-tool-number",
+              "answer": 42,
+              "outcome": "completed",
+              "calls": [],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 42}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 0.3830792090011528,
+              "correct": true
+            },
+            {
+              "id": "no-tool-word",
+              "answer": "ready",
+              "outcome": "completed",
+              "calls": [],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": \"ready\"}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 0.30806537499302067,
+              "correct": true
+            },
+            {
+              "id": "stock-minus",
+              "answer": 90,
+              "outcome": "completed",
+              "calls": [
+                "stock",
+                "arithmetic",
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_xachj2na",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "A100"
+                          }
+                        }
+                      },
+                      {
+                        "id": "call_d06326ge",
+                        "function": {
+                          "index": 1,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "right": 5,
+                            "left": 100,
+                            "operation": "subtract"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "A100"
+                  },
+                  "result": {
+                    "quantity": 17
+                  }
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "right": 5,
+                    "left": 100,
+                    "operation": "subtract"
+                  },
+                  "result": {
+                    "value": 95
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_cficb3ob",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "left": 95,
+                            "operation": "subtract",
+                            "right": 5
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "left": 95,
+                    "operation": "subtract",
+                    "right": 5
+                  },
+                  "result": {
+                    "value": 90
+                  }
+                },
+                {
+                  "turn": 3,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 90}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 3.7597701670019887,
+              "correct": false
+            },
+            {
+              "id": "two-step",
+              "answer": null,
+              "outcome": "invalid_final",
+              "calls": [
+                "arithmetic",
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "call_fbi6qg6d",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "right": 9,
+                            "operation": "multiply",
+                            "left": 8
+                          }
+                        }
+                      },
+                      {
+                        "id": "call_uu0i014b",
+                        "function": {
+                          "index": 1,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "add",
+                            "left": 72,
+                            "right": 13
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "right": 9,
+                    "operation": "multiply",
+                    "left": 8
+                  },
+                  "result": {
+                    "value": 72
+                  }
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "add",
+                    "left": 72,
+                    "right": 13
+                  },
+                  "result": {
+                    "value": 85
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "85"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.956742666006903,
+              "correct": false
+            }
+          ]
+        },
+        "qwen3:8b": {
+          "identity": {
+            "name": "qwen3:8b",
+            "digest": "e4b5fd7f8af048d3c02e0357274238a9e93da51936665599ccb957aa42bfe173",
+            "ollama": "0.40.16"
+          },
+          "correct": 13,
+          "n": 14,
+          "rows": [
+            {
+              "id": "multiply",
+              "answer": 133,
+              "outcome": "completed",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "kqFNjInKAbmu61yK42yDyfTM7wZTVuHA",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "multiply",
+                            "left": 19,
+                            "right": 7
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "multiply",
+                    "left": 19,
+                    "right": 7
+                  },
+                  "result": {
+                    "value": 133
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 133}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 8.408912458995474,
+              "correct": true
+            },
+            {
+              "id": "divide",
+              "answer": 12.0,
+              "outcome": "completed",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "Gbo7MzGHik6a8ovyA7jMM1g1iHARzWzn",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "divide",
+                            "left": 144,
+                            "right": 12
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "divide",
+                    "left": 144,
+                    "right": 12
+                  },
+                  "result": {
+                    "value": 12.0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 12.0}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.1574423339916393,
+              "correct": true
+            },
+            {
+              "id": "subtract",
+              "answer": 63,
+              "outcome": "completed",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "Nu8hdvChUsdjV2L6qP809N4DB7wwGWuv",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "subtract",
+                            "left": 100,
+                            "right": 37
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "subtract",
+                    "left": 100,
+                    "right": 37
+                  },
+                  "result": {
+                    "value": 63
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 63}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.082380916996044,
+              "correct": true
+            },
+            {
+              "id": "decimal",
+              "answer": 6.75,
+              "outcome": "completed",
+              "calls": [
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "I1lqYPK2U4euQbznX6DCPopSHW7nVZgf",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "add",
+                            "left": 4.5,
+                            "right": 2.25
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "add",
+                    "left": 4.5,
+                    "right": 2.25
+                  },
+                  "result": {
+                    "value": 6.75
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 6.75}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.2260723749932367,
+              "correct": true
+            },
+            {
+              "id": "stock-one",
+              "answer": 17,
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "vMXXrDhxslJl3ohkwaDqwz6t0N1omg9W",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "A100"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "A100"
+                  },
+                  "result": {
+                    "quantity": 17
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 17}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.552657916006865,
+              "correct": true
+            },
+            {
+              "id": "stock-two",
+              "answer": "0",
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "M88F9qBJ8PWC6Qe978e3EVLbPs5yrdk2",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "B200"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "B200"
+                  },
+                  "result": {
+                    "quantity": 0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": \"0\"}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.53965474999859,
+              "correct": false
+            },
+            {
+              "id": "stock-three",
+              "answer": 42,
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "wCW7tBSNnnVB19mUtrGXyy4oF003BuSN",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "C300"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "C300"
+                  },
+                  "result": {
+                    "quantity": 42
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 42}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.6038940409926,
+              "correct": true
+            },
+            {
+              "id": "missing",
+              "answer": "unavailable",
+              "outcome": "completed",
+              "calls": [
+                "stock"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "PdrQwMPvsNlsdDv4ylPONx5ZFn5LYmb3",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "X999"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "X999"
+                  },
+                  "result": {
+                    "error": "unknown SKU"
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": \"unavailable\"}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 1.54664616700029,
+              "correct": true
+            },
+            {
+              "id": "km-to-m",
+              "answer": 2500.0,
+              "outcome": "completed",
+              "calls": [
+                "distance"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "nJzFZFSPHpVLKKcHZv4QrrAYlIb8MfNW",
+                        "function": {
+                          "index": 0,
+                          "name": "distance",
+                          "arguments": {
+                            "value": 2.5,
+                            "from_unit": "km",
+                            "to_unit": "m"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "distance",
+                  "arguments": {
+                    "value": 2.5,
+                    "from_unit": "km",
+                    "to_unit": "m"
+                  },
+                  "result": {
+                    "value": 2500.0
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 2500.0}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.2959987920039566,
+              "correct": true
+            },
+            {
+              "id": "m-to-km",
+              "answer": 0.75,
+              "outcome": "completed",
+              "calls": [
+                "distance"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "gA2da1D27gjOxfKq4HRLtxStFyH8TRet",
+                        "function": {
+                          "index": 0,
+                          "name": "distance",
+                          "arguments": {
+                            "value": 750,
+                            "from_unit": "m",
+                            "to_unit": "km"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "distance",
+                  "arguments": {
+                    "value": 750,
+                    "from_unit": "m",
+                    "to_unit": "km"
+                  },
+                  "result": {
+                    "value": 0.75
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 0.75}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 2.6037985420116456,
+              "correct": true
+            },
+            {
+              "id": "no-tool-number",
+              "answer": 42,
+              "outcome": "completed",
+              "calls": [],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 42}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 0.4503472500073258,
+              "correct": true
+            },
+            {
+              "id": "no-tool-word",
+              "answer": "ready",
+              "outcome": "completed",
+              "calls": [],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": \"ready\"}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 0.3526505830086535,
+              "correct": true
+            },
+            {
+              "id": "stock-minus",
+              "answer": 12,
+              "outcome": "completed",
+              "calls": [
+                "stock",
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "owkBYzjaOxlhHqqhh5DYUTiq6nQRvXJH",
+                        "function": {
+                          "index": 0,
+                          "name": "stock",
+                          "arguments": {
+                            "sku": "A100"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "stock",
+                  "arguments": {
+                    "sku": "A100"
+                  },
+                  "result": {
+                    "quantity": 17
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "vl48aEoUl8fXKTqIqxGzTZlVwTJHLxIC",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "subtract",
+                            "left": 17,
+                            "right": 5
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "subtract",
+                    "left": 17,
+                    "right": 5
+                  },
+                  "result": {
+                    "value": 12
+                  }
+                },
+                {
+                  "turn": 3,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 12}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 3.3993830409890506,
+              "correct": true
+            },
+            {
+              "id": "two-step",
+              "answer": 85,
+              "outcome": "completed",
+              "calls": [
+                "arithmetic",
+                "arithmetic"
+              ],
+              "rejected": 0,
+              "trace": [
+                {
+                  "turn": 1,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "",
+                    "tool_calls": [
+                      {
+                        "id": "ConsHekADTFj7FMZVToLUQU1zMcZRsYC",
+                        "function": {
+                          "index": 0,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "multiply",
+                            "left": 8,
+                            "right": 9
+                          }
+                        }
+                      },
+                      {
+                        "id": "2JYQLRXEp3uXmgUgzLnSlY8CGeFOx1Y9",
+                        "function": {
+                          "index": 1,
+                          "name": "arithmetic",
+                          "arguments": {
+                            "operation": "add",
+                            "left": 72,
+                            "right": 13
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "done": true
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "multiply",
+                    "left": 8,
+                    "right": 9
+                  },
+                  "result": {
+                    "value": 72
+                  }
+                },
+                {
+                  "tool": "arithmetic",
+                  "arguments": {
+                    "operation": "add",
+                    "left": 72,
+                    "right": 13
+                  },
+                  "result": {
+                    "value": 85
+                  }
+                },
+                {
+                  "turn": 2,
+                  "assistant": {
+                    "role": "assistant",
+                    "content": "{\"answer\": 85}"
+                  },
+                  "done": true
+                }
+              ],
+              "seconds": 3.8357593749969965,
+              "correct": true
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "changed_results": {
+    "qwen3:8b": [],
+    "qwen2.5:7b": []
+  }
+}

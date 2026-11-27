@@ -1,0 +1,180 @@
+[
+  {
+    "id": "multiply",
+    "prompt": "Use the calculator to multiply 19 by 7. Return the numeric result.",
+    "expected": 133,
+    "required_tools": [
+      "arithmetic"
+    ],
+    "expected_tool_results": [
+      {
+        "value": 133
+      }
+    ]
+  },
+  {
+    "id": "divide",
+    "prompt": "Use the calculator to divide 144 by 12. Return the numeric result.",
+    "expected": 12,
+    "required_tools": [
+      "arithmetic"
+    ],
+    "expected_tool_results": [
+      {
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "subtract",
+    "prompt": "Use the calculator to subtract 37 from 100. Return the numeric result.",
+    "expected": 63,
+    "required_tools": [
+      "arithmetic"
+    ],
+    "expected_tool_results": [
+      {
+        "value": 63
+      }
+    ]
+  },
+  {
+    "id": "decimal",
+    "prompt": "Use the calculator to add 4.5 and 2.25. Return the numeric result.",
+    "expected": 6.75,
+    "required_tools": [
+      "arithmetic"
+    ],
+    "expected_tool_results": [
+      {
+        "value": 6.75
+      }
+    ]
+  },
+  {
+    "id": "stock-one",
+    "prompt": "Look up the available quantity of item A100. Return its quantity.",
+    "expected": 17,
+    "required_tools": [
+      "stock"
+    ],
+    "expected_tool_results": [
+      {
+        "quantity": 17
+      }
+    ]
+  },
+  {
+    "id": "stock-two",
+    "prompt": "Look up the available quantity of item B200. Return its quantity.",
+    "expected": 0,
+    "required_tools": [
+      "stock"
+    ],
+    "expected_tool_results": [
+      {
+        "quantity": 0
+      }
+    ]
+  },
+  {
+    "id": "stock-three",
+    "prompt": "Look up the available quantity of item C300. Return its quantity.",
+    "expected": 42,
+    "required_tools": [
+      "stock"
+    ],
+    "expected_tool_results": [
+      {
+        "quantity": 42
+      }
+    ]
+  },
+  {
+    "id": "missing",
+    "prompt": "Look up item X999. If the tool says it is unknown, return the string unavailable.",
+    "expected": "unavailable",
+    "required_tools": [
+      "stock"
+    ],
+    "expected_tool_results": [
+      {
+        "error": "unknown SKU"
+      }
+    ]
+  },
+  {
+    "id": "km-to-m",
+    "prompt": "Use the conversion tool to convert 2.5 kilometers to meters. Return the numeric value.",
+    "expected": 2500,
+    "required_tools": [
+      "distance"
+    ],
+    "expected_tool_results": [
+      {
+        "value": 2500
+      }
+    ]
+  },
+  {
+    "id": "m-to-km",
+    "prompt": "Use the conversion tool to convert 750 meters to kilometers. Return the numeric value.",
+    "expected": 0.75,
+    "required_tools": [
+      "distance"
+    ],
+    "expected_tool_results": [
+      {
+        "value": 0.75
+      }
+    ]
+  },
+  {
+    "id": "no-tool-number",
+    "prompt": "Without using any tools, return the number 42 from this message.",
+    "expected": 42,
+    "required_tools": [],
+    "expected_tool_results": []
+  },
+  {
+    "id": "no-tool-word",
+    "prompt": "Without using any tools, return the string ready from this message.",
+    "expected": "ready",
+    "required_tools": [],
+    "expected_tool_results": []
+  },
+  {
+    "id": "stock-minus",
+    "prompt": "Look up the quantity of A100, then use the calculator to subtract 5. Return the remaining quantity.",
+    "expected": 12,
+    "required_tools": [
+      "stock",
+      "arithmetic"
+    ],
+    "expected_tool_results": [
+      {
+        "quantity": 17
+      },
+      {
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "two-step",
+    "prompt": "Use the calculator to multiply 8 by 9, then use it again to add 13 to that result. Return the final number.",
+    "expected": 85,
+    "required_tools": [
+      "arithmetic",
+      "arithmetic"
+    ],
+    "expected_tool_results": [
+      {
+        "value": 72
+      },
+      {
+        "value": 85
+      }
+    ]
+  }
+]
