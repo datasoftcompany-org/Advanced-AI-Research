@@ -72,6 +72,10 @@ Researchers, engineers, and organizations are welcome to review the public work,
 - Project-specific code, data, and reports will be linked or added when they are ready for public release.
 
 
+## Local sentiment tool
+
+Use the [local sentiment tool](tools/sentiment/README.md) to classify a short English review or a CSV file with a locally installed Ollama model and export the results.
+
 ## GitHub workflow
 
 Start from a clean working tree. Update the local default branch and create a branch for the work.
