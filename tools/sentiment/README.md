@@ -1,6 +1,6 @@
 # Local sentiment tool
 
-Classify short English reviews using a locally installed Ollama model. This command-line release uses the direct prompt and generation settings selected in the [final research report](../../research/FINAL_REPORT.md).
+Classify short English reviews using a locally installed Ollama model. This local v0.1 release uses the direct prompt and generation settings selected in the [final research report](../../research/FINAL_REPORT.md).
 
 ## Browser interface
 
@@ -57,3 +57,7 @@ Validation covered real requests with both models and a batch with positive, neg
 ```sh
 python3 -B -m unittest discover -s tools/sentiment -v
 ```
+
+## Local v0.1 acceptance
+
+The [authored acceptance check](acceptance/README.md) covers 60 English reviews plus three empty-input cases through the browser interface with both models. It includes the reusable fixture, reference labels, exported predictions and reproduction steps.
