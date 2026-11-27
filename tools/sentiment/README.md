@@ -2,6 +2,20 @@
 
 Classify short English reviews using a locally installed Ollama model. This command-line release uses the direct prompt and generation settings selected in the [final research report](../../research/FINAL_REPORT.md).
 
+## Browser interface
+
+Start Ollama, then run from the repository root:
+
+```sh
+python3 tools/sentiment/serve.py
+```
+
+Open `http://127.0.0.1:8765`. The Arabic interface supports English review text, CSV upload with a configurable column, model selection, row-by-row progress and CSV download. It reuses the repository's colored glass card styling.
+
+The server binds to the loopback address and runs one classification at a time. Uploaded content is processed in memory; the app writes no uploaded files or results to disk. Download saves the CSV through the browser. Requests are limited to 10 MiB including JSON encoding. The interface reports incomplete or invalid rows and only enables results after model identity verification. Closing the tab can interrupt the request; rerun the batch after the active request finishes.
+
+Keep the terminal running while using the interface. Press Ctrl+C to stop it. Use `--port 8766` if the default port is occupied. The terminal prints the corresponding URL.
+
 ## Run
 
 Use Python 3.13, start Ollama, and have either `llama3.2:3b` or `qwen2.5:7b` installed locally. No extra Python packages are required. From the repository root:

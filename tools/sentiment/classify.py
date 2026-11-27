@@ -21,22 +21,26 @@ def load_texts(args):
             raise ValueError("Enter a non-empty English review.")
         return [args.text]
     with args.csv.open(encoding="utf-8-sig", newline="") as stream:
-        reader = csv.DictReader(stream)
-        if not reader.fieldnames or args.column not in reader.fieldnames:
-            raise ValueError(f"CSV must contain column {args.column!r}.")
-        if len(reader.fieldnames) != len(set(reader.fieldnames)):
-            raise ValueError("CSV contains duplicate column names.")
-        texts = []
-        for row in reader:
-            if None in row or row[args.column] is None:
-                raise ValueError("CSV contains a row with missing or extra cells.")
-            texts.append(row[args.column])
+        return read_csv(stream, args.column)
+
+
+def read_csv(stream, column):
+    reader = csv.DictReader(stream)
+    if not reader.fieldnames or column not in reader.fieldnames:
+        raise ValueError(f"CSV must contain column {column!r}.")
+    if len(reader.fieldnames) != len(set(reader.fieldnames)):
+        raise ValueError("CSV contains duplicate column names.")
+    texts = []
+    for row in reader:
+        if None in row or row[column] is None:
+            raise ValueError("CSV contains a row with missing or extra cells.")
+        texts.append(row[column])
     if not texts:
         raise ValueError("CSV contains no data rows.")
     return texts
 
 
-def classify(texts, settings):
+def classify(texts, settings, progress=None):
     identity = model_identity(settings)
     rows = []
     for index, text in enumerate(texts, 1):
@@ -47,6 +51,8 @@ def classify(texts, settings):
             "status": "ok" if valid else answer, "model": identity["name"],
             "model_digest": identity["digest"], "ollama_version": identity["ollama"],
         })
+        if progress:
+            progress(index, len(texts))
     if model_identity(settings) != identity:
         raise ValueError("Model or Ollama version changed during classification. Retry the batch.")
     return rows
@@ -57,18 +63,23 @@ def spreadsheet_safe(value):
     return "'" + text if text.lstrip().startswith(("=", "+", "-", "@")) else text
 
 
-def export_csv(rows, output):
-    """Publish a complete export without replacing an existing destination."""
-    if not output.parent.is_dir():
-        raise ValueError("Output directory does not exist.")
+def csv_text(rows):
     buffer = io.StringIO(newline="")
     writer = csv.DictWriter(buffer, fieldnames=FIELDS)
     writer.writeheader()
     writer.writerows({key: spreadsheet_safe(value) for key, value in row.items()} for row in rows)
+    return buffer.getvalue()
+
+
+def export_csv(rows, output):
+    """Write a complete export without replacing an existing destination."""
+    if not output.parent.is_dir():
+        raise ValueError("Output directory does not exist.")
+    content = csv_text(rows)
     # Exclusive creation also works on the shared exFAT archive disk.
     with output.open("x", encoding="utf-8", newline="") as stream:
         try:
-            stream.write(buffer.getvalue())
+            stream.write(content)
             stream.flush()
         except OSError:
             output.unlink()
