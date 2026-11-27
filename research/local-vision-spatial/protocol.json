@@ -1,0 +1,15 @@
+{
+  "models": [
+    "qwen2.5vl:7b",
+    "gemma3:4b"
+  ],
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 128
+  },
+  "question_prefix": "Answer the question using only the visible image. Reply with exactly one lowercase word: yes or no. Question: ",
+  "description_prompt": "Describe the visible objects and their relative positions in this image in at most three English sentences. State uncertainty when details are unclear.",
+  "scope": "Small author-annotated pilot on four CC0 still-life images, three paintings and one photograph. Image padding is outside the depicted scene."
+}

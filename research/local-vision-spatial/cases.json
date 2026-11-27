@@ -1,0 +1,146 @@
+[
+  {
+    "id": "tableware:1",
+    "image": "tableware",
+    "question": "Is the cut lemon to the left of the drinking glass?",
+    "reference": "yes"
+  },
+  {
+    "id": "tableware:2",
+    "image": "tableware",
+    "question": "Is the brown pitcher behind the dark plate?",
+    "reference": "yes"
+  },
+  {
+    "id": "tableware:3",
+    "image": "tableware",
+    "question": "Is the large piece of cheese to the right of the drinking glass?",
+    "reference": "yes"
+  },
+  {
+    "id": "tableware:4",
+    "image": "tableware",
+    "question": "Is the brown pitcher to the right of the drinking glass?",
+    "reference": "no"
+  },
+  {
+    "id": "tableware:5",
+    "image": "tableware",
+    "question": "Is the dark plate above the drinking glass?",
+    "reference": "no"
+  },
+  {
+    "id": "tableware:6",
+    "image": "tableware",
+    "question": "Is a red car visible?",
+    "reference": "no"
+  },
+  {
+    "id": "jar-apples:1",
+    "image": "jar-apples",
+    "question": "Is the green jar to the left of the cup?",
+    "reference": "yes"
+  },
+  {
+    "id": "jar-apples:2",
+    "image": "jar-apples",
+    "question": "Are some apples below the cup?",
+    "reference": "yes"
+  },
+  {
+    "id": "jar-apples:3",
+    "image": "jar-apples",
+    "question": "Is a white cloth underneath the fruit?",
+    "reference": "yes"
+  },
+  {
+    "id": "jar-apples:4",
+    "image": "jar-apples",
+    "question": "Is the cup to the left of the green jar?",
+    "reference": "no"
+  },
+  {
+    "id": "jar-apples:5",
+    "image": "jar-apples",
+    "question": "Are the apples above the cup?",
+    "reference": "no"
+  },
+  {
+    "id": "jar-apples:6",
+    "image": "jar-apples",
+    "question": "Is a red car visible?",
+    "reference": "no"
+  },
+  {
+    "id": "books:1",
+    "image": "books",
+    "question": "Is the open book on the left side of the picture?",
+    "reference": "yes"
+  },
+  {
+    "id": "books:2",
+    "image": "books",
+    "question": "Are some books stacked horizontally?",
+    "reference": "yes"
+  },
+  {
+    "id": "books:3",
+    "image": "books",
+    "question": "Is a large rounded backdrop behind the books?",
+    "reference": "yes"
+  },
+  {
+    "id": "books:4",
+    "image": "books",
+    "question": "Is the open book on the right side of the picture?",
+    "reference": "no"
+  },
+  {
+    "id": "books:5",
+    "image": "books",
+    "question": "Is a bowl of fruit visible?",
+    "reference": "no"
+  },
+  {
+    "id": "books:6",
+    "image": "books",
+    "question": "Is a red car visible?",
+    "reference": "no"
+  },
+  {
+    "id": "strawberries:1",
+    "image": "strawberries",
+    "question": "Is the bowl of red fruit above the asparagus?",
+    "reference": "yes"
+  },
+  {
+    "id": "strawberries:2",
+    "image": "strawberries",
+    "question": "Are the large pink flowers to the left of the fruit bowl?",
+    "reference": "yes"
+  },
+  {
+    "id": "strawberries:3",
+    "image": "strawberries",
+    "question": "Is a table underneath the displayed objects?",
+    "reference": "yes"
+  },
+  {
+    "id": "strawberries:4",
+    "image": "strawberries",
+    "question": "Is the fruit bowl below the asparagus?",
+    "reference": "no"
+  },
+  {
+    "id": "strawberries:5",
+    "image": "strawberries",
+    "question": "Are the large pink flowers to the right of the fruit bowl?",
+    "reference": "no"
+  },
+  {
+    "id": "strawberries:6",
+    "image": "strawberries",
+    "question": "Is a red car visible?",
+    "reference": "no"
+  }
+]
