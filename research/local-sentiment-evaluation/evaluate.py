@@ -101,7 +101,7 @@ def request(path, timeout, body=None):
     return result
 
 
-def predict(text, protocol):
+def predict(text, protocol, labels=LABELS):
     try:
         result = request("/api/generate", protocol["timeout_seconds"], {
             "model": protocol["model"],
@@ -115,7 +115,7 @@ def predict(text, protocol):
     except (OSError, ValueError, urllib.error.URLError):
         return "failure"
     answer = result["response"].strip()
-    return answer if answer in LABELS else "invalid"
+    return answer if answer in labels else "invalid"
 
 
 def model_identity(protocol):
