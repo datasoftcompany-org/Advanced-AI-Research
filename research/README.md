@@ -25,3 +25,6 @@ Keep credentials, private datasets, unpublished material, large model weights, a
 - [Stage 1 — Independent-source binary sentiment validation](independent-source-validation/README.md)
 - [Stage 2 — Neutrality, ambiguity and human-review deferral](uncertain-sentiment-evaluation/README.md)
 - [Stage 3 — Sentiment stability under meaning-preserving edits](sentiment-stability/README.md)
+- [Stage 4 — Local quality, latency and allocation tradeoffs](local-resource-tradeoffs/README.md)
+
+[Four-stage series report and operational recommendation](NEW_SERIES_REPORT.md)

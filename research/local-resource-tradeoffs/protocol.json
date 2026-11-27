@@ -1,0 +1,7 @@
+{
+  "models": ["llama3.2:3b", "qwen2.5:7b"],
+  "contexts": [1024, 2048],
+  "warmup": "I enjoyed this experience and would happily repeat it.",
+  "scope": "Resource comparison on 60 authored acceptance reviews and 24 spelling variants already evaluated. Source label decisions are fixed. Reversed rounds; no prompt tuning.",
+  "memory_measure": "Ollama /api/ps size and size_vram sampled after warm-up and after every scored request; maximum reported values, with no inference about total process RAM or instantaneous peaks."
+}
