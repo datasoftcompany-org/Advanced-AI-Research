@@ -1,0 +1,1295 @@
+{
+  "runtime": {
+    "python": "3.13.4",
+    "architecture": "arm64"
+  },
+  "ui": {
+    "evidence": [
+      {
+        "model": "llama3.2:3b",
+        "rows": 63,
+        "progressUpdates": 63,
+        "download": true
+      },
+      {
+        "model": "qwen2.5:7b",
+        "rows": 63,
+        "progressUpdates": 63,
+        "download": true
+      }
+    ],
+    "mobileWidth": 320,
+    "errorRecovery": true,
+    "pageErrors": []
+  },
+  "models": {
+    "llama": {
+      "summary": {
+        "model": "llama3.2:3b",
+        "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+        "ollama_version": "0.40.16",
+        "input_sha256": "776ff87866ea439dede883c752e6d02775f8ba4ee70f19df8c892f173687ffdd",
+        "reference_sha256": "25dba1641d64b78c4ad909f7c4712469e4c1ed5fb3302984190c56142c909379",
+        "rows": 63,
+        "status_counts": {
+          "ok": 60,
+          "empty": 3
+        },
+        "review_correct": 56,
+        "review_total": 60,
+        "categories": {
+          "plain": {
+            "passed": 11,
+            "total": 12
+          },
+          "negation": {
+            "passed": 11,
+            "total": 12
+          },
+          "mixed": {
+            "passed": 12,
+            "total": 12
+          },
+          "implicit": {
+            "passed": 10,
+            "total": 12
+          },
+          "csv_format": {
+            "passed": 12,
+            "total": 12
+          },
+          "empty": {
+            "passed": 3,
+            "total": 3
+          }
+        },
+        "errors": [
+          {
+            "row": 4,
+            "category": "plain",
+            "expected": "positive",
+            "actual": "negative",
+            "status": "ok"
+          },
+          {
+            "row": 17,
+            "category": "negation",
+            "expected": "positive",
+            "actual": "negative",
+            "status": "ok"
+          },
+          {
+            "row": 37,
+            "category": "implicit",
+            "expected": "positive",
+            "actual": "negative",
+            "status": "ok"
+          },
+          {
+            "row": 38,
+            "category": "implicit",
+            "expected": "positive",
+            "actual": "negative",
+            "status": "ok"
+          }
+        ]
+      },
+      "rows": [
+        {
+          "row": "1",
+          "text": "The headphones sound clear and fit comfortably.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "2",
+          "text": "This notebook opens quickly and runs every app I need.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "3",
+          "text": "The soup arrived hot and tasted delicious.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "4",
+          "text": "The documentary kept me interested until the final scene.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "5",
+          "text": "The courier handled my parcel carefully and arrived on time.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "6",
+          "text": "The hotel room was clean, quiet, and comfortable.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "7",
+          "text": "The headphones buzz constantly and hurt my ears.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "8",
+          "text": "This notebook freezes whenever I open a document.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "9",
+          "text": "The soup arrived cold and tasted burnt.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "10",
+          "text": "The documentary was tedious from beginning to end.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "11",
+          "text": "The courier broke my parcel and delivered it late.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "12",
+          "text": "The hotel room was filthy and impossible to sleep in.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "13",
+          "text": "I cannot find anything to dislike about this keyboard.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "14",
+          "text": "The meal was not disappointing in the slightest.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "15",
+          "text": "I never regretted choosing this hotel.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "16",
+          "text": "There was nothing wrong with the replacement screen.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "17",
+          "text": "The film did not waste a minute of my time.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "18",
+          "text": "I have no reason to complain about this repair.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "19",
+          "text": "I cannot recommend this keyboard to anyone.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "20",
+          "text": "The meal was not worth the wait.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "21",
+          "text": "I will never book this hotel again.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "22",
+          "text": "There was nothing useful about the replacement screen.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "23",
+          "text": "The film did not give me any reason to keep watching.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "24",
+          "text": "I have no intention of using this repair service again.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "25",
+          "text": "The packaging was plain, but the speaker sounds wonderful.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "26",
+          "text": "The queue was long, yet the meal was worth every minute.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "27",
+          "text": "The opening was slow, but the ending made this film a favorite.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "28",
+          "text": "The room was small, but its comfort makes me eager to return.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "29",
+          "text": "The app looks dated, but it does everything reliably and I love it.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "30",
+          "text": "The delivery was late, but the seller resolved it so well that I recommend them.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "31",
+          "text": "The packaging was beautiful, but the speaker never worked.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "32",
+          "text": "The waiter was friendly, yet the food was inedible.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "33",
+          "text": "The opening was exciting, but the film became a complete disappointment.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "34",
+          "text": "The room was spacious, but the noise ruined my stay.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "35",
+          "text": "The app looks beautiful, but its constant crashes make it unusable.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "36",
+          "text": "The delivery was fast, but the broken item left me deeply dissatisfied.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "37",
+          "text": "I ordered a second pair before the first week was over.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "38",
+          "text": "We asked for the recipe before leaving the restaurant.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "39",
+          "text": "I have already booked the same room for our next trip.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "40",
+          "text": "The credits rolled and I immediately wanted to watch it again.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "41",
+          "text": "I keep recommending this camera to my friends.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "42",
+          "text": "We bought another copy of the game so our friends could join us.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "43",
+          "text": "The new charger went straight back into its box for a refund.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "44",
+          "text": "We left the restaurant and bought dinner elsewhere.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "45",
+          "text": "We checked out early and found another hotel.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "46",
+          "text": "I spent most of the film checking how much time was left.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "47",
+          "text": "This camera has spent more time being repaired than taking pictures.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "48",
+          "text": "We uninstalled the game before finishing the tutorial.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "49",
+          "text": "The clerk said, \"We will fix it,\" and delivered an excellent repair.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "50",
+          "text": "The first course was good.\nThe dessert was even better.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "51",
+          "text": "Fast, friendly, and accurate: this service earns my recommendation.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "52",
+          "text": "Five stars! The replacement works perfectly.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "53",
+          "text": "The chair is comfortable; I would buy it again.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "54",
+          "text": "I am delighted with the \"compact\" model.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "55",
+          "text": "The clerk said, \"It works,\" but the device was completely dead.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "56",
+          "text": "The first course was cold.\nThe dessert was stale.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "57",
+          "text": "Slow, rude, and inaccurate: this service was a waste of money.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "58",
+          "text": "One star! The replacement failed immediately.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "59",
+          "text": "The chair is painful to use; I want a refund.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "60",
+          "text": "I am disappointed with the \"premium\" model.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "61",
+          "text": "",
+          "sentiment": "",
+          "status": "empty",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "62",
+          "text": "   ",
+          "sentiment": "",
+          "status": "empty",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "63",
+          "text": "\n",
+          "sentiment": "",
+          "status": "empty",
+          "model": "llama3.2:3b",
+          "model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+          "ollama_version": "0.40.16"
+        }
+      ]
+    },
+    "qwen": {
+      "summary": {
+        "model": "qwen2.5:7b",
+        "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "ollama_version": "0.40.16",
+        "input_sha256": "776ff87866ea439dede883c752e6d02775f8ba4ee70f19df8c892f173687ffdd",
+        "reference_sha256": "25dba1641d64b78c4ad909f7c4712469e4c1ed5fb3302984190c56142c909379",
+        "rows": 63,
+        "status_counts": {
+          "ok": 60,
+          "empty": 3
+        },
+        "review_correct": 58,
+        "review_total": 60,
+        "categories": {
+          "plain": {
+            "passed": 12,
+            "total": 12
+          },
+          "negation": {
+            "passed": 11,
+            "total": 12
+          },
+          "mixed": {
+            "passed": 12,
+            "total": 12
+          },
+          "implicit": {
+            "passed": 11,
+            "total": 12
+          },
+          "csv_format": {
+            "passed": 12,
+            "total": 12
+          },
+          "empty": {
+            "passed": 3,
+            "total": 3
+          }
+        },
+        "errors": [
+          {
+            "row": 17,
+            "category": "negation",
+            "expected": "positive",
+            "actual": "negative",
+            "status": "ok"
+          },
+          {
+            "row": 38,
+            "category": "implicit",
+            "expected": "positive",
+            "actual": "negative",
+            "status": "ok"
+          }
+        ]
+      },
+      "rows": [
+        {
+          "row": "1",
+          "text": "The headphones sound clear and fit comfortably.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "2",
+          "text": "This notebook opens quickly and runs every app I need.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "3",
+          "text": "The soup arrived hot and tasted delicious.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "4",
+          "text": "The documentary kept me interested until the final scene.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "5",
+          "text": "The courier handled my parcel carefully and arrived on time.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "6",
+          "text": "The hotel room was clean, quiet, and comfortable.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "7",
+          "text": "The headphones buzz constantly and hurt my ears.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "8",
+          "text": "This notebook freezes whenever I open a document.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "9",
+          "text": "The soup arrived cold and tasted burnt.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "10",
+          "text": "The documentary was tedious from beginning to end.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "11",
+          "text": "The courier broke my parcel and delivered it late.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "12",
+          "text": "The hotel room was filthy and impossible to sleep in.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "13",
+          "text": "I cannot find anything to dislike about this keyboard.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "14",
+          "text": "The meal was not disappointing in the slightest.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "15",
+          "text": "I never regretted choosing this hotel.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "16",
+          "text": "There was nothing wrong with the replacement screen.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "17",
+          "text": "The film did not waste a minute of my time.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "18",
+          "text": "I have no reason to complain about this repair.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "19",
+          "text": "I cannot recommend this keyboard to anyone.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "20",
+          "text": "The meal was not worth the wait.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "21",
+          "text": "I will never book this hotel again.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "22",
+          "text": "There was nothing useful about the replacement screen.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "23",
+          "text": "The film did not give me any reason to keep watching.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "24",
+          "text": "I have no intention of using this repair service again.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "25",
+          "text": "The packaging was plain, but the speaker sounds wonderful.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "26",
+          "text": "The queue was long, yet the meal was worth every minute.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "27",
+          "text": "The opening was slow, but the ending made this film a favorite.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "28",
+          "text": "The room was small, but its comfort makes me eager to return.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "29",
+          "text": "The app looks dated, but it does everything reliably and I love it.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "30",
+          "text": "The delivery was late, but the seller resolved it so well that I recommend them.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "31",
+          "text": "The packaging was beautiful, but the speaker never worked.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "32",
+          "text": "The waiter was friendly, yet the food was inedible.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "33",
+          "text": "The opening was exciting, but the film became a complete disappointment.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "34",
+          "text": "The room was spacious, but the noise ruined my stay.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "35",
+          "text": "The app looks beautiful, but its constant crashes make it unusable.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "36",
+          "text": "The delivery was fast, but the broken item left me deeply dissatisfied.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "37",
+          "text": "I ordered a second pair before the first week was over.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "38",
+          "text": "We asked for the recipe before leaving the restaurant.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "39",
+          "text": "I have already booked the same room for our next trip.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "40",
+          "text": "The credits rolled and I immediately wanted to watch it again.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "41",
+          "text": "I keep recommending this camera to my friends.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "42",
+          "text": "We bought another copy of the game so our friends could join us.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "43",
+          "text": "The new charger went straight back into its box for a refund.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "44",
+          "text": "We left the restaurant and bought dinner elsewhere.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "45",
+          "text": "We checked out early and found another hotel.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "46",
+          "text": "I spent most of the film checking how much time was left.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "47",
+          "text": "This camera has spent more time being repaired than taking pictures.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "48",
+          "text": "We uninstalled the game before finishing the tutorial.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "49",
+          "text": "The clerk said, \"We will fix it,\" and delivered an excellent repair.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "50",
+          "text": "The first course was good.\nThe dessert was even better.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "51",
+          "text": "Fast, friendly, and accurate: this service earns my recommendation.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "52",
+          "text": "Five stars! The replacement works perfectly.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "53",
+          "text": "The chair is comfortable; I would buy it again.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "54",
+          "text": "I am delighted with the \"compact\" model.",
+          "sentiment": "positive",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "55",
+          "text": "The clerk said, \"It works,\" but the device was completely dead.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "56",
+          "text": "The first course was cold.\nThe dessert was stale.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "57",
+          "text": "Slow, rude, and inaccurate: this service was a waste of money.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "58",
+          "text": "One star! The replacement failed immediately.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "59",
+          "text": "The chair is painful to use; I want a refund.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "60",
+          "text": "I am disappointed with the \"premium\" model.",
+          "sentiment": "negative",
+          "status": "ok",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "61",
+          "text": "",
+          "sentiment": "",
+          "status": "empty",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "62",
+          "text": "   ",
+          "sentiment": "",
+          "status": "empty",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        },
+        {
+          "row": "63",
+          "text": "\n",
+          "sentiment": "",
+          "status": "empty",
+          "model": "qwen2.5:7b",
+          "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+          "ollama_version": "0.40.16"
+        }
+      ]
+    }
+  }
+}
