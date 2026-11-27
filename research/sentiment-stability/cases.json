@@ -1,0 +1,242 @@
+[
+  {
+    "id": "review:01",
+    "label": "positive",
+    "original": "The meal was delicious and I would return.",
+    "variants": {
+      "paraphrase": "I would come back because the food tasted wonderful.",
+      "typo": "The meal was deliciuos and I would return.",
+      "punctuation": "The meal was delicious and I would return!"
+    }
+  },
+  {
+    "id": "review:02",
+    "label": "positive",
+    "original": "The camera takes sharp photos and I love it.",
+    "variants": {
+      "paraphrase": "I love the camera because its pictures are clear.",
+      "typo": "The camera takes sharp photos and I lvoe it.",
+      "punctuation": "The camera takes sharp photos and I love it!"
+    }
+  },
+  {
+    "id": "review:03",
+    "label": "positive",
+    "original": "The staff were helpful and made my visit enjoyable.",
+    "variants": {
+      "paraphrase": "Helpful employees made this a pleasant visit.",
+      "typo": "The staff were helpfull and made my visit enjoyable.",
+      "punctuation": "The staff were helpful and made my visit enjoyable!"
+    }
+  },
+  {
+    "id": "review:04",
+    "label": "positive",
+    "original": "The film kept me interested until the end.",
+    "variants": {
+      "paraphrase": "I stayed engaged throughout the movie.",
+      "typo": "The film kept me intrested until the end.",
+      "punctuation": "The film kept me interested until the end!"
+    }
+  },
+  {
+    "id": "review:05",
+    "label": "positive",
+    "original": "The keyboard is comfortable and reliable.",
+    "variants": {
+      "paraphrase": "Typing is comfortable and the keyboard works dependably.",
+      "typo": "The keybaord is comfortable and reliable.",
+      "punctuation": "The keyboard is comfortable and reliable!"
+    }
+  },
+  {
+    "id": "review:06",
+    "label": "positive",
+    "original": "The room was quiet and I slept very well.",
+    "variants": {
+      "paraphrase": "I slept comfortably because the room was peaceful.",
+      "typo": "The room was quiet and I slept vrey well.",
+      "punctuation": "The room was quiet and I slept very well!"
+    }
+  },
+  {
+    "id": "review:07",
+    "label": "positive",
+    "original": "I have no complaints about this excellent service.",
+    "variants": {
+      "paraphrase": "The service was excellent and gave me nothing to complain about.",
+      "typo": "I have no complants about this excellent service.",
+      "punctuation": "I have no complaints about this excellent service!"
+    }
+  },
+  {
+    "id": "review:08",
+    "label": "positive",
+    "original": "The headphones did not disappoint me.",
+    "variants": {
+      "paraphrase": "The headphones met my expectations and I was pleased.",
+      "typo": "The headphones did not disapoint me.",
+      "punctuation": "The headphones did not disappoint me!"
+    }
+  },
+  {
+    "id": "review:09",
+    "label": "positive",
+    "original": "The package was plain but the product works beautifully.",
+    "variants": {
+      "paraphrase": "Despite simple packaging, I am pleased with how well the product works.",
+      "typo": "The package was plain but the product works beatifully.",
+      "punctuation": "The package was plain but the product works beautifully!"
+    }
+  },
+  {
+    "id": "review:10",
+    "label": "positive",
+    "original": "The wait was long but the food was worth it.",
+    "variants": {
+      "paraphrase": "The meal justified the long wait.",
+      "typo": "The wait was long but the food was wroth it.",
+      "punctuation": "The wait was long but the food was worth it!"
+    }
+  },
+  {
+    "id": "review:11",
+    "label": "positive",
+    "original": "I enjoyed the game enough to buy a copy for my sister.",
+    "variants": {
+      "paraphrase": "I bought my sister the game because playing it was so enjoyable.",
+      "typo": "I enjoyed the game enough to buy a copy for my sistr.",
+      "punctuation": "I enjoyed the game enough to buy a copy for my sister!"
+    }
+  },
+  {
+    "id": "review:12",
+    "label": "positive",
+    "original": "I am already planning another stay at this wonderful hotel.",
+    "variants": {
+      "paraphrase": "This hotel was wonderful and I intend to stay again.",
+      "typo": "I am already planing another stay at this wonderful hotel.",
+      "punctuation": "I am already planning another stay at this wonderful hotel!"
+    }
+  },
+  {
+    "id": "review:13",
+    "label": "negative",
+    "original": "The meal was awful and I will never return.",
+    "variants": {
+      "paraphrase": "The terrible food means I will not come back.",
+      "typo": "The meal was awfull and I will never return.",
+      "punctuation": "The meal was awful and I will never return!"
+    }
+  },
+  {
+    "id": "review:14",
+    "label": "negative",
+    "original": "The camera produces blurry photos and I regret buying it.",
+    "variants": {
+      "paraphrase": "I regret this camera purchase because the pictures are blurred.",
+      "typo": "The camera produces blury photos and I regret buying it.",
+      "punctuation": "The camera produces blurry photos and I regret buying it!"
+    }
+  },
+  {
+    "id": "review:15",
+    "label": "negative",
+    "original": "The staff were rude and ruined my visit.",
+    "variants": {
+      "paraphrase": "My visit was spoiled by impolite employees.",
+      "typo": "The staff were rude and ruind my visit.",
+      "punctuation": "The staff were rude and ruined my visit!"
+    }
+  },
+  {
+    "id": "review:16",
+    "label": "negative",
+    "original": "The film bored me from start to finish.",
+    "variants": {
+      "paraphrase": "I found the entire movie tedious.",
+      "typo": "The film bord me from start to finish.",
+      "punctuation": "The film bored me from start to finish!"
+    }
+  },
+  {
+    "id": "review:17",
+    "label": "negative",
+    "original": "The keyboard hurts my hands and often stops working.",
+    "variants": {
+      "paraphrase": "Typing is painful and the keyboard frequently fails.",
+      "typo": "The keybaord hurts my hands and often stops working.",
+      "punctuation": "The keyboard hurts my hands and often stops working!"
+    }
+  },
+  {
+    "id": "review:18",
+    "label": "negative",
+    "original": "The room was noisy and I could not sleep.",
+    "variants": {
+      "paraphrase": "Noise in the room prevented me from sleeping.",
+      "typo": "The room was noisey and I could not sleep.",
+      "punctuation": "The room was noisy and I could not sleep!"
+    }
+  },
+  {
+    "id": "review:19",
+    "label": "negative",
+    "original": "I cannot recommend this terrible service.",
+    "variants": {
+      "paraphrase": "The service was terrible and I advise against using it.",
+      "typo": "I cannot recomend this terrible service.",
+      "punctuation": "I cannot recommend this terrible service!"
+    }
+  },
+  {
+    "id": "review:20",
+    "label": "negative",
+    "original": "The headphones did not meet my expectations.",
+    "variants": {
+      "paraphrase": "I was disappointed because the headphones fell short of what I expected.",
+      "typo": "The headphones did not meet my expectatons.",
+      "punctuation": "The headphones did not meet my expectations!"
+    }
+  },
+  {
+    "id": "review:21",
+    "label": "negative",
+    "original": "The packaging was beautiful but the product is useless.",
+    "variants": {
+      "paraphrase": "Despite attractive packaging, the product has no value to me.",
+      "typo": "The packaging was beautiful but the product is useles.",
+      "punctuation": "The packaging was beautiful but the product is useless!"
+    }
+  },
+  {
+    "id": "review:22",
+    "label": "negative",
+    "original": "The waiter was kind but the food was inedible.",
+    "variants": {
+      "paraphrase": "Although the waiter was friendly, the food could not be eaten.",
+      "typo": "The waiter was kind but the food was inedble.",
+      "punctuation": "The waiter was kind but the food was inedible!"
+    }
+  },
+  {
+    "id": "review:23",
+    "label": "negative",
+    "original": "I uninstalled the game because playing it was frustrating.",
+    "variants": {
+      "paraphrase": "The game frustrated me so much that I removed it.",
+      "typo": "I uninstalled the game because playing it was frustratng.",
+      "punctuation": "I uninstalled the game because playing it was frustrating!"
+    }
+  },
+  {
+    "id": "review:24",
+    "label": "negative",
+    "original": "I checked out early because the hotel was filthy.",
+    "variants": {
+      "paraphrase": "The hotel's dirtiness made me end my stay early.",
+      "typo": "I checked out early because the hotel was flithy.",
+      "punctuation": "I checked out early because the hotel was filthy!"
+    }
+  }
+]
