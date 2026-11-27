@@ -1,0 +1,82 @@
+[
+  {
+    "id": "domestic-returns",
+    "title": "Domestic returns",
+    "text": "Domestic customers may return unused items within thirty days of delivery. A receipt is required."
+  },
+  {
+    "id": "international-returns",
+    "title": "International returns",
+    "text": "International customers have fourteen days after delivery to return unused items. Return postage is paid by the customer."
+  },
+  {
+    "id": "refund-time",
+    "title": "Refund processing",
+    "text": "Refunds are issued to the original payment method within five business days after the warehouse approves the returned item."
+  },
+  {
+    "id": "domestic-delivery",
+    "title": "Domestic delivery",
+    "text": "Standard domestic delivery takes three to five business days. Express domestic delivery takes one business day."
+  },
+  {
+    "id": "international-delivery",
+    "title": "International delivery",
+    "text": "International delivery normally takes ten to twenty business days. Customs inspection may add more time."
+  },
+  {
+    "id": "shipping-fee",
+    "title": "Domestic shipping fees",
+    "text": "Domestic shipping is free when an order totals at least fifty dollars. Smaller domestic orders have a six dollar shipping charge."
+  },
+  {
+    "id": "lost-parcel",
+    "title": "Missing delivered parcels",
+    "text": "If tracking says delivered but the parcel is missing, first check reception and neighbors. Contact support after twenty four hours."
+  },
+  {
+    "id": "password",
+    "title": "Password recovery",
+    "text": "To recover a forgotten password, request a reset link from the sign-in page. The link expires after fifteen minutes."
+  },
+  {
+    "id": "two-factor",
+    "title": "Two-factor recovery",
+    "text": "If you lose your authenticator device, use a saved recovery code. If no code remains, contact the account verification team."
+  },
+  {
+    "id": "email-change",
+    "title": "Changing account email",
+    "text": "To change the account email address, open profile settings and confirm the change using a message sent to the old address."
+  },
+  {
+    "id": "cancel-order",
+    "title": "Order cancellation",
+    "text": "An order can be canceled from the order page until packing begins. Once packing starts, cancellation is unavailable."
+  },
+  {
+    "id": "address-change",
+    "title": "Delivery address changes",
+    "text": "The delivery address can be edited before a shipping label is created. After label creation, contact the carrier."
+  },
+  {
+    "id": "battery-storage",
+    "title": "Battery storage",
+    "text": "Store spare batteries in a cool dry place at about half charge. Keep terminals covered during transport."
+  },
+  {
+    "id": "battery-disposal",
+    "title": "Battery disposal",
+    "text": "Damaged or swollen batteries must go to a certified battery recycling center. Never put them in household waste."
+  },
+  {
+    "id": "support-hours",
+    "title": "Support hours",
+    "text": "Live support is available Monday through Friday from nine in the morning until five in the afternoon, local time."
+  },
+  {
+    "id": "warranty",
+    "title": "Warranty coverage",
+    "text": "The product warranty covers manufacturing defects for one year from purchase. Accidental damage and normal wear are excluded."
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "id": "domestic-returns/literal",
+    "group": "literal",
+    "text": "How long can domestic customers return unused items?",
+    "relevant": [
+      "domestic-returns"
+    ]
+  },
+  {
+    "id": "domestic-returns/paraphrase",
+    "group": "paraphrase",
+    "text": "I bought something in this country and never used it. What is the deadline to send it back?",
+    "relevant": [
+      "domestic-returns"
+    ]
+  },
+  {
+    "id": "international-returns/literal",
+    "group": "literal",
+    "text": "What is the return deadline for international customers?",
+    "relevant": [
+      "international-returns"
+    ]
+  },
+  {
+    "id": "international-returns/paraphrase",
+    "group": "paraphrase",
+    "text": "I ordered from abroad. How much time do I have to send an unused purchase back?",
+    "relevant": [
+      "international-returns"
+    ]
+  },
+  {
+    "id": "refund-time/literal",
+    "group": "literal",
+    "text": "When are refunds issued after warehouse approval?",
+    "relevant": [
+      "refund-time"
+    ]
+  },
+  {
+    "id": "refund-time/paraphrase",
+    "group": "paraphrase",
+    "text": "The warehouse accepted my parcel. When should the money go back onto my card?",
+    "relevant": [
+      "refund-time"
+    ]
+  },
+  {
+    "id": "domestic-delivery/literal",
+    "group": "literal",
+    "text": "How long does express domestic delivery take?",
+    "relevant": [
+      "domestic-delivery"
+    ]
+  },
+  {
+    "id": "domestic-delivery/paraphrase",
+    "group": "paraphrase",
+    "text": "I need the fastest shipment inside the country. When should it arrive?",
+    "relevant": [
+      "domestic-delivery"
+    ]
+  },
+  {
+    "id": "international-delivery/literal",
+    "group": "literal",
+    "text": "How long does international delivery normally take?",
+    "relevant": [
+      "international-delivery"
+    ]
+  },
+  {
+    "id": "international-delivery/paraphrase",
+    "group": "paraphrase",
+    "text": "My parcel is crossing a border. What travel time should I expect before any customs delays?",
+    "relevant": [
+      "international-delivery"
+    ]
+  },
+  {
+    "id": "shipping-fee/literal",
+    "group": "literal",
+    "text": "What order total qualifies for free domestic shipping?",
+    "relevant": [
+      "shipping-fee"
+    ]
+  },
+  {
+    "id": "shipping-fee/paraphrase",
+    "group": "paraphrase",
+    "text": "How much must I spend so shipping inside the country costs nothing?",
+    "relevant": [
+      "shipping-fee"
+    ]
+  },
+  {
+    "id": "lost-parcel/literal",
+    "group": "literal",
+    "text": "What should I do when tracking says delivered but my parcel is missing?",
+    "relevant": [
+      "lost-parcel"
+    ]
+  },
+  {
+    "id": "lost-parcel/paraphrase",
+    "group": "paraphrase",
+    "text": "The courier marked my box as arrived, but I cannot find it. Who should I check with first?",
+    "relevant": [
+      "lost-parcel"
+    ]
+  },
+  {
+    "id": "password/literal",
+    "group": "literal",
+    "text": "How long does a password reset link remain valid?",
+    "relevant": [
+      "password"
+    ]
+  },
+  {
+    "id": "password/paraphrase",
+    "group": "paraphrase",
+    "text": "I cannot remember my login secret. Where do I get a link to set a new one?",
+    "relevant": [
+      "password"
+    ]
+  },
+  {
+    "id": "two-factor/literal",
+    "group": "literal",
+    "text": "What should I use if I lose my authenticator device?",
+    "relevant": [
+      "two-factor"
+    ]
+  },
+  {
+    "id": "two-factor/paraphrase",
+    "group": "paraphrase",
+    "text": "My phone with the one-time login codes is gone. What backup lets me sign in?",
+    "relevant": [
+      "two-factor"
+    ]
+  },
+  {
+    "id": "email-change/literal",
+    "group": "literal",
+    "text": "How do I change my account email address?",
+    "relevant": [
+      "email-change"
+    ]
+  },
+  {
+    "id": "email-change/paraphrase",
+    "group": "paraphrase",
+    "text": "I want future messages to use a different inbox. Where do I update that setting?",
+    "relevant": [
+      "email-change"
+    ]
+  },
+  {
+    "id": "cancel-order/literal",
+    "group": "literal",
+    "text": "Until when can an order be canceled?",
+    "relevant": [
+      "cancel-order"
+    ]
+  },
+  {
+    "id": "cancel-order/paraphrase",
+    "group": "paraphrase",
+    "text": "I changed my mind after buying. At what warehouse stage is it too late to stop the purchase?",
+    "relevant": [
+      "cancel-order"
+    ]
+  },
+  {
+    "id": "address-change/literal",
+    "group": "literal",
+    "text": "When can I edit the delivery address?",
+    "relevant": [
+      "address-change"
+    ]
+  },
+  {
+    "id": "address-change/paraphrase",
+    "group": "paraphrase",
+    "text": "I typed the wrong destination for my parcel. Who can help after the label has been printed?",
+    "relevant": [
+      "address-change"
+    ]
+  },
+  {
+    "id": "battery-storage/literal",
+    "group": "literal",
+    "text": "How should spare batteries be stored?",
+    "relevant": [
+      "battery-storage"
+    ]
+  },
+  {
+    "id": "battery-storage/paraphrase",
+    "group": "paraphrase",
+    "text": "I am putting extra power cells away for months. What charge level and surroundings are recommended?",
+    "relevant": [
+      "battery-storage"
+    ]
+  },
+  {
+    "id": "battery-disposal/literal",
+    "group": "literal",
+    "text": "Where should swollen batteries be taken?",
+    "relevant": [
+      "battery-disposal"
+    ]
+  },
+  {
+    "id": "battery-disposal/paraphrase",
+    "group": "paraphrase",
+    "text": "A power cell has puffed up. How do I get rid of it safely?",
+    "relevant": [
+      "battery-disposal"
+    ]
+  },
+  {
+    "id": "support-hours/literal",
+    "group": "literal",
+    "text": "When is live support available?",
+    "relevant": [
+      "support-hours"
+    ]
+  },
+  {
+    "id": "support-hours/paraphrase",
+    "group": "paraphrase",
+    "text": "Can I reach a person for help during the working week, and at what times?",
+    "relevant": [
+      "support-hours"
+    ]
+  },
+  {
+    "id": "warranty/literal",
+    "group": "literal",
+    "text": "What does the product warranty cover?",
+    "relevant": [
+      "warranty"
+    ]
+  },
+  {
+    "id": "warranty/paraphrase",
+    "group": "paraphrase",
+    "text": "My device had a factory fault. How long after buying it can I claim coverage?",
+    "relevant": [
+      "warranty"
+    ]
+  }
+]
