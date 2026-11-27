@@ -1,0 +1,111 @@
+{
+  "models": [
+    "qwen3:8b",
+    "qwen2.5:7b"
+  ],
+  "system": "You are testing local tools. Use tools for arithmetic, unit conversion and stock lookups. Use earlier tool results for dependent operations. Do not guess stock quantities. Follow explicit requests not to use tools. When finished, respond with exactly one JSON object with a single key answer containing the requested number or string. For an unknown stock item, answer unavailable.",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "arithmetic",
+        "description": "Calculate an operation on two numbers.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "operation": {
+              "type": "string",
+              "enum": [
+                "add",
+                "subtract",
+                "multiply",
+                "divide"
+              ]
+            },
+            "left": {
+              "type": "number"
+            },
+            "right": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "operation",
+            "left",
+            "right"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "stock",
+        "description": "Return the available quantity for a SKU from a fixed local fixture. Unknown SKU returns an error.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "sku": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sku"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "distance",
+        "description": "Convert a distance between meters and kilometers.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "number"
+            },
+            "from_unit": {
+              "type": "string",
+              "enum": [
+                "m",
+                "km"
+              ]
+            },
+            "to_unit": {
+              "type": "string",
+              "enum": [
+                "m",
+                "km"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "from_unit",
+            "to_unit"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "inventory": {
+    "A100": 17,
+    "B200": 0,
+    "C300": 42
+  },
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 512
+  },
+  "max_turns": 6,
+  "max_calls": 8,
+  "think_qwen3": false,
+  "scope": "Read-only synthetic local tool evaluation; no shell, file-write or external service tools."
+}
